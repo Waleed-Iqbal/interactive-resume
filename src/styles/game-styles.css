@@ -6,6 +6,7 @@
 }
 
 .game-row {
+  margin: inherit;
   margin-top: -4px;
   width: 125px;
 }
@@ -15,8 +16,9 @@
   float: left;
   width: 40px;
   height: 40px;
-  margin-left: -4px;
+  font-size: 1.5em;
   margin-top: -4px;
+  margin-left: -4px;
   font-weight: bold;
   border: 1px solid black;
   background-color: white;
@@ -24,4 +26,12 @@
 
 .game-square:focus {
   outline: none;
+}
+
+.game-info {
+  margin-left: 40px;
+}
+
+.game-status {
+  font-weight: bold;
 }
