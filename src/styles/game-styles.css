@@ -35,3 +35,8 @@
 .game-status {
   font-weight: bold;
 }
+
+.game-history {
+  padding-left: 0;
+  list-style: none;
+}
