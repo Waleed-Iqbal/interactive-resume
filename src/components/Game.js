@@ -7,28 +7,41 @@ class Game extends React.Component {
     super(props);
     this.state = {
       xIsNext: true,
-      squares: Array(9).fill(null)
+      squares: Array(9).fill(null),
+      isGameOver: false,
+      status: "Turn X"
     };
   }
 
   handleClick = i => {
+    if (this.state.isGameOver) return; // no further input when game is over
+
     let arr = this.state.squares.slice();
     arr[i] = this.state.xIsNext ? "X" : "O";
+
+    let isGameOver = Helpers.isGameOver(arr);
+    if (isGameOver) {
+      this.setState({
+        squares: arr,
+        isGameOver: true,
+        status: isGameOver
+      });
+      return;
+    }
+
     this.setState({
       xIsNext: !this.state.xIsNext,
-      squares: arr
+      squares: arr,
+      status: `Turn: ${!this.state.xIsNext ? "X" : "O"}`
     });
   };
 
   render() {
-    let status = `Turn: ${this.state.xIsNext ? "X" : "O"}`;
-    Helpers.isGameOver(this.state.squares);
-
     return (
       <div className="game">
         <Board onClick={this.handleClick} squares={this.state.squares} />
         <div className="game-info">
-          <div className="game-status">{status}</div>
+          <div className="game-status">{this.state.status}</div>
           <div>{/*gameHistory*/}</div>
         </div>
       </div>
