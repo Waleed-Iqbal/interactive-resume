@@ -5,13 +5,15 @@ import * as Helpers from "../scripts/helpers";
 class Game extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
+
+    this.startingState = {
       xIsNext: true,
-      squares: Array(9).fill(null),
-      history: [Array(9).fill(null)],
+      status: "Turn X",
       isGameOver: false,
-      status: "Turn X"
+      squares: Array(9).fill(null),
+      history: [Array(9).fill(null)]
     };
+    this.state = this.startingState;
   }
 
   handleClick = i => {
@@ -24,27 +26,41 @@ class Game extends React.Component {
     if (isGameOver) {
       this.setState({
         squares: arr,
-        history: this.state.history.concat([arr]),
+        history: [Array(9).fill(null)],
         isGameOver: true,
         status: isGameOver
       });
       return;
     }
 
+    let updatedHistory = arr.reduce((result, val, i) => {
+      return val !== null ? ++result : result;
+    }, 0);
+
     this.setState({
       xIsNext: !this.state.xIsNext,
-      history: this.state.history.concat([arr]),
+      history: this.state.history.slice(0, updatedHistory).concat([arr]),
       squares: arr,
       status: `Turn: ${!this.state.xIsNext ? "X" : "O"}`
     });
   };
 
+  goToStep = stepNumber => {
+    if (stepNumber === 0) {
+      this.setState(this.startingState);
+    } else {
+      this.setState({
+        squares: this.state.history[stepNumber]
+      });
+    }
+  };
+
   getHistory = () => {
     let steps = this.state.history.map((step, i) => {
-      let desc = i===0 ? "Go to Start" : `Go to step# ${i}`;
+      let desc = i === 0 ? "New Game" : `Go to step# ${i}`;
       return (
         <li key={i}>
-          <button>{desc}</button>
+          <button onClick={() => this.goToStep(i)}>{desc}</button>
         </li>
       );
     });
