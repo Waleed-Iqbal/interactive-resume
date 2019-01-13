@@ -1,10 +1,11 @@
+import React from "react";
 import Board from "./Board";
 
 function Game() {
   return (
-    <div class="game">
+    <div className="game">
       <Board />
-      <div class="game-info">
+      <div className="game-info">
         <div>{/*gameStatus*/}</div>
         <div>{/*gameHistory*/}</div>
       </div>
