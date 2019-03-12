@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/game-styles.css";
-import Game from "./components/Game";
+import Portfolio from "./components/portfolio";
 
-ReactDOM.render(<Game />, document.getElementById("root"));
+ReactDOM.render(<Portfolio />, document.getElementById("root"));
