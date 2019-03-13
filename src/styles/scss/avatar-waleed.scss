@@ -1,0 +1,39 @@
+#AvatarWaleed {
+    .avatar-head {
+        width: 80px;
+        height: 80px;
+        background-color: azure;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        z-index: 10;
+        transform: translateY(-50%);
+
+        >div {
+            position: relative;
+            z-index: 0;
+            left: 20%;
+        }
+    }
+
+
+
+    .avatar-hair-forehead {
+        width: 50%;
+        height: 30%;
+        background-color: brown;
+    }
+
+    .avatar-ears-eyes {
+        width: 50%;
+        height: 40%;
+        background-color: black;
+    }
+
+    .avatar-chin-eyes {
+        width: 50%;
+        height: 30%;
+        background-color: chocolate;
+    }
+}

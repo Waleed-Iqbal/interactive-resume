@@ -1,18 +1,20 @@
 import React from "react";
-//import * as Helpers from "../scripts/helpers";
+import {
+  AvatarWaleed
+} from "./avatars/avatar-waleed";
 
 class Portfolio extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+  //constructor(props) {
+  //  super(props);
+  //}
 
-render() {
-  return(
-    <div id="portfolio">
-      THIS IS GONNA BE MY PORTFOLIO. In Sha Allah
-    </div>
-  );
-}
+  render() {
+    return ( 
+      <div id = "portfolio" >
+         <AvatarWaleed />
+      </div>
+    );
+  }
 
 }
 
