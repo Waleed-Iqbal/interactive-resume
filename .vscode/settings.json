@@ -5,6 +5,10 @@
     "emmet.includeLanguages": {
         "javascript":"javascriptreact",
     },
-    "emmet.triggerExpansionOnTab": true
+    "emmet.triggerExpansionOnTab": true,
+    "cSpell.words": [
+        "avatar",
+        "waleed"
+    ]
     
 }
