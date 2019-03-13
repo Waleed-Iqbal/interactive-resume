@@ -16,4 +16,4 @@ render() {
 
 }
 
-export default Game;
+export default Portfolio;
