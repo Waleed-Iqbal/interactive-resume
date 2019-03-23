@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/css/globals.min.css";
-import "../styles/css/under-construction.min.css";
+import "../styles/globals.scss";
+import "../styles/under-construction.scss";
 import { UnderConstruction } from "./under-construction";
 
 class Portfolio extends React.Component {
