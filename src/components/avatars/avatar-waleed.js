@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/css/avatar-waleed.min.css";
+import "../../styles/avatar-waleed.scss";
 
 export function AvatarWaleed() {
   return (
