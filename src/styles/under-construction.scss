@@ -57,21 +57,17 @@
         top: 30%;
         width: 100%;
         height: 6rem;
-
+        --glasses-temple-skew-angle: 22deg;
         .temple {
-            width: 5rem;
-            height: 3rem;
-            content: "";
+            width: 4rem;
+            height: 0.6rem;
             box-sizing: border-box;
-            border: 2px solid black;
-            border-bottom: none;
-            border-left: none;
+            margin-top: 2rem;
             background-color: black;
         }
 
         .left-temple {
-            border-bottom-left-radius: 100%;
-            border-top-right-radius: 100%;
+            transform: skewY(var(--glasses-temple-skew-angle));
         }
 
         .frame {
@@ -80,7 +76,6 @@
             content: "";
             border-radius: 50%;
             border: 5px solid black;
-
             background-color: white;
         }
 
@@ -98,8 +93,7 @@
         }
 
         .right-temple {
-            border-bottom-right-radius: 100%;
-            border-top-left-radius: 100%;
+            transform: skewY(calc(var(--glasses-temple-skew-angle) * -1));
         }
     }
 }
