@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 20vh 10vh auto;
-    grid-template-areas: "HomePage""Coming""Soon";
+    grid-template-areas:
+        "HomePage"
+        "Coming"
+        "Soon";
 }
 
 #HomePage {
@@ -29,8 +32,13 @@
     display: flex;
     justify-content: center;
 
-    div:first-child, div:last-child {
-        font-size: 2rem;
+    >div {
+
+        &:first-child,
+        &:last-child {
+            font-size: 8rem;
+            padding-top: 10rem;
+        }
     }
 }
 
@@ -68,7 +76,7 @@
 
         .frame {
             width: 6rem;
-            height: 5   rem;
+            height: 5 rem;
             content: "";
             border-radius: 50%;
             border: 5px solid black;
