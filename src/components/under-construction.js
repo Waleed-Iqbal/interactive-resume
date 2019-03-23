@@ -7,12 +7,16 @@ export function UnderConstruction() {
       <div id="HomePage">
         <div className="div--bottom__center">Home Page</div>
       </div>
-      <div className="div--middle__center" id="Coming">Coming</div>
+      <div id="Coming">Coming</div>
       <div id="Soon">
-        <div>S</div>
+        <div className="div--middle__center">S</div>
         <div id="AvatarFace">
           <div className="avatar--glasses">
-
+            <div className="temple left-temple"></div>
+            <div className="frame"></div>
+            <div className="glasses-bridge"></div>
+            <div className="frame"></div>
+            <div className="temple right-temple"></div>
           </div>
         </div>
         <div>N</div>

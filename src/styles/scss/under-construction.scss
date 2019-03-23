@@ -1,9 +1,8 @@
-
 #UnderConstruction {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 40vh 10vh 50vh;
-    grid-template-areas: "HomePage" "Coming" "Soon";
+    grid-template-rows: 20vh 10vh auto;
+    grid-template-areas: "HomePage""Coming""Soon";
 }
 
 #HomePage {
@@ -12,30 +11,83 @@
     position: relative;
     text-align: center;
 
-     .div--bottom__center {
+    .div--bottom__center {
         font-size: 3em;
-     }
+    }
 }
 
 
 #Coming {
     grid-area: Coming;
-    background-color: azure;
+    background-color: ghostwhite;
+    text-align: center;
 }
 
 
 #Soon {
     grid-area: Soon;
     display: flex;
-    background-color: lightgrey;
     justify-content: center;
 }
 
 #AvatarFace {
-    width: 40vw;
-    height: 30vh;;
+    width: 27rem;
+    height: 30rem;
     background-color: lightgoldenrodyellow;
     border-radius: 40%;
     border-top: 50px solid grey;
     border-bottom: 20px solid black;
+    position: relative;
+
+    .avatar--glasses {
+        display: flex;
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        height: 6rem;
+
+        .temple {
+            width: 5rem;
+            height: 3rem;
+            content: "";
+            box-sizing: border-box;
+            border: 2px solid black;
+            border-bottom: none;
+            border-left: none;
+            background-color: black;
+        }
+
+        .left-temple {
+            border-bottom-left-radius: 100%;
+            border-top-right-radius: 100%;
+        }
+
+        .frame {
+            width: 6rem;
+            height: 5   rem;
+            content: "";
+            border-radius: 50%;
+            border: 5px solid black;
+
+            background-color: white;
+        }
+
+        .glasses-bridge {
+            width: 3rem;
+            height: 0.1rem;
+            position: relative;
+            top: 40%;
+            background-color: gray;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom: none;
+            border: 5px solid gray;
+
+        }
+
+        .right-temple {
+            border-bottom-right-radius: 100%;
+            border-top-left-radius: 100%;
+        }
+    }
 }
