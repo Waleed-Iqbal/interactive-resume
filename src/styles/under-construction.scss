@@ -87,13 +87,14 @@
             background-color: gray;
             border-top-left-radius: 50%;
             border-top-right-radius: 50%;
-            border-bottom: none;
-            border: 5px solid gray;
+            border-style: solid;
+            border-color: grey;
+            border-width: 5px 0 0 0;
 
         }
 
         .right-temple {
-            transform: skewY(calc(var(--glasses-temple-skew-angle) * -1));
+            transform: skewY(calc(var(--glasses-temple-skew-angle) * -1)); // making angle negative 
         }
     }
 }
