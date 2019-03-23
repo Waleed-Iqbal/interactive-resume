@@ -28,6 +28,10 @@
     grid-area: Soon;
     display: flex;
     justify-content: center;
+
+    div:first-child, div:last-child {
+        font-size: 2rem;
+    }
 }
 
 #AvatarFace {
