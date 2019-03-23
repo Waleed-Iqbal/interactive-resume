@@ -1,15 +1,15 @@
 import React from "react";
-import "../styles/css/under-construction.min.css";
+import "../styles/under-construction.scss";
 
 export function UnderConstruction() {
   return (
     <div id="UnderConstruction">
       <div id="HomePage">
-        <div className="div--bottom__center">Home Page</div>
+        <div className="div--bottom__center">Under Construction</div>
       </div>
       <div id="Coming">Coming</div>
       <div id="Soon">
-        <div className="div--middle__center">S</div>
+        <div>S</div>
         <div id="AvatarFace">
           <div className="avatar--glasses">
             <div className="temple left-temple"></div>
