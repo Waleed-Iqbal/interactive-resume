@@ -7,14 +7,14 @@ export function UnderConstruction() {
     <div id="UnderConstruction">
       <div id="HomePage">
         <div className="div--bottom__center">
-          Portfolio Under Construction
+          Under Construction
         </div>
       </div>
       <div id="Coming">
-        <div className="div--middle__center">Coming</div>
+        <div className="div--middle__center"></div>
       </div>
       <div id="Soon">
-        <div>S</div>
+        <div>Coming S</div>
         <AvatarWaleed />
         <div>N</div>
       </div>

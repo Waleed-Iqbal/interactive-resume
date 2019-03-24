@@ -22,8 +22,6 @@
     text-align: center;
     position: relative;
     font-size: 3rem;
-
-
 }
 
 
@@ -37,16 +35,15 @@
 
         &:first-child,
         &:last-child {
-            font-size: 7rem;
-            padding: 6rem 10px 0 10px;
+            font-size: 5rem;
+            padding: 7rem 10px 0 10px;
         }
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 662px) {
 
-    #HomePage,
-    #Coming {
+    #HomePage {
         font-size: 2rem;
     }
 
@@ -64,10 +61,33 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
 
-    #HomePage,
-    #Coming {
-        font-size: 1.5rem;
+    #HomePage {
+        font-size: 2rem;
+    }
+
+    #Soon {
+        font-size: 2rem;
+
+        >div {
+
+            &:first-child,
+            &:last-child {
+                display: none; 
+            }
+        }
+
+        &:before {
+            content: "Coming S";
+            padding-top: 5rem;
+            padding-right: 10px;
+        }
+
+        &:after {
+            content: "N";
+            padding-top: 5rem;
+            padding-left: 10px;
+        }
     }
 }
