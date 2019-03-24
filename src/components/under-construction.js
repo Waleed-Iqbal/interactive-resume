@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/under-construction.scss";
+import { AvatarWaleed } from "./avatars/avatar-waleed";
 
 export function UnderConstruction() {
   return (
@@ -10,15 +11,7 @@ export function UnderConstruction() {
       <div id="Coming">Coming</div>
       <div id="Soon">
         <div>S</div>
-        <div id="AvatarFace">
-          <div className="avatar--glasses">
-            <div className="temple left-temple"></div>
-            <div className="frame"></div>
-            <div className="glasses-bridge"></div>
-            <div className="frame"></div>
-            <div className="temple right-temple"></div>
-          </div>
-        </div>
+        <AvatarWaleed/>
         <div>N</div>
       </div>
     </div>
