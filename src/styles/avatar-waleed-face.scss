@@ -30,10 +30,10 @@
         }
 
         .frame {
-            --frame-open-height: 80px;
             --frame-margin-top: 0;
-            --frame-frame-width: 96px;
             --frame-close-height: 0;
+            --frame-open-height: 80px;
+            --frame-frame-width: 96px;
 
             width: var(--frame-frame-width);
             margin-top: var(--frame-margin-top);
@@ -89,37 +89,14 @@
             top: 20%;
 
             .temple {
-                height: 0.4rem;
+                height: 5px;
             }
 
             .frame {
-                --frame-open-height: 48px;
                 --frame-margin-top: 15px;
+                --frame-open-height: 48px;
                 --frame-frame-width: 80px;
-
-                width: var(--frame-frame-width);
-                height: var(--frame-open-height);
-                margin-top: var(--frame-margin-top);
                 border-width: 3px;
-
-
-                @keyframes eye-blink {
-                    20% {
-                        height: var(--frame-open-height);
-                        margin-top: var(--frame-margin-top);
-                    }
-
-                    25% {
-                        height: var(--frame-close-height);
-                        margin-top: calc(var(--frame-open-height)/2);
-                        ;
-                    }
-
-                    30% {
-                        height: var(--frame-open-height);
-                        margin-top: var(--frame-margin-top);
-                    }
-                }
             }
 
             .glasses-bridge {
