@@ -9,12 +9,6 @@
     border-bottom: 20px solid black;
     position: relative;
 
-    @media screen and (max-width: 650px) {
-        width: 140px;
-        height: 130px;
-        border-top: 25px solid grey;
-        border-bottom: 15px solid black;
-    }
 
     .avatar--glasses {
         display: flex;
@@ -24,9 +18,6 @@
         height: 6rem;
         --glasses-temple-skew-angle: 22deg;
 
-        @media screen and (max-width: 650px) {
-            top: 20%;
-        }
 
         .temple {
             width: 4rem;
@@ -34,10 +25,6 @@
             box-sizing: border-box;
             margin-top: 2rem;
             background-color: black;
-
-            @media screen and (max-width: 650px) {
-                height: 0.4rem;
-            }
         }
 
         .left-temple {
@@ -69,8 +56,40 @@
                     margin-top: 0;
                 }
             }
+        }
 
-            @media screen and (max-width: 650px) {
+        .glasses-bridge {
+            width: 3rem;
+            height: 0.1rem;
+            position: relative;
+            top: 40%;
+            background-color: gray;
+            border-radius: 50% 50% 0 0;
+            border-style: solid;
+            border-color: grey;
+            border-width: 5px 0 0 0;
+        }
+
+        .right-temple {
+            transform: skewY(calc(var(--glasses-temple-skew-angle) * -1)); // making angle negative 
+        }
+    }
+
+
+    @media screen and (max-width: 650px) {
+        width: 140px;
+        height: 130px;
+        border-top: 25px solid grey;
+        border-bottom: 15px solid black;
+
+        .avatar--glasses {
+            top: 20%;
+
+            .temple {
+                height: 0.4rem;
+            }
+
+            .frame {
                 width: 5rem;
                 height: 3rem;
                 border-width: 3px;
@@ -93,29 +112,11 @@
                     }
                 }
             }
-        }
 
-        .glasses-bridge {
-            width: 3rem;
-            height: 0.1rem;
-            position: relative;
-            top: 40%;
-            background-color: gray;
-            border-radius: 50% 50% 0 0;
-            border-style: solid;
-            border-color: grey;
-            border-width: 5px 0 0 0;
-
-            @media screen and (max-width: 650px) {
+            .glasses-bridge {
                 width: 2.5rem;
                 border-width: 3px 0 0 0;
             }
-
-        }
-
-        .right-temple {
-            transform: skewY(calc(var(--glasses-temple-skew-angle) * -1)); // making angle negative 
         }
     }
 }
-
