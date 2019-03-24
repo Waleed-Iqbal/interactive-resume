@@ -36,7 +36,7 @@
         &:first-child,
         &:last-child {
             font-size: 5rem;
-            padding: 120px 10px 0 10px;
+            padding: 90px 10px 0 10px;
         }
     }
 }
@@ -80,13 +80,13 @@
 
         &:before {
             content: "Coming S";
-            padding-top: 4.5rem;
+            padding-top: 72px;
             padding-right: 10px;
         }
 
         &:after {
             content: "N";
-            padding-top: 4.5rem;
+            padding-top: 72px;
             padding-left: 10px;
         }
     }
