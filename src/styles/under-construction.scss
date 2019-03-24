@@ -11,33 +11,49 @@
 #HomePage {
     grid-area: HomePage;
     background-color: bisque;
-    position: relative;
-    text-align: center;
+}
 
-    .div--bottom__center {
-        font-size: 3em;
+#Coming {
+    grid-area: Coming;
+}
+
+#HomePage,
+#Coming {
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
+
+    @media screen and (max-width: 650px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 1rem;
     }
 }
 
 
-#Coming {
-    grid-area: Coming;
-    background-color: ghostwhite;
-    text-align: center;
-}
-
-
 #Soon {
-    grid-area: Soon;
     display: flex;
+    grid-area: Soon;
+    padding-top: 50px;
     justify-content: center;
+
+    @media screen and (max-width: 650px) {
+        padding-top: 10px;
+    }
 
     >div {
 
         &:first-child,
         &:last-child {
             font-size: 7rem;
-            padding-top: 7rem;
+            padding: 6rem 10px 0 10px;
+
+            @media screen and (max-width: 650px) {
+                font-size: 3rem;
+                padding-top: 4rem;
+            }
         }
     }
 }

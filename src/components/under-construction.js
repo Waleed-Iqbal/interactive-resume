@@ -10,10 +10,12 @@ export function UnderConstruction() {
           Portfolio Under Construction
         </div>
       </div>
-      <div id="Coming">Coming</div>
+      <div id="Coming">
+        <div className="div--middle__center">Coming</div>
+      </div>
       <div id="Soon">
         <div>S</div>
-        <AvatarWaleed/>
+        <AvatarWaleed />
         <div>N</div>
       </div>
     </div>
