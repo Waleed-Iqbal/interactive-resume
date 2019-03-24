@@ -23,9 +23,7 @@
     position: relative;
     font-size: 3rem;
 
-    @media screen and (max-width: 400px) {
-        font-size: 1.5rem;
-    }
+
 }
 
 
@@ -63,5 +61,13 @@
                 padding-top: 4rem;
             }
         }
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    #HomePage,
+    #Coming {
+        font-size: 1.5rem;
     }
 }
