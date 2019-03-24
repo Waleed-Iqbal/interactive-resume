@@ -1,29 +1,27 @@
 #AvatarWaleedFace {
     width: 240px;
     height: 230px;
-
-
-    background-color: lightgoldenrodyellow;
+    position: relative;
     border-radius: 40%;
     border-top: 50px solid grey;
     border-bottom: 20px solid black;
-    position: relative;
+    background-color: lightgoldenrodyellow;
 
 
     .avatar--glasses {
-        display: flex;
-        position: absolute;
         top: 30%;
         width: 100%;
-        height: 6rem;
+        height: 96px;
+        display: flex;
+        position: absolute;
         --glasses-temple-skew-angle: 22deg;
 
 
         .temple {
-            width: 4rem;
-            height: 0.6rem;
+            width: 64px;
+            height: 10px;
+            margin-top: 32px;
             box-sizing: border-box;
-            margin-top: 2rem;
             background-color: black;
         }
 
@@ -32,42 +30,47 @@
         }
 
         .frame {
-            width: 6rem;
-            height: 5rem;
+            --frame-open-height: 80px;
+            --frame-margin-top: 0;
+            --frame-frame-width: 96px;
+            --frame-close-height: 0;
+
+            width: var(--frame-frame-width);
+            margin-top: var(--frame-margin-top);
             border-radius: 50%;
             border: 5px solid black;
             background-color: white;
-            margin-top: 0;
+            height: var(--frame-open-height);
             animation: eye-blink 4s linear infinite;
 
             @keyframes eye-blink {
                 20% {
-                    height: 5rem;
-                    margin-top: 0;
+                    margin-top: var(--frame-margin-top);
+                    height: var(--frame-open-height);
                 }
 
                 25% {
-                    height: 0;
-                    margin-top: 2.5rem;
+                    height: var(--frame-close-height);
+                    margin-top: calc(var(--frame-open-height)/2);
                 }
 
                 30% {
-                    height: 5rem;
-                    margin-top: 0;
+                    margin-top: var(--frame-margin-top);
+                    height: var(--frame-open-height);
                 }
             }
         }
 
         .glasses-bridge {
+            top: 40%;
             width: 3rem;
             height: 0.1rem;
             position: relative;
-            top: 40%;
-            background-color: gray;
-            border-radius: 50% 50% 0 0;
             border-style: solid;
             border-color: grey;
             border-width: 5px 0 0 0;
+            background-color: gray;
+            border-radius: 50% 50% 0 0;
         }
 
         .right-temple {
@@ -90,25 +93,31 @@
             }
 
             .frame {
-                width: 5rem;
-                height: 3rem;
+                --frame-open-height: 48px;
+                --frame-margin-top: 15px;
+                --frame-frame-width: 80px;
+
+                width: var(--frame-frame-width);
+                height: var(--frame-open-height);
+                margin-top: var(--frame-margin-top);
                 border-width: 3px;
-                margin-top: 15px;
+
 
                 @keyframes eye-blink {
                     20% {
-                        height: 3rem;
-                        margin-top: 15px;
+                        height: var(--frame-open-height);
+                        margin-top: var(--frame-margin-top);
                     }
 
                     25% {
-                        height: 0;
-                        margin-top: 37px;
+                        height: var(--frame-close-height);
+                        margin-top: calc(var(--frame-open-height)/2);
+                        ;
                     }
 
                     30% {
-                        height: 3rem;
-                        margin-top: 15px;
+                        height: var(--frame-open-height);
+                        margin-top: var(--frame-margin-top);
                     }
                 }
             }
