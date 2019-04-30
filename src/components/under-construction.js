@@ -19,6 +19,7 @@ export function UnderConstruction() {
       </div> */}
 
       <img src={svgComingSoon} alt="coming-soon" />
+      
     </div>
   );
 }
