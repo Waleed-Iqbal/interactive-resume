@@ -14,9 +14,9 @@ export function UnderConstruction() {
         <div className="div--middle__center"></div>
       </div>
       <div id="Soon">
-        <div>Cumingg S</div>
+        <div>Coming S</div>
         <AvatarWaleed />
-        <div>NNNN</div>
+        <div>N</div>
       </div>
     </div>
   );
