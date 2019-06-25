@@ -4,6 +4,7 @@ import "../styles/globals.scss";
 import "../styles/under-construction.scss";
 import { UnderConstruction } from "./under-construction";
 import Resume from "./resume";
+import { Error404 } from './error404';
 
 class Portfolio extends React.Component {
   //constructor(props) {
@@ -17,6 +18,7 @@ class Portfolio extends React.Component {
         <Switch>
           <Route exact path="/" component={UnderConstruction} />
           <Route exact path="/resume" component={Resume} />
+          <Route component={Error404} />
         </Switch>
       </React.Fragment>
     );
