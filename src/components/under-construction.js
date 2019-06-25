@@ -6,7 +6,7 @@ import svgComingSoon from "../assets/coming-soon.svg";
 export function UnderConstruction() {
   return (
     <div id="UnderConstruction">
-      {/* <div id="HomePage">
+      <div id="HomePage">
         <div className="div--bottom__center">Under Construction</div>
       </div>
       <div id="Coming">
@@ -15,10 +15,10 @@ export function UnderConstruction() {
       <div id="Soon">
         <div>Coming S</div>
         <AvatarWaleed />
-        <div>N</div>
-      </div> */}
+        <div>NNN</div>
+      </div>
 
-      <img src={svgComingSoon} alt="coming-soon" />
+      {/* <img src={svgComingSoon} alt="coming-soon" /> */}
       
     </div>
   );
