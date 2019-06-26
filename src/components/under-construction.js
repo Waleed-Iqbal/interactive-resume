@@ -6,7 +6,7 @@ import { AvatarWaleed } from "./avatars/waleed/avatar-waleed";
 export function UnderConstruction() {
   return (
     <div id="UnderConstruction">
-      <Link href="/resume">
+      <Link to="/resume">
         <h1>RESUME HERE !!!</h1>
       </Link>
       <div id="HomePage">
