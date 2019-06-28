@@ -6,7 +6,7 @@ import { UnderConstruction } from "./under-construction";
 import Resume from "./resume";
 import { Error404 } from './error404';
 
-class Portfolio extends React.Component {
+class App extends React.Component {
   //constructor(props) {
   //  super(props);
   //}
@@ -17,7 +17,12 @@ class Portfolio extends React.Component {
         {/* NavBar is not inside Switch since its gonna be displayed on all pages */}
         <Switch>
           <Route exact path="/" component={UnderConstruction} />
-          <Route exact path="/resume" component={Resume} />
+          <Route 
+            exact 
+            path="/resume" 
+            render = {props => (
+              <Page {...props} component={Resume} title="Resume" />
+            )} />
           <Route component={Error404} />
         </Switch>
       </React.Fragment>
@@ -25,4 +30,19 @@ class Portfolio extends React.Component {
   }
 }
 
-export default Portfolio;
+
+class Page extends React.Component {
+  componentDidMount() {
+    document.title = this.props.title
+  }
+  
+  render() {
+    const PageComponent = this.props.component
+
+    return (
+      <PageComponent />
+    )
+  }
+}
+
+export default App;
