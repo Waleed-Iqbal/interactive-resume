@@ -62,10 +62,34 @@ export function Resume() {
           </div>
         </div>
         <div className="skill-set"></div>
-        <div className="work-experience"></div>
-        <div className="certifications"></div>
-        <div className="education"></div>
-        <div className="interests"></div>
+        <div className="work-experience">
+          <li>KeepTrucking</li>
+          <li>NowSoftware Inc.</li>
+          <li>Bentley Systems Inc.</li>
+          <li>Contour Software Inc. / Trapeze</li>
+          <li>LMKR</li>
+        </div>
+        <div className="certs-honors">
+          <ul>
+            <li>Microsoft Certified Professional. (Oct 2015)</li>
+            <li>Gold Medal for best undergraduate final year project awarded by National University of Science and Technology. (Aug 2014)</li>
+            <li>GPA (> 3.5) based scholarship in every semester from NUST during Bachelors in Engineering. (2010 – 2014)</li>
+            <li>Merit certificate from Rector NUST for being among the high achievers of the institute. (Mar 2014)</li>
+            <li>Gold Medal and Cash Prize from school in Matriculation exams. (2008)</li>
+          </ul>
+        </div>
+        <div className="education">
+          <li>Undergraduate</li>
+          <li>College</li>
+          <li>School</li>
+        </div>
+        <div className="interests">
+          <ul>
+            <li>Cycling</li>
+            <li>Reading</li>
+            <li>Playing and making games</li>
+          </ul>
+        </div>
       </section>
     </main>
   );
