@@ -44,8 +44,11 @@ class App extends React.Component {
   }
 }
 
-// The following component is used to add custom title while routing
+/**
+ * Add a component as page when routed with custom tab
+ */
 class Page extends React.Component {
+  
   componentDidMount() {
     document.title = this.props.title
   }
