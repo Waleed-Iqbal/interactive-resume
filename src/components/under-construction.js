@@ -11,7 +11,7 @@ export function UnderConstruction() {
       </Link>
       <div id="HomePage">
         <div className="div--bottom__center">
-          Under Construction
+          Your <strong>search</strong> ends <strong>here</strong>. Under contruction, stay tuned.
         </div>
       </div>
       <div id="Coming">
