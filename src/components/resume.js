@@ -8,7 +8,7 @@ export function Resume() {
     <main className="resume-container">
       <section className="name designation">
         <div className="first-name">Khawaja</div>
-        <title>Frontend Developer, Web Animator, Brings your online presense to life</title>
+        <title>Frontend Developer, Web Animator, Brings your online presence to life</title>
         <div className="last-name">Waleed Iqbal</div>
       </section>
       <section className="somethings-about-me"></section>
