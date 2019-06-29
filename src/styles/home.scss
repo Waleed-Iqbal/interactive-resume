@@ -1,0 +1,32 @@
+// TODO: Optimize this when needed
+@import "../styles/globals.scss";
+
+
+@media screen and (min-width: $mobile-breakpoint) {
+
+  .home-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 100%;
+    grid-template-areas: "main-left-nav main-section"
+  }
+
+  .main-left-nav {
+    grid-area: "main-left-nav";
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+
+    li {
+      list-style: none;
+    }
+  }
+  
+  
+
+  .main-section {
+    grid-area: "main-section";
+    background-color: lightcoral;
+  }
+}
