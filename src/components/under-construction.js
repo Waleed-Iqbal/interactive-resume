@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import "../styles/under-construction.scss";
 import { AvatarWaleed } from "./avatars/waleed/avatar-waleed";
 
-export function UnderConstruction() {
+export default function UnderConstruction(props) {
   return (
     <div id="UnderConstruction">
       <Link to="/resume">
@@ -11,7 +11,7 @@ export function UnderConstruction() {
       </Link>
       <div id="HomePage">
         <div className="div--bottom__center">
-          Your <strong>search</strong> ends <strong>here</strong>. Under contruction, stay tuned.
+          <strong>{props.heading}</strong> under construction, stay tuned.
         </div>
       </div>
       <div id="Coming">
