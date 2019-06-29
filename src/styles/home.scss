@@ -20,10 +20,12 @@
 
     li {
       list-style: none;
+
+      p {
+        display: inline;
+      }
     }
   }
-  
-  
 
   .main-section {
     grid-area: "main-section";
