@@ -11,7 +11,7 @@ export default function UnderConstruction(props) {
       </Link>
       <div id="HomePage">
         <div className="div--bottom__center">
-          <strong>{props.heading}</strong> under construction, stay tuned.
+          <strong><em>{props.heading}</em></strong> under construction, stay tuned.
         </div>
       </div>
       <div id="Coming">
