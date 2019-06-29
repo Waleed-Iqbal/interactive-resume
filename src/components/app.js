@@ -1,11 +1,12 @@
+
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "../styles/globals.scss";
 import "../styles/under-construction.scss";
 import UnderConstruction from "./under-construction";
 import Demos from "../components/demos/demos";
 import Resume from "./resume";
 import Home from "./home";
+import "../styles/globals.scss";
 import { Error404 } from './error404';
 
 class App extends React.Component {
@@ -26,6 +27,15 @@ class App extends React.Component {
           />
           <Route
             exact
+            path="/home"
+            render={
+              props => (
+                <Page {...props} component={Home} title="Coming Soon" />
+              )
+            }
+          />
+          <Route
+            exact
             path="/resume"
             render={
               props => (
@@ -38,7 +48,7 @@ class App extends React.Component {
             path="/demos"
             render={
               props => (
-                <Page {...props} component={UnderConstruction} title="Demo & Samples" heading="Demos and samples" />
+                <Page {...props} component={UnderConstruction} title="Demo &amp; Samples" heading="Demos and samples" />
               )
             }
           />
