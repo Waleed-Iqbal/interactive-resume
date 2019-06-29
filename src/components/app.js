@@ -2,9 +2,10 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "../styles/globals.scss";
 import "../styles/under-construction.scss";
-import { UnderConstruction } from "./under-construction";
-import { Demos } from "../components/demos/demos";
+import UnderConstruction from "./under-construction";
+import Demos from "../components/demos/demos";
 import Resume from "./resume";
+import Home from "./home";
 import { Error404 } from './error404';
 
 class App extends React.Component {
@@ -19,7 +20,7 @@ class App extends React.Component {
             path="/"
             render={
               props => (
-                <Page {...props} component={UnderConstruction} title="Coming Soon" />
+                <Page {...props} component={Home} title="Coming Soon" />
               )
             }
           />
@@ -37,14 +38,24 @@ class App extends React.Component {
             path="/demos"
             render={
               props => (
-                <Page {...props} component={Demos} title="Demo & Samples" />
+                <Page {...props} component={UnderConstruction} title="Demo & Samples" heading="Demos and samples" />
+              )
+            }
+          />
+          
+          <Route
+            exact
+            path="/blog"
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title="Waleed - Blog" heading="Blog" />
               )
             }
           />
           <Route
             render={
               props => (
-                <Page {...props} component={Error404} title="Page not found" />
+                <Page {...props} component={Error404} title="Page not found" heading="Blog" />
               )
             }
           />
@@ -67,7 +78,7 @@ class Page extends React.Component {
     const PageComponent = this.props.component
 
     return (
-      <PageComponent />
+      <PageComponent heading={this.props.heading} />
     )
   }
 }
