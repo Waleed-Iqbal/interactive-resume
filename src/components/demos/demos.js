@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Demos() {
+export default function Demos() {
   return (
     <div>
       DEMOS COME HERE
