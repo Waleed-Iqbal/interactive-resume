@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import "../styles/home.scss";
 
 export default function Home() {
@@ -9,23 +9,45 @@ export default function Home() {
         <ul className="nav-tabs">
           <li className="nav-home">
             <Link to="/home" >
-              Home
+              <span>
+                icon <p>Home</p>
+              </span>
             </Link>
           </li>
           <li className="nav-simplistic-resume">
-            Simplistic Resume
+            <Link to="/simple-resume">
+              <span>
+                icon <p>Simplistic Resume</p>
+              </span>
+            </Link>
           </li>
           <li className="nav-interactive-resume">
-            Immersive Resume
+            <Link to="/interactive-resume" >
+              <span>
+                icon <p>Immersive Resume</p>
+              </span>
+            </Link>
           </li>
           <li className="nav-demos-samples">
-            Demos &amp; Samples
+            <Link to="/demos" >
+              <span>
+                icon <p>Demos &amp; Samples</p>
+              </span>
+            </Link>
           </li>
           <li className="nav-blog">
-            Blog
+            <Link to="/blog</li>">
+              <span>
+                icon <p>Blog</p>
+              </span>
+            </Link>
           </li>
           <li className="nav-contact">
-            Get in touch
+            <Link to="contact-me">
+              <span>
+                icon <p>Get in touch</p>
+              </span>
+            </Link>
           </li>
         </ul>
       </nav>
