@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import "../styles/home.scss";
 
@@ -7,51 +7,30 @@ export default function Home() {
     <div class="home-container">
       <nav className="main-left-nav">
         <ul className="nav-tabs">
-          <li className="nav-home">
-            <Link to="/home" >
-              <span>
-                icon <p>Home</p>
-              </span>
-            </Link>
-          </li>
-          <li className="nav-simplistic-resume">
-            <Link to="/simple-resume">
-              <span>
-                icon <p>Simplistic Resume</p>
-              </span>
-            </Link>
-          </li>
-          <li className="nav-interactive-resume">
-            <Link to="/interactive-resume" >
-              <span>
-                icon <p>Immersive Resume</p>
-              </span>
-            </Link>
-          </li>
-          <li className="nav-demos-samples">
-            <Link to="/demos" >
-              <span>
-                icon <p>Demos &amp; Samples</p>
-              </span>
-            </Link>
-          </li>
-          <li className="nav-blog">
-            <Link to="/blog</li>">
-              <span>
-                icon <p>Blog</p>
-              </span>
-            </Link>
-          </li>
-          <li className="nav-contact">
-            <Link to="contact-me">
-              <span>
-                icon <p>Get in touch</p>
-              </span>
-            </Link>
-          </li>
+          <NavigationItem navigationClass="nav-home" linkTo="/home" text="Home" />
+          <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="Read my story" />
+          <NavigationItem navigationClass="nav-simplistic-resume" linkTo="/simple-resume" text="Simplistic Resume" />
+          <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" />
+          <NavigationItem navigationClass="nav-demos-samples" linkTo="/demos" text="Demos &amp; Samples" />
+          <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" />
+          <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Get in touch" />
         </ul>
       </nav>
       <main className="main-section"></main>
     </div>
   )
+}
+
+class NavigationItem extends Component {
+  render() {
+    return (
+      <div>
+        <li className={this.props.navigationClass}>
+            <Link to={this.props.linkTo}>
+              <p>{this.props.text}</p>
+            </Link>
+          </li>
+      </div>
+    )
+  }
 }
