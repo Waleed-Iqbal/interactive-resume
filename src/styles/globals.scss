@@ -1,6 +1,19 @@
+$mobile-breakpoint: 576px;
+$desktop-breakpoint: 992px;
+
 body {
     margin: 0;
     font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
 }
 
 .div--bottom__center {
