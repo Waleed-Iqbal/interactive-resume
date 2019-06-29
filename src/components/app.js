@@ -6,6 +6,7 @@ import UnderConstruction from "./under-construction";
 import Demos from "../components/demos/demos";
 import Resume from "./resume";
 import Home from "./home";
+import About from "./about";
 import "../styles/globals.scss";
 import { Error404 } from './error404';
 
@@ -31,6 +32,15 @@ class App extends React.Component {
             render={
               props => (
                 <Page {...props} component={Home} title="Hire Waleed" />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/aboutwaleed"
+            render={
+              props => (
+                <Page {...props} component={About} title="About Waleed" />
               )
             }
           />
