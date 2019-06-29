@@ -21,7 +21,7 @@ class App extends React.Component {
             path="/"
             render={
               props => (
-                <Page {...props} component={Home} title="Coming Soon" />
+                <Page {...props} component={Home} title="Hire Waleed" />
               )
             }
           />
@@ -30,13 +30,13 @@ class App extends React.Component {
             path="/home"
             render={
               props => (
-                <Page {...props} component={Home} title="Coming Soon" />
+                <Page {...props} component={Home} title="Hire Waleed" />
               )
             }
           />
           <Route
             exact
-            path="/resume"
+            path="/simple-resume"
             render={
               props => (
                 <Page {...props} component={Resume} title="Resume" />
@@ -45,20 +45,37 @@ class App extends React.Component {
           />
           <Route
             exact
-            path="/demos"
+            path="/interactive-resume"
             render={
               props => (
-                <Page {...props} component={UnderConstruction} title="Demo &amp; Samples" heading="Demos and samples" />
+                <Page {...props} component={UnderConstruction} title="Interactive Resume" title="Immersive resume" />
               )
             }
           />
-          
+          <Route
+            exact
+            path="/demos"
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title="Demo &amp; Samples" heading="Demos &amp; samples" />
+              )
+            }
+          />
           <Route
             exact
             path="/blog"
             render={
               props => (
                 <Page {...props} component={UnderConstruction} title="Waleed - Blog" heading="Blog" />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/contact-me"
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
               )
             }
           />
