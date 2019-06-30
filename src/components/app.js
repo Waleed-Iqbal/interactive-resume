@@ -32,7 +32,7 @@ class App extends React.Component {
             path="/home"
             render={
               props => (
-                <Page {...props} component={Home} title="Hire Waleed" />
+                <Page {...props} component={LandingPage} title="Hire Waleed" />
               )
             }
           />
@@ -59,7 +59,7 @@ class App extends React.Component {
             path="/interactive-resume"
             render={
               props => (
-                <Page {...props} component={UnderConstruction} title="Interactive Resume" title="Immersive resume" />
+                <Page {...props} component={UnderConstruction} title="Interactive Resume" heading="Immersive resume" />
               )
             }
           />
