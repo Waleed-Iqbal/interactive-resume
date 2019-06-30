@@ -3,7 +3,7 @@
 
 @mixin navigation-icon-text($pl, $icon-url, $icon-size: 1em) {
   p {
-    padding-left: $pl;
+    // padding-left: $pl;
 
     &::before {
       left: 0;
@@ -19,7 +19,6 @@
 .main-left-nav {
   grid-area: main-left-nav;
   background-color: theme-color(backgroundColor, light);
-  padding: 50% 0 0;
 
   li {
     list-style: none;
@@ -32,12 +31,14 @@
 }
 
 .nav-tabs {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding-left: 3em;
+  justify-content: center; 
 
   li {
-    margin: 0.5em 0;
+    margin-left: 1.5em;
+    padding: 0.5em 0 0.5em 1.5em;
   }
 }
 
@@ -47,5 +48,4 @@
 
 .nav-about {
   @include navigation-icon-text(1.2em, '../images/avatar-face.svg');
-
 }
