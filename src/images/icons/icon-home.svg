@@ -12,12 +12,12 @@
 <title>Home icon</title>
 <desc>Home icon portfolio navigation</desc>
 	<!-- <rect width="500" height="500" fill="none" stroke="black" /> -->
-	<g id="home">
-			<line x1="250" x2="470" y1="490" y2="490" stroke="#000" stroke-width="20" />
-			<line x1="460" x2="460" y1="490" y2="230" stroke="#000" stroke-width="20" />
-			<line x1="480" x2="244" y1="245" y2="30" stroke="#000" stroke-width="20" />
-			<line x1="310" x2="310" y1="490" y2="330" stroke="#000" stroke-width="20" />
-			<line x1="320" x2="250" y1="330" y2="330" stroke="#000" stroke-width="20" />			
+	<g id="home" stroke="#000" stroke-width="40">
+			<line x1="250" x2="460" y1="490" y2="490" />
+			<line x1="440" x2="440" y1="490" y2="220" />
+			<line x1="480" x2="235" y1="260" y2="30" />
+			<line x1="300" x2="300" y1="490" y2="330" />
+			<line x1="320" x2="250" y1="330" y2="330" />			
 	</g>
 	
 	<use xlink:href="#home" transform="translate(500, 0) scale(-1, 1)" />
