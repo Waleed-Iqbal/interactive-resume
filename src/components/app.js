@@ -1,13 +1,14 @@
 
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import "../styles/under-construction.scss";
 import UnderConstruction from "./under-construction";
 import Demos from "../components/demos/demos";
 import Resume from "./resume";
+import LandingPage from "./landing-page";
 import Home from "./home";
 import About from "./about";
 import "../styles/globals.scss";
+import "../styles/master.scss";
 import { Error404 } from './error404';
 
 class App extends React.Component {
@@ -22,7 +23,7 @@ class App extends React.Component {
             path="/"
             render={
               props => (
-                <Page {...props} component={Home} title="Hire Waleed" />
+                <Page {...props} component={LandingPage} title="Hire Waleed" />
               )
             }
           />
