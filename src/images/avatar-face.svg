@@ -3,7 +3,7 @@
 	
 <title>Home icon</title>
 <desc>Home icon portfolio navigation</desc>
-		<rect x="0" y="0" width="500" height="500" stroke="#000" stroke-width="1" fill="none" />
+
 	<g id="svg-about-me-icon">
 		<!-- head -->
 		<path  d="M 50,170 C 90,-30 390,-30 450,170 " fill="#aaa"/>
