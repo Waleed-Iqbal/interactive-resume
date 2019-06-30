@@ -6,13 +6,13 @@
 		<rect x="0" y="0" width="500" height="500" stroke="#000" stroke-width="1" fill="none" />
 	<g id="svg-about-me-icon">
 		<!-- head -->
-		<path  d="M 50,170 C 90,-10 390,-10 450,170 " fill="#aaa"/>
+		<path  d="M 50,170 C 90,-30 390,-30 450,170 " fill="#aaa"/>
 
 		<!-- forehead -->
-		<path d="M 50,170 C 90,90 360,80 450,170 " fill="#fafad2"/>
+		<path d="M 50,171 C 90,90 360,80 450,171 " fill="#fafad2"/>
 		
 		<!-- face -->
-		<rect x="50" y="170" width="400" height="160" fill="#fafad2" />
+		<rect x="50" y="170" width="400" height="180" fill="#fafad2" />
 		
 		<g id="temple-glasses">
 			<line x1="55" x2="130" y1="200" y2="220" stroke="#222" stroke-width="10" stroke-linecap="round" />
@@ -24,10 +24,10 @@
 		<path d="M 235,220 C 230,205 270,205 265,220 " fill="#aaa" />
 		
 		<!-- beard -->
-		<path d="M 50,320 C 70,470 410,470 450,320 " fill="#222"/>
+		<path d="M 50,351 C 70,500 410,500 450,351 " fill="#222"/>
 		
 		<!-- chin -->
-		<path d="M 50,320 C 90,410 360,410 450,320 " fill="#fafad2"/>
+		<path d="M 50,350 C 90,440 360,440 450,350 " fill="#fafad2"/>
 		
 	</g>
 </svg>
