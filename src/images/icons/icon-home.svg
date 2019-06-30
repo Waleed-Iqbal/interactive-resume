@@ -1,16 +1,25 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
+<svg 
+	version="1.1" 
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0px" y="0px"
+	viewBox="0 0 500 500"
+	style="enable-background:new 0 0 500 500;"
+	xml:space="preserve"
+	>
+	
 <title>Home icon</title>
 <desc>Home icon portfolio navigation</desc>
-	<g>
-			<rect width="500" height="500" fill="none" stroke="black" />
-			
-			<path d="
-						M 0 300, 
-						L 250 0, 
-						L 500 300
-						z" 
-						fill="#ccc" />
+	<!-- <rect width="500" height="500" fill="none" stroke="black" /> -->
+	<g id="home">
+			<line x1="250" x2="470" y1="490" y2="490" stroke="#000" stroke-width="20" />
+			<line x1="460" x2="460" y1="490" y2="230" stroke="#000" stroke-width="20" />
+			<line x1="480" x2="244" y1="245" y2="30" stroke="#000" stroke-width="20" />
+			<line x1="310" x2="310" y1="490" y2="330" stroke="#000" stroke-width="20" />
+			<line x1="320" x2="250" y1="330" y2="330" stroke="#000" stroke-width="20" />			
 	</g>
+	
+	<use xlink:href="#home" transform="translate(500, 0) scale(-1, 1)" />
+	
 </svg>
