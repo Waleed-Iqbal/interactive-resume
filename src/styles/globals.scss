@@ -23,7 +23,7 @@ $theme-colors: (
 
 $avatar-colors: (
     face: #fafad2,
-    hair: #eee,
+    hair: #aaa,
     beard: #222,
     glasses: #222,
     glassesBridge: #eee,
@@ -36,7 +36,7 @@ $avatar-colors: (
 }
 
 @function avatar-color($key) {
-    @return map-get($theme-colors, $key);
+    @return map-get($avatar-colors, $key);
 }
 
 body {
