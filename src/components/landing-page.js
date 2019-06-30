@@ -9,7 +9,7 @@ export default function LandingPage() {
       <nav className="main-left-nav">
         <ul className="nav-tabs">
           <NavigationItem navigationClass="nav-home" linkTo="/home" text="Home" />
-          <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="Read my story" />
+          <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="About me" />
           <NavigationItem navigationClass="nav-simplistic-resume" linkTo="/simple-resume" text="Simplistic Resume" />
           <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" />
           <NavigationItem navigationClass="nav-demos-samples" linkTo="/demos" text="Demos" />
@@ -25,13 +25,11 @@ export default function LandingPage() {
 class NavigationItem extends Component {
   render() {
     return (
-      <div>
-        <li className={this.props.navigationClass}>
-            <Link to={this.props.linkTo}>
-              <p>{this.props.text}</p>
-            </Link>
-          </li>
-      </div>
+      <li className={this.props.navigationClass}>
+          <Link to={this.props.linkTo}>
+            <p>{this.props.text}</p>
+          </Link>
+      </li>
     )
   }
 }
