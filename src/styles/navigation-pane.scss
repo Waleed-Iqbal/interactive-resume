@@ -1,3 +1,6 @@
+
+@import "./globals.scss";
+
 @mixin navigation-icon-text($pl, $icon-url, $icon-size: 1em) {
   p {
     padding-left: $pl;
@@ -15,7 +18,7 @@
 
 .main-left-nav {
   grid-area: main-left-nav;
-  background-color: lightgray;
+  background-color: theme-color(backgroundColor, light);
   padding: 50% 0 0;
 
   li {

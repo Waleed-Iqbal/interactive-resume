@@ -13,6 +13,7 @@
 
   .main-section {
     grid-area: main-section;
-    background-color: lightcoral;
+    background-color: theme-color(primary, dark);
+    background: url('../images/icons/icon-about-me.svg') no-repeat;
   }
 }
