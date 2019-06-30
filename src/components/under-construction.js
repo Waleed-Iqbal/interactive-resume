@@ -6,9 +6,6 @@ import { AvatarWaleed } from "./avatars/waleed/avatar-waleed";
 export default function UnderConstruction(props) {
   return (
     <div id="UnderConstruction">
-      <Link to="/resume">
-        <h1>RESUME HERE !!!</h1>
-      </Link>
       <div id="HomePage">
         <div className="div--bottom__center">
           <strong><em>{props.heading}</em></strong> under construction, stay tuned.
