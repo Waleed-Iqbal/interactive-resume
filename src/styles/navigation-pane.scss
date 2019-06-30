@@ -1,0 +1,40 @@
+
+@mixin navigation-icon-text($pl, $icon-url, $icon-size: 1em) {
+  p {
+    padding-left: $pl;
+
+    &::before {
+      left: 0;
+      content: "";
+      width: $icon-size;
+      height: $icon-size;
+      position: absolute;
+      background: url($icon-url) no-repeat;
+    }
+  }
+}
+
+.main-left-nav {
+  grid-area: main-left-nav;
+  background-color: lightgray;
+
+  li {
+    list-style: none;
+    position: relative;
+
+    p {
+      display: inline;
+    }
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+
+}
+
+.nav-home {
+  @include navigation-icon-text(1.2em, '../images/icons/icon-home.svg');
+}
