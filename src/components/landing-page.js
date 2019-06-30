@@ -12,9 +12,9 @@ export default function LandingPage() {
           <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="Read my story" />
           <NavigationItem navigationClass="nav-simplistic-resume" linkTo="/simple-resume" text="Simplistic Resume" />
           <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" />
-          <NavigationItem navigationClass="nav-demos-samples" linkTo="/demos" text="Demos &amp; Samples" />
+          <NavigationItem navigationClass="nav-demos-samples" linkTo="/demos" text="Demos" />
           <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" />
-          <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Get in touch" />
+          <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Contact Me" />
         </ul>
       </nav>
       <main className="main-section"></main>

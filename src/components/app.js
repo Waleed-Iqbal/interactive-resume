@@ -68,7 +68,7 @@ class App extends React.Component {
             path="/demos"
             render={
               props => (
-                <Page {...props} component={UnderConstruction} title="Demo &amp; Samples" heading="Demos &amp; samples" />
+                <Page {...props} component={UnderConstruction} title="Demos &amp; Samples" heading="Demos" />
               )
             }
           />
