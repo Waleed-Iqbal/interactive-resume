@@ -50,3 +50,7 @@
 .nav-about {
   @include navigation-icon-text(1.2em, '../images/avatar-face.svg');
 }
+
+.nav-demos-samples {
+  @include navigation-icon-text(1.2em, '../images/icons/icon-demo.svg');  
+}
