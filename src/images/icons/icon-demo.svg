@@ -1,14 +1,16 @@
 <!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"	x="0px" y="0px"	viewBox="0 0 500 500"	style="enable-background:new 0 0 500 500;"	xml:space="preserve" >
-<title>Home icon</title>
-<desc>Home icon portfolio navigation</desc>
+<title>Demo icon</title>
+<desc>Demo icon portfolio navigation</desc>
 	<rect x="0" y="0" width="500" height="500" stroke="#000" fill="none" stroke-width="1" />
 	<g id="svg-icon-home" stroke="#000" stroke-width="15" fill="none">
-		<circle cx="200" cy="100" r="40" />
-		<path d="M 160,170
-				C 120,190 90,180 70,250
+		<circle cx="200" cy="100" r="45" />
+		<path d="M 160,150
+				C 120,170 90,180 80,210
 				L 45,330
-				A 10,20 20 1 0 90,330"
+				A 10,20 20 1 0 90,330
+				
+				"
 		/>
 	</g>
 	<!-- <use href="#svg-icon-home" transform="translate(500, 0) scale(-1, 1)" /> -->
