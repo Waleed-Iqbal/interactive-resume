@@ -3,7 +3,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import UnderConstruction from "./under-construction";
 import Demos from "../components/demos/demos";
-import Resume from "./resume";
+import SimpleResume from "./simple-resume";
 import LandingPage from "./landing-page";
 import Home from "./home";
 import About from "./about";
@@ -50,7 +50,7 @@ class App extends React.Component {
             path="/simple-resume"
             render={
               props => (
-                <Page {...props} component={Resume} title="Resume" />
+                <Page {...props} component={SimpleResume} title="Resume" />
               )
             }
           />

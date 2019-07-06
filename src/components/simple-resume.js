@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/resume.scss";
+import "../styles/simple-resume.scss";
 
 
-export function Resume() {
+export function SimpleResume() {
   return (
     <main className="resume-container">
       <section className="name designation">
@@ -95,4 +94,4 @@ export function Resume() {
   );
 }
 
-export default Resume;
+export default SimpleResume;
