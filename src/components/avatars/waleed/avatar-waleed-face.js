@@ -1,7 +1,7 @@
 import React from "react";
 import "../../../styles/avatar-waleed-face.scss";
 
-export function AvatarWaleedFace() {
+export function AvatarWaleedFace(props) {
   return (
     <div id="AvatarWaleedFace">
       <div className="avatar--glasses">

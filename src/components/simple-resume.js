@@ -1,16 +1,24 @@
 import React, { Component } from 'react';
 import "../styles/simple-resume.scss";
+import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
 
 
 export function SimpleResume() {
   return (
     <main className="resume-container">
-      <section className="name designation">
-        <div className="first-name">Khawaja</div>
-        <title>Frontend Developer, Web Animator, Brings your online presence to life</title>
-        <div className="last-name">Waleed Iqbal</div>
+      <section className="name-designation">
+        <AvatarWaleedFace />
+        <div className="name-designation-container">
+          <h1 className="name">Waleed Iqbal</h1>
+          <h1 className="designation">Frontend Developer</h1>
+        </div>
       </section>
-      <section className="somethings-about-me"></section>
+      <section className="somethings-about-me">
+        I turn complex into simple
+        I turn chaos into order
+        I turn coffee into code
+        I turn designs into websites/webapps
+      </section>
       <section className="content">
         <div className="contact-info">
           <div className="contact-me">
