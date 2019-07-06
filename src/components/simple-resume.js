@@ -12,13 +12,20 @@ export function SimpleResume() {
           <h1 className="name">Waleed Iqbal</h1>
           <h1 className="designation">Frontend Developer</h1>
         </div>
-        <div className="somethings-about-me">
-          <h3>I excel at:</h3>
-          turning complex into simple
-          turning lag into optimization
-          turning designs into websites/webapps
-      </div>
+        <div className="somethings-about-me transform-animation">
+          <h3 className="transform-text">I transform ...</h3>
+          <p className="transform-animating-text-1">
+            <span className="transform-quality-1">designs</span> into <span className="transform-quality-1">websites</span>
+          </p>
+          <p className="transform-animating-text-2">
+            <span className="transform-quality-2">complex</span> into <span className="transform-quality-2">simple</span>
+          </p>
+          <p className="transform-animating-text-3">
+            <span className="transform-quality-3">lag</span> into <span className="transform-quality-3">optimization</span>
+          </p>
+        </div>
       </section>
+      {/*       
       <section className="contact-info">
         <div className="contact-me">
           <ul>
@@ -89,13 +96,13 @@ export function SimpleResume() {
         <li>College</li>
         <li>School</li>
       </section>
-      <section className="interests">
+      <section className="interests"> 
         <ul>
           <li>Cycling</li>
           <li>Reading</li>
           <li>Playing and making games</li>
         </ul>
-      </section>
+      </section>*/}
     </main>
   );
 }

@@ -10,7 +10,7 @@
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
   grid-template-areas:
-    "name-designation""somethings-about-me""content";
+    "name-designation""contact-info""skillset";
 }
 
 
@@ -23,20 +23,46 @@
   padding-bottom: 1em;
   justify-content: left;
   border-bottom: 2px solid theme-color(primary, dark);
+  #AvatarWaleedFace {
+    top: -3.4em;
+    transform: scale(0.5);
+  }
 }
 
-#AvatarWaleedFace {
-  top: -3em;
-  transform: scale(0.5);
-}
 
 .name {
   font-size: 3em;
 }
 
 .somethings-about-me {
-  grid-area: somethings-about-me;
+  padding-left: 6em;
 }
+
+.transform-animation {
+  display: inline;
+
+  p:nth-of-type(n+2) {
+    display: none;  
+  }
+}
+
+.transform-text {
+  display: inline;  
+}
+
+.transform-quality-1 {
+  animation: transform-quality-1 4s linear infinite;
+}
+
+@keyframes transform-quality-1 {
+  0%, 100% {
+    opacity: 0;
+  }
+  20%, 80%  {
+    opacity: 1;
+  }
+}
+
 
 .content {
   grid-area: content;
