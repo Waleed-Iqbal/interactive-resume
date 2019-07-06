@@ -54,7 +54,7 @@ class App extends React.Component {
               )
             }
           />
-          <Route
+          {/* <Route
             exact
             path="/interactive-resume"
             render={
@@ -62,7 +62,7 @@ class App extends React.Component {
                 <Page {...props} component={UnderConstruction} title="Interactive Resume" heading="Immersive resume" />
               )
             }
-          />
+          /> */}
           <Route
             exact
             path="/demos"
