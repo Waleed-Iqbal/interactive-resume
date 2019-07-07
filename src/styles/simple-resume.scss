@@ -133,4 +133,29 @@
 
 .contact-links {
   grid-area: contact-links;
+
+  a {
+    color: theme-color(primary, dark);
+    text-decoration: underline;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+}
+
+.contact-links div {
+  margin-bottom: 3em;
+}
+
+.contact-links h3 {
+  margin-bottom: 0.5em;  
+}
+
+.skype-me a {
+  text-decoration: none;
+  
+  &:hover {
+    cursor: default;
+  }
 }

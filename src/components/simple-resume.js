@@ -32,54 +32,41 @@ export function SimpleResume() {
       </section>
              
       <section className="contact-info">
-        <h1 className="contact-me">Contact me</h1>
+        <h1 className="contact-me">Want to reach me?</h1>
         <div className="contact-links">
           <div className="contact-me">
+            <h3>Contact me</h3>
             <ul>
               <li className="email">
-                Don't be shy. Drop me an email at <a href="ikhawajawaleed@gmail.com"></a> 
-              </li>
+                Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank">ikhawajawaleed@gmail.com</a></li>
               <li className="linked-in">
-                <a href="https://www.linkedin.com/in/kwaleediqbal" target="_black">
+                Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank">
                   LinkedIn profile
                   </a>
               </li>
-              <li className="skype-me">khawajawaleediqbal91</li>
+              <li className="skype-me">Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a></li>
             </ul>
           </div>
           <div className="hire-me">
-            <p className="fiverr">
-              <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_black">
-                Fiverr 5 Star Rated Profile
-                </a>
-              <p>Have a peek</p>
-            </p>
+            <h3>Hire me</h3>
+            <li className="fiverr">
+              Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_blank">Fiverr 5 Star Rated Profile</a>
+            </li>
           </div>
           <div className="social-presence">
+            <h3>Social and technical presence</h3>
           <ul>
             <li className="git-hub">
-              <a href="https://github.com/Waleed-Iqbal" target="_black">
-                Github
-                </a>
-              <p className="">Wanna copy paste code?</p>
+              Want a free project? checkout my <a href="https://github.com/Waleed-Iqbal" target="_blank">Github</a> account.
             </li>
             <li className="stack-overflow">
-              <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_black">
-                Stackoverflow
-                </a>
-              <p className="">Want some stylish answers?</p>
+              Need to copy paste code?, visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank">Stackoverflow</a> profile
             </li>
             <li className="facebook">
-              <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_black">
-                Facebook
-                </a>
-              <p className=""> Wanna stalk?</p>
+              Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank">Facebook</a> profile
             </li>
             <li className="quora">
-              <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_black">
-                Quora
-                </a>
-              <p className="">Lets ask questions together</p>
+              Want to ask questions together? Let's go to <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank">Quora</a>
             </li>
           </ul>
         </div>
