@@ -40,7 +40,11 @@
 
 .transform-animation {
   display: inline;
-
+  
+  p {
+    display: inline;
+  }
+  
   p:nth-of-type(n+2) {
     display: none;  
   }
@@ -55,13 +59,40 @@
 }
 
 @keyframes transform-quality-1 {
-  0%, 100% {
-    opacity: 0;
-  }
-  20%, 80%  {
+  0%, 20%, 100% {
     opacity: 1;
   }
+  
+  10% {
+    opacity: 0;
+  }
 }
+
+// .transform-quality-2 {
+//   animation: transform-quality-2 12s linear 5s infinite;
+// }
+
+// @keyframes transform-quality-2 {
+//   0%, 33.33%, 100% {
+//     opacity: 0;
+//   }
+//   66.66%, 80%  {
+//     opacity: 1;
+//   }
+// }
+
+// .transform-quality-3 {
+//   animation: transform-quality-3 12s linear 10s infinite;
+// }
+
+// @keyframes transform-quality-3 {
+//   0%, 100% {
+//     opacity: 0;
+//   }
+//   20%, 80%  {
+//     opacity: 1;
+//   }
+// }
 
 
 .content {

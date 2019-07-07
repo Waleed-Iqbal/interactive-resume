@@ -13,7 +13,7 @@ export function SimpleResume() {
           <h1 className="designation">Frontend Developer</h1>
         </div>
         <div className="somethings-about-me transform-animation">
-          <h3 className="transform-text">I transform ...</h3>
+          <h3 className="transform-text">I transform ...&nbsp;</h3>
           <p className="transform-animating-text-1">
             <span className="transform-quality-1">designs</span> into <span className="transform-quality-1">websites</span>
           </p>
