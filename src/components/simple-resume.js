@@ -60,7 +60,7 @@ export function SimpleResume() {
               Want a free project? checkout my <a href="https://github.com/Waleed-Iqbal" target="_blank">Github</a> account.
             </li>
             <li className="stack-overflow">
-              Need to copy paste code?, visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank">Stackoverflow</a> profile
+              Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank">Stackoverflow</a> profile
             </li>
             <li className="facebook">
               Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank">Facebook</a> profile
