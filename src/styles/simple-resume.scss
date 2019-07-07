@@ -3,7 +3,7 @@
 
 .resume-container {
   background-color: ghostwhite;
-  width: 100vw;
+  width: 96vw;
   height: 100vh;
   padding: 30px;
   display: grid;
@@ -34,19 +34,11 @@
   font-size: 3em;
 }
 
-.somethings-about-me {
-  padding-left: 6em;
-}
-
 .transform-animation {
-  display: inline;
+  padding: 1em 0 0 6em;
   
   p {
     display: inline;
-  }
-  
-  p:nth-of-type(n+2) {
-    display: none;  
   }
 }
 
@@ -54,45 +46,68 @@
   display: inline;  
 }
 
-.transform-quality-1 {
-  animation: transform-quality-1 4s linear infinite;
+.transform-qualities {
+  height: 1em;
+  width: 3.5em;
+  position: relative;
+  display: inline-block;
+}
+
+.into {
+  padding: 0 0.6em;
+}
+
+.transform-quality {
+  top: 2px;
+  position: absolute;
+}
+
+.transform-quality:nth-child(n+2) {
+  opacity: 0;
+}
+
+
+.transform-quality:nth-child(1) {
+  animation: transform-quality-1 12s linear infinite;
+}
+
+.transform-quality:nth-child(2) {
+  animation: transform-quality-2 12s linear 4s infinite;
+}
+
+.transform-quality:nth-child(3) {
+  animation: transform-quality-3 12s linear 8s infinite;
 }
 
 @keyframes transform-quality-1 {
-  0%, 20%, 100% {
+  0%, 6.66%, 32% {
     opacity: 1;
   }
   
-  10% {
+  3.33%, 33.33%, 100% {
     opacity: 0;
   }
 }
 
-// .transform-quality-2 {
-//   animation: transform-quality-2 12s linear 5s infinite;
-// }
+@keyframes transform-quality-2 {
+  33.33%, 39.33%, 65% {
+    opacity: 1;
+  }
+  
+  0%, 32%, 36.33%, 66.66%, 100% {
+    opacity: 0;
+  }
+}
 
-// @keyframes transform-quality-2 {
-//   0%, 33.33%, 100% {
-//     opacity: 0;
-//   }
-//   66.66%, 80%  {
-//     opacity: 1;
-//   }
-// }
-
-// .transform-quality-3 {
-//   animation: transform-quality-3 12s linear 10s infinite;
-// }
-
-// @keyframes transform-quality-3 {
-//   0%, 100% {
-//     opacity: 0;
-//   }
-//   20%, 80%  {
-//     opacity: 1;
-//   }
-// }
+@keyframes transform-quality-3 {
+  66.66%, 72.66%, 98.66% {
+    opacity: 1;
+  }
+  
+  0%, 65%, 69.66%, 99.66% {
+    opacity: 0;
+  }
+}
 
 
 .content {

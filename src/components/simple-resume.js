@@ -12,17 +12,22 @@ export function SimpleResume() {
           <h1 className="name">Waleed Iqbal</h1>
           <h1 className="designation">Frontend Developer</h1>
         </div>
-        <div className="somethings-about-me transform-animation">
-          <h3 className="transform-text">I transform ...&nbsp;</h3>
-          <p className="transform-animating-text-1">
-            <span className="transform-quality-1">designs</span> into <span className="transform-quality-1">websites</span>
+        <div className="transform-animation">
+          <p className="transform-text">I transform &nbsp;</p>
+          <p className="transform-animating-text">
+            <span className="transform-qualities">
+              <div className="transform-quality"><b>mockup</b></div>
+              <div className="transform-quality"><b>complex</b></div>
+              <div className="transform-quality"><b>lagging</b></div>
+            </span>
+            <span className="into">into</span>
+            <span className="transform-qualities">
+              <div className="transform-quality"><b>layout</b></div>
+              <div className="transform-quality"><b>simple</b></div>
+              <div className="transform-quality"><b>leading</b></div>
+            </span>  
           </p>
-          <p className="transform-animating-text-2">
-            <span className="transform-quality-2">complex</span> into <span className="transform-quality-2">simple</span>
-          </p>
-          <p className="transform-animating-text-3">
-            <span className="transform-quality-3">lag</span> into <span className="transform-quality-3">optimization</span>
-          </p>
+          <p>and much more</p>
         </div>
       </section>
       {/*       
