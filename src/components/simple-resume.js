@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/simple-resume.scss";
 import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
-import iconEmail from "../images/icons/icon-email.svg";
 
 export function SimpleResume() {
   return (
@@ -38,14 +37,9 @@ export function SimpleResume() {
             <h3>Contact me</h3>
             <ul>
               <li className="email">
-                <a className="email-icon"  href="mailto:ikhawajawaleed@gmail.com">
-                  {/* <img src={iconEmail} /> */}
-                </a>
-                Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank">ikhawajawaleed@gmail.com</a></li>
+                <a className="icon icon-email"  href="mailto:ikhawajawaleed@gmail.com"></a>Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank">ikhawajawaleed@gmail.com</a></li>
               <li className="linked-in">
-                Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank">
-                  LinkedIn profile
-                  </a>
+              <a className="icon icon-linkedin"  href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank">LinkedIn profile</a>
               </li>
               <li className="skype-me">Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a></li>
             </ul>
