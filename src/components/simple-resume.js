@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "../styles/simple-resume.scss";
 import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
-
+import iconEmail from "../images/icons/icon-email.svg";
 
 export function SimpleResume() {
   return (
@@ -38,6 +38,9 @@ export function SimpleResume() {
             <h3>Contact me</h3>
             <ul>
               <li className="email">
+                <a className="email-icon"  href="mailto:ikhawajawaleed@gmail.com">
+                  {/* <img src={iconEmail} /> */}
+                </a>
                 Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank">ikhawajawaleed@gmail.com</a></li>
               <li className="linked-in">
                 Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank">
