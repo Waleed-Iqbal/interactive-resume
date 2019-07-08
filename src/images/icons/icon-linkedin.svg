@@ -5,12 +5,12 @@
 	<rect x="0" y="0" width="500" height="500" fill="none" stroke="black" />
 	<g id="svg-icon-linkedin" stroke="#000" stroke-width="1" fill="none">
 		<rect x="50" y="100" width="400" height="300" fill="#00669a" stroke="none" rx="10" ry="10" />
-		<g stroke="#fff" stroke-width="40"   fill="#fff">
+		<g stroke="#fff" stroke-width="40"  fill="#fff">
 			<circle cx="120" cy="160" r="15" stroke-width="15" />
 			<line x1="120" x2="120" y1="200" y2="360" />
 			<line x1="200" x2="200" y1="200" y2="360" />
-			<line x1="350" x2="350" y1="275" y2="360" />
-			<path d="M200,280 C270,150 340,190 350,280" fill="none" />
+			<line x1="345" x2="345" y1="275" y2="360" />
+			<path d="M200,280 C270,150 350,260 345,280" fill="none" />
 		</g>
 	</g>
 </svg>
