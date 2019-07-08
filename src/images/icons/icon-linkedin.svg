@@ -4,13 +4,13 @@
 <desc>Linked icon resume</desc>
 	<rect x="0" y="0" width="500" height="500" fill="none" stroke="black" />
 	<g id="svg-icon-linkedin" stroke="#000" stroke-width="1" fill="none">
-		<rect x="50" y="100" width="400" height="300" fill="#00669a" stroke="none" rx="10" ry="10" />
-		<g stroke="#fff" stroke-width="40"  fill="#fff">
-			<circle cx="120" cy="160" r="15" stroke-width="15" />
-			<line x1="120" x2="120" y1="200" y2="360" />
-			<line x1="200" x2="200" y1="200" y2="360" />
-			<line x1="345" x2="345" y1="275" y2="360" />
-			<path d="M200,280 C270,150 350,260 345,280" fill="none" />
+		<rect x="50" y="100" width="390" height="300" fill="#00669a" stroke="none" rx="10" ry="10" />
+		<g stroke="#fff" stroke-width="45"  fill="#fff">
+			<circle cx="135" cy="160" r="15" stroke-width="19" />
+			<line x1="135" x2="135" y1="200" y2="360" />
+			<line x1="210" x2="210" y1="200" y2="360" />
+			<line x1="355" x2="355" y1="275" y2="360" />
+			<path d="M210,280 C280,150 360,260 355,280" fill="none" />
 		</g>
 	</g>
 </svg>
