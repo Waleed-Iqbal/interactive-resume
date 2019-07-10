@@ -41,7 +41,7 @@ export function SimpleResume() {
               <li className="linked-in">
               <a className="icon icon-linkedin" href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank">LinkedIn profile</a>
               </li>
-              <a className="icon icon-skype" title="clicking it won't work, search this id on skype"></a><li className="skype-me">Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a></li>
+              <li className="skype-me"><a className="icon icon-skype" title="clicking it won't work, search this id on skype"></a>Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a></li>
             </ul>
           </div>
           <div className="hire-me">

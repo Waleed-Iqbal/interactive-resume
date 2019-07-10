@@ -8,5 +8,5 @@
 		<circle cx="130" cy="125" r="120" />
 		<circle cx="370" cy="375" r="120" />
 	</g>
-	<text x="100" y="410" fill="#fff" style="font-size:28em; font-family:'Arial Rounded MT Bold';">S</text>
+	<text x="120" y="390" fill="#fff" style="font-size:25em; font-family:'Arial Rounded MT Bold';">S</text>
 </svg>
