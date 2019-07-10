@@ -1,0 +1,14 @@
+<!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"	x="0px" y="0px"	viewBox="0 0 500 500"	style="enable-background:new 0 0 500 500;"	xml:space="preserve" >
+<title>Skype icon</title>
+<desc>Skype icon for resume</desc>
+	<rect x="0" y="0" width="500" height="500" fill="none" stroke="black" />
+	<g fill="#00aff0">
+		<circle cx="250" cy="250" r="230" />
+		<circle cx="130" cy="125" r="120" />
+		<circle cx="370" cy="375" r="120" />
+	</g>
+	<g id="svg-icon-linkedin" stroke="#000" stroke-width="1" fill="none">
+		<!-- <rect x="50" y="100" width="390" height="300" fill="#00669a" stroke="none" rx="10" ry="10" /> -->
+	</g>
+</svg>
