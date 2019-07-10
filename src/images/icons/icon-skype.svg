@@ -8,7 +8,5 @@
 		<circle cx="130" cy="125" r="120" />
 		<circle cx="370" cy="375" r="120" />
 	</g>
-	<g id="svg-icon-linkedin" stroke="#000" stroke-width="1" fill="none">
-		<!-- <rect x="50" y="100" width="390" height="300" fill="#00669a" stroke="none" rx="10" ry="10" /> -->
-	</g>
+	<text x="100" y="410" fill="#fff" style="font-size:28em; font-family:'Arial Rounded MT Bold';">S</text>
 </svg>
