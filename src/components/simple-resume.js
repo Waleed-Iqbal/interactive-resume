@@ -47,7 +47,7 @@ export function SimpleResume() {
           <div className="hire-me">
             <h3>Hire me</h3>
             <li className="fiverr">
-              Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_blank">Fiverr 5 Star Rated Profile</a>
+              <a className="icon icon-fiverr" href="https://www.fiverr.com/waleed_iqbal?up_rollout=true"></a>Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_blank">Fiverr 5 Star Rated Profile</a>
             </li>
           </div>
           <div className="social-presence">
