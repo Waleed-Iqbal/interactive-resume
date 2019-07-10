@@ -129,14 +129,15 @@
 
 .contact-me {
   grid-area: contact-me;
-  
-  .icon {
-    height: 1em;
-    width: 1em;
-    margin-right: 1em;
-    display: inline-block;
-    background-repeat: no-repeat;
-  }
+}
+
+.icon {
+  height: 1em;
+  width: 1em;
+  margin-right: 1em;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact-links {
@@ -168,12 +169,14 @@
 
 .icon-linkedin {
   background-image: url('../images/icons/icon-linkedin.svg');
-  background-size: cover;
 }
 
 .icon-skype {
   background-image: url('../images/icons/icon-skype.svg');
-  background-size: cover;
+}
+
+.icon-fiverr {
+  background-image: url('../images/icons/icon-fiverr.svg');
 }
 
 .skype-me a {
