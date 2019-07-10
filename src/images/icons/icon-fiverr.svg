@@ -3,7 +3,7 @@
 <title>Fiverr icon</title>
 <desc>Fiverr icon for resume</desc>
 	<rect x="0" y="0" width="500" height="500" fill="none" stroke="black" />
-	<circle cx="250" cy="250" r="230" fill="#01ad2c" />
+	<circle cx="250" cy="250" r="248" fill="#01ad2c" />
 	<text x="135" y="380" fill="#fff" style="font-size:26em; font-weight:bold;">fi</text>
 </svg>
 
