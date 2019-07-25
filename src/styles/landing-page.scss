@@ -9,11 +9,11 @@
     grid-template-columns: 15% auto;
     grid-template-areas: "main-left-nav main-section"
   }
-  
+
 
   .main-section {
     grid-area: main-section;
     background-color: theme-color(primary, dark);
-    background: url('../images/icons/icon-fiverr.svg') no-repeat;
+    // background: url('../images/icons/icon-fiverr.svg') no-repeat;
   }
 }
