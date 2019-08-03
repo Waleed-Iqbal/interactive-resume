@@ -2,8 +2,8 @@ import React from 'react'
 
 export function Error404() {
   return (
-    <div>
+    <h1>
       Page not found
-    </div>
+    </h1>
   )
 }
