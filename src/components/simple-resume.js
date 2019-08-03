@@ -24,12 +24,12 @@ export function SimpleResume() {
               <div className="transform-quality"><b>layout</b></div>
               <div className="transform-quality"><b>simple</b></div>
               <div className="transform-quality"><b>leading</b></div>
-            </span>  
+            </span>
           </p>
           <p> ... and much more</p>
         </div>
       </section>
-             
+
       <section className="contact-info">
         <h1 className="contact-me">Want to reach me?</h1>
         <div className="contact-links">
@@ -91,7 +91,7 @@ export function SimpleResume() {
         <li>College</li>
         <li>School</li>
       </section>
-      <section className="interests"> 
+      <section className="interests">
         <ul>
           <li>Cycling</li>
           <li>Reading</li>

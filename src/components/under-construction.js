@@ -1,7 +1,8 @@
 import React from "react";
-import {Link} from 'react-router-dom';
-import "../styles/under-construction.scss";
 import { AvatarWaleed } from "./avatars/waleed/avatar-waleed";
+
+import "../styles/under-construction.scss";
+// under-contruction.scss is being imported in app.js
 
 export default function UnderConstruction(props) {
   return (

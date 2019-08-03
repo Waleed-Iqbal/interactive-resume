@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import "../styles/home.scss";
+import "../styles/navigation-pane.scss";
 
 export default function Home() {
   return (
-
-    <div class="home-container">
+    <div className="home-container">
       <nav className="main-left-nav">
         <ul className="nav-tabs">
           <NavigationItem navigationClass="nav-home" linkTo="/home" text="Home" />
