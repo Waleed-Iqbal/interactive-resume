@@ -1,4 +1,17 @@
-@import './globals.scss';
+
+
+@function avatar-color($key) {
+  @return map-get($avatar-colors, $key);
+}
+
+$avatar-colors: (
+    face: #fafad2,
+    hair: #aaa,
+    beard: #222,
+    glasses: #222,
+    glassesBridge: #aaa,
+    eyes: #fff
+);
 
 #AvatarWaleedFace {
   width: 240px;

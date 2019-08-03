@@ -1,4 +1,5 @@
-@import "./globals.scss";
+@import "./responsive-breakpoints.scss";
+@import "./theme-colors.scss";
 
 @media screen and (min-width: $mobile-breakpoint) {
 

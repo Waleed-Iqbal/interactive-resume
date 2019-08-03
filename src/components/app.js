@@ -2,7 +2,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
-
 import "../styles/globals.scss";
 import UnderConstruction from "./under-construction";
 import Demos from "../components/demos/demos";

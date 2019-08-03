@@ -1,4 +1,5 @@
-@import "./globals.scss";
+@import "./responsive-breakpoints.scss";
+@import "./theme-colors.scss";
 
 @mixin navigation-icon-text($pl, $icon-url, $icon-size: 1em) {
   p::before {
