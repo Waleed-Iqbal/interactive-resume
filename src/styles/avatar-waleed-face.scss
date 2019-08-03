@@ -1,113 +1,111 @@
-
 @import './globals.scss';
 
 #AvatarWaleedFace {
-    width: 240px;
-    height: 230px;
-    position: relative;
-    border-radius: 40%;
-    border-top: 50px solid avatar-color(hair);
-    border-bottom: 20px solid avatar-color(beard);
-    background-color: avatar-color(face);
+  width: 240px;
+  height: 230px;
+  position: relative;
+  border-radius: 40%;
+  border-top: 50px solid avatar-color(hair);
+  border-bottom: 20px solid avatar-color(beard);
+  background-color: avatar-color(face);
 
+
+  .avatar--glasses {
+    top: 18%;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    position: absolute;
+    --glasses-temple-skew-angle: 22deg;
+
+
+    .temple {
+      width: 65px;
+      height: 7px;
+      margin-top: 32px;
+      box-sizing: border-box;
+      background-color: avatar-color(glasses);
+    }
+
+    .left-temple {
+      transform: skewY(var(--glasses-temple-skew-angle));
+    }
+
+    .frame {
+      --frame-margin-top: 0;
+      --frame-close-height: 0;
+      --frame-open-height: 80px;
+      --frame-frame-width: 96px;
+
+      width: var(--frame-frame-width);
+      margin-top: var(--frame-margin-top);
+      border-radius: 50%;
+      border: 8px solid avatar-color(glasses);
+      background-color: avatar-color(eyes);
+      height: var(--frame-open-height);
+      animation: eye-blink 4s linear infinite;
+
+      @keyframes eye-blink {
+        20% {
+          height: var(--frame-open-height);
+          margin-top: var(--frame-margin-top);
+        }
+
+        25% {
+          height: var(--frame-close-height);
+          margin-top: calc(var(--frame-open-height)/2);
+        }
+
+        30% {
+          height: var(--frame-open-height);
+          margin-top: var(--frame-margin-top);
+        }
+      }
+    }
+
+    .glasses-bridge {
+      top: 40%;
+      width: 48px;
+      height: 2px;
+      position: relative;
+      border-style: solid;
+      border-color: avatar-color(glassesBridge);
+      border-width: 5px 0 0 0;
+      background-color: avatar-color(glassesBridge);
+      border-radius: 50% 50% 0 0;
+    }
+
+    .right-temple {
+      transform: skewY(calc(var(--glasses-temple-skew-angle) * -1)); // making angle negative
+    }
+  }
+
+
+  @media screen and (max-width: 662px) {
+    width: 140px;
+    height: 130px;
+    border-top: 25px solid grey;
+    border-bottom: 15px solid black;
 
     .avatar--glasses {
-        top: 18%;
-        width: 100%;
-        height: 90px;
-        display: flex;
-        position: absolute;
-        --glasses-temple-skew-angle: 22deg;
+      top: 20%;
+      height: 55px;
 
+      .temple {
+        height: 4px;
+        margin-top: 20px;
+      }
 
-        .temple {
-            width: 65px;
-            height: 7px;
-            margin-top: 32px;
-            box-sizing: border-box;
-            background-color: avatar-color(glasses);
-        }
+      .frame {
+        --frame-open-height: 48px;
+        --frame-frame-width: 80px;
+        border-width: 5px;
+      }
 
-        .left-temple {
-            transform: skewY(var(--glasses-temple-skew-angle));
-        }
-
-        .frame {
-            --frame-margin-top: 0;
-            --frame-close-height: 0;
-            --frame-open-height: 80px;
-            --frame-frame-width: 96px;
-
-            width: var(--frame-frame-width);
-            margin-top: var(--frame-margin-top);
-            border-radius: 50%;
-            border: 8px solid avatar-color(glasses);
-            background-color: avatar-color(eyes);
-            height: var(--frame-open-height);
-            animation: eye-blink 4s linear infinite;
-
-            @keyframes eye-blink {
-                20% {
-                    height: var(--frame-open-height);
-                    margin-top: var(--frame-margin-top);
-                }
-
-                25% {
-                    height: var(--frame-close-height);
-                    margin-top: calc(var(--frame-open-height)/2);
-                }
-
-                30% {
-                    height: var(--frame-open-height);
-                    margin-top: var(--frame-margin-top);
-                }
-            }
-        }
-
-        .glasses-bridge {
-            top: 40%;
-            width: 48px;
-            height: 2px;
-            position: relative;
-            border-style: solid;
-            border-color: avatar-color(glassesBridge);
-            border-width: 5px 0 0 0;
-            background-color: avatar-color(glassesBridge);
-            border-radius: 50% 50% 0 0;
-        }
-
-        .right-temple {
-            transform: skewY(calc(var(--glasses-temple-skew-angle) * -1)); // making angle negative 
-        }
+      .glasses-bridge {
+        width: 40px;
+        border-width: 3px 0 0 0;
+      }
     }
-
-
-    @media screen and (max-width: 662px) {
-        width: 140px;
-        height: 130px;
-        border-top: 25px solid grey;
-        border-bottom: 15px solid black;
-
-        .avatar--glasses {
-            top: 20%;
-            height: 55px;
-
-            .temple {
-                height: 4px;
-                margin-top: 20px;
-            }
-
-            .frame {
-                //--frame-margin-top: 15px;
-                --frame-open-height: 48px;
-                --frame-frame-width: 80px;
-                border-width: 5px;
-            }
-
-            .glasses-bridge {
-                width: 40px;
-                border-width: 3px 0 0 0;
-            }
-        }
-    }
+  }
 }
