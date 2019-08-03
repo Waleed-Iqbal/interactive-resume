@@ -1,18 +1,13 @@
-
 @import "./globals.scss";
 
 @mixin navigation-icon-text($pl, $icon-url, $icon-size: 1em) {
-  p {
-    // padding-left: $pl;
-
-    &::before {
-      left: 0;
-      content: "";
-      width: $icon-size;
-      height: $icon-size;
-      position: absolute;
-      background: url($icon-url) no-repeat;
-    }
+  p::before {
+    left: 0;
+    content: "";
+    width: $icon-size;
+    height: $icon-size;
+    position: absolute;
+    background: url($icon-url) no-repeat;
   }
 }
 
