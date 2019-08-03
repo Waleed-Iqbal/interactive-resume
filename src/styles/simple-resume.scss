@@ -1,4 +1,4 @@
-@import "./globals.scss";
+// @import "./globals.scss";
 
 
 .resume-container {
@@ -39,14 +39,14 @@
 
 .transform-animation {
   padding: 1em 0 0 6em;
-  
+
   p {
     display: inline;
   }
 }
 
 .transform-text {
-  display: inline;  
+  display: inline;
 }
 
 .transform-qualities {
@@ -86,7 +86,7 @@
   3%, 30% {
     opacity: 1;
   }
-  
+
   0%, 33.33%, 100% {
     opacity: 0;
   }
@@ -96,7 +96,7 @@
   37.33%, 62% {
     opacity: 1;
   }
-  
+
   0%, 33.33%, 66.66%, 100% {
     opacity: 0;
   }
@@ -106,7 +106,7 @@
   70.66%, 98.66% {
     opacity: 1;
   }
-  
+
   0%, 66.66%, 100% {
     opacity: 0;
   }
@@ -121,7 +121,7 @@
   grid-template-columns: 30% 70%;
   grid-template-areas:
   "contact-me contact-links";
-  
+
   li {
     list-style: none;
   }
@@ -158,7 +158,7 @@
 }
 
 .contact-links h3 {
-  margin-bottom: 0.5em;  
+  margin-bottom: 0.5em;
 }
 
 
@@ -181,7 +181,7 @@
 
 .skype-me a {
   text-decoration: none;
-  
+
   &:hover {
     cursor: default;
   }

@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 import UnderConstruction from "./under-construction";
 import Demos from "../components/demos/demos";
 import SimpleResume from "./simple-resume";
-import LandingPage from "./landing-page";
 import Home from "./home";
 import About from "./about";
 import "../styles/globals.scss";
@@ -23,7 +22,7 @@ class App extends React.Component {
             path="/"
             render={
               props => (
-                <Page {...props} component={LandingPage} title="Hire Waleed" />
+                <Page {...props} component={Home} title="Hire Waleed" />
               )
             }
           />
@@ -32,7 +31,7 @@ class App extends React.Component {
             path="/home"
             render={
               props => (
-                <Page {...props} component={LandingPage} title="Hire Waleed" />
+                <Page {...props} component={Home} title="Hire Waleed" />
               )
             }
           />
