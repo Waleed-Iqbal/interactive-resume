@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "../styles/simple-resume.scss";
 import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
 
@@ -15,15 +15,15 @@ export function SimpleResume() {
           <p className="transform-text">I transform &nbsp;</p>
           <p className="transform-animating-text">
             <span className="transform-qualities">
-              <div className="transform-quality"><b>mockup</b></div>
-              <div className="transform-quality"><b>complex</b></div>
-              <div className="transform-quality"><b>lagging</b></div>
+              <span className="transform-quality"><em>mockup</em></span>
+              <span className="transform-quality"><em>complex</em></span>
+              <span className="transform-quality"><em>lagging</em></span>
             </span>
             <span className="into">into</span>
             <span className="transform-qualities">
-              <div className="transform-quality"><b>layout</b></div>
-              <div className="transform-quality"><b>simple</b></div>
-              <div className="transform-quality"><b>leading</b></div>
+              <span className="transform-quality"><em>layout</em></span>
+              <span className="transform-quality"><em>simple</em></span>
+              <span className="transform-quality"><em>leading</em></span>
             </span>
           </p>
           <p> ... and much more</p>
@@ -37,9 +37,9 @@ export function SimpleResume() {
             <h3>Contact me</h3>
             <ul>
               <li className="email">
-                <a className="icon icon-email" href="mailto:ikhawajawaleed@gmail.com"></a>Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank">ikhawajawaleed@gmail.com</a></li>
+                <a className="icon icon-email" href="mailto:ikhawajawaleed@gmail.com"></a>Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank" rel="noopener noreferrer">ikhawajawaleed@gmail.com</a></li>
               <li className="linked-in">
-              <a className="icon icon-linkedin" href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank">LinkedIn profile</a>
+              <a className="icon icon-linkedin" href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
               </li>
               <li className="skype-me"><a className="icon icon-skype" title="clicking it won't work, search this id on skype"></a>Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a></li>
             </ul>
@@ -47,23 +47,23 @@ export function SimpleResume() {
           <div className="hire-me">
             <h3>Hire me</h3>
             <li className="fiverr">
-              <a className="icon icon-fiverr" href="https://www.fiverr.com/waleed_iqbal?up_rollout=true"></a>Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_blank">Fiverr 5 Star Rated Profile</a>
+              <a className="icon icon-fiverr" href="https://www.fiverr.com/waleed_iqbal?up_rollout=true"></a>Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_blank" rel="noopener noreferrer">Fiverr 5 Star Rated Profile</a>
             </li>
           </div>
           <div className="social-presence">
             <h3>Social and technical presence</h3>
           <ul>
             <li className="git-hub">
-              Want a free project? checkout my <a href="https://github.com/Waleed-Iqbal" target="_blank">Github</a> account.
+              Want a free project? checkout my <a href="https://github.com/Waleed-Iqbal" target="_blank" rel="noopener noreferrer">Github</a> account.
             </li>
             <li className="stack-overflow">
-              Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank">Stackoverflow</a> profile
+              Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer">Stackoverflow</a> profile
             </li>
             <li className="facebook">
-              Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank">Facebook</a> profile
+              Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer">Facebook</a> profile
             </li>
             <li className="quora">
-              Want to ask questions together? Let's go to <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank">Quora</a>
+              Want to ask questions together? Let's go to <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank" rel="noopener noreferrer">Quora</a>
             </li>
           </ul>
         </div>

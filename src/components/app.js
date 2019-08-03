@@ -4,7 +4,6 @@ import { Switch, Route } from "react-router-dom";
 
 import "../styles/globals.scss";
 import UnderConstruction from "./under-construction";
-import Demos from "../components/demos/demos";
 import SimpleResume from "./simple-resume";
 import Home from "./home";
 import { Error404 } from './error404';

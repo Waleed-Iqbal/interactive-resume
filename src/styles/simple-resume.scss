@@ -59,8 +59,13 @@
 }
 
 .transform-quality {
-  top: 2px;
+  display: inline-block;
+  top: 6px;
   position: absolute;
+
+  & em {
+    font-weight: bold;
+  }
 }
 
 .transform-quality:nth-child(n+2) {
