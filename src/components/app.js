@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import "../styles/globals.scss";
 import UnderConstruction from "./under-construction";
+import VideoPlayer from "./demos/video-player/containers/app";
 import SimpleResume from "./simple-resume";
 import Home from "./home";
 import { Error404 } from './error404';
@@ -88,9 +89,18 @@ class App extends React.Component {
             }
           />
           <Route
+            exact
+            path="/video-player"
             render={
               props => (
-                <Page {...props} component={Error404} title="Page not found" heading="Blog" />
+                <Page {...props} component={VideoPlayer} title="Video Player" heading="Video Player" />
+              )
+            }
+          />
+          <Route
+            render={
+              props => (
+                <Page {...props} component={Error404} title="Page not found" />
               )
             }
           />
