@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
 import Video from '../video';
 import Playlist from './playlist';
 
-export default function VideoPlayer() {
+const VideoPlayer = (props) => {
   return (
-    <div>
+    <React.Fragment>
       <Video />
       <Playlist />
-    </div>
+    </React.Fragment>
   );
 }
+
+export default VideoPlayer;

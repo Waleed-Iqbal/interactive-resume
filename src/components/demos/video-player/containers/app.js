@@ -1,8 +1,8 @@
 import React from 'react';
+import VideoPlayer from './video-player';
 
+const VideoPlayerApp = () => (
+  <VideoPlayer />
+);
 
-const VideoPlayer = () => (
-  <div>music player</div>
-)
-
-export default VideoPlayer;
+export default VideoPlayerApp;

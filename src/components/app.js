@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 import "../styles/globals.scss";
 import UnderConstruction from "./under-construction";
-import VideoPlayer from "./demos/video-player/containers/app";
+import VideoPlayerApp from "./demos/video-player/containers/app";
 import SimpleResume from "./simple-resume";
 import Home from "./home";
 import { Error404 } from './error404';
@@ -93,7 +93,7 @@ class App extends React.Component {
             path="/video-player"
             render={
               props => (
-                <Page {...props} component={VideoPlayer} title="Video Player" heading="Video Player" />
+                <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
               )
             }
           />
