@@ -88,6 +88,7 @@ class App extends React.Component {
               )
             }
           />
+          {/* START: Video player */}
           <Route
             exact
             path="/video-player"
@@ -97,6 +98,16 @@ class App extends React.Component {
               )
             }
           />
+          <Route
+            exact
+            path="/:activevideo"
+            render={
+              props => (
+                <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
+              )
+            }
+          />
+          {/* END: Video player */}
           <Route
             render={
               props => (
