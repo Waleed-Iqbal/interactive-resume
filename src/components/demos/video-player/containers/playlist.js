@@ -2,13 +2,14 @@ import React from 'react';
 import PlaylistHeader from '../playlist-header';
 import PlaylistItems from './playlist-items';
 import Nightmode from '../nightmode';
+import StyledPlaylist from '../styles/styled-playlist';
 
 const Playlist = (props) => (
-  <React.Fragment>
+  <StyledPlaylist>
     <Nightmode />
     <PlaylistHeader />
     <PlaylistItems />
-  </React.Fragment>
+  </StyledPlaylist>
 );
 
 export default Playlist;
