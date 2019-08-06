@@ -26,17 +26,11 @@ const themeLight = {
 
 const VideoPlayer = (props) => {
 
-  const nightModeCallback = () => {
+  const nightModeCallback = () => { }
 
-  }
+  const endCallback = () => { }
 
-  const endCallback = () => {
-
-  }
-
-  const progressCallback = () => {
-
-  }
+  const progressCallback = () => { }
 
   return (
     <ThemeProvider theme={state.nightMode ? theme: themeLight }>
