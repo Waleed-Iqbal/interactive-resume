@@ -21,7 +21,7 @@ const themeLight = {
   bgcolorPlayed: "#7d9979",
   border: "1px solid #353535",
   borderPlayed: "none",
-  color: "##353535"
+  color: "#353535"
 };
 
 const VideoPlayer = (props) => {

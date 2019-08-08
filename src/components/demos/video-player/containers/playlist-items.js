@@ -1,9 +1,9 @@
 import React from 'react'
 import PlaylistItem from '../playlist-item';
-import StyledPlaylistitems from '../styles/styled-playlist-items';
+import StyledPlaylistItems from '../styles/styled-playlist-items';
 
 const PlaylistItems = ({videos, active}) => (
-  <StyledPlaylistitems>
+  <StyledPlaylistItems>
     {
       videos.map(video => {
         return <PlaylistItem
@@ -14,7 +14,7 @@ const PlaylistItems = ({videos, active}) => (
          />
       })
     }
-  </StyledPlaylistitems>
+  </StyledPlaylistItems>
 );
 
 export default PlaylistItems;

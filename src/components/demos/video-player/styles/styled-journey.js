@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledJourney = styled.div`
-  background: #565656;
+  background-color: #565656;
   font-size: 0.8em;
   padding: 2px 5px;
   height: 20px;

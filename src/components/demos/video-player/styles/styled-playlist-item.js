@@ -33,15 +33,15 @@ const StyledPlaylistItem = styled.div`
     top: 19px;
   }
 
-  .wbn-player__video-nr {
+  .video-player__video-nr {
     flex-grow: 1; /* default 0 */
     max-width: 30px;
     padding-right: 20px;
     border-right: 2px solid #565656;
   }
 
-  .wbn-player__video-name,
-  .wbn-player__video-name a {
+  .video-player__video-name,
+  .video-player__video-name a {
     flex-grow: 10; /* default 0 */
     padding: 0 0 0 10px;
     color: ${props => props.theme.color};
@@ -50,19 +50,19 @@ const StyledPlaylistItem = styled.div`
     display: block;
   }
 
-  .wbn-player__video-time {
+  .video-player__video-time {
     background: #565656;
     min-width: 45px;
     color: #fff;
     font-size: 0.8em;
-    padding: 0px 5px;
+    padding: 4px;
     height: 20px;
     text-align: center;
     border-radius: 5px;
     margin: 0 0 0 5px;
   }
 
-  .wbn-player__video-download {
+  .video-player__video-download {
     flex-grow: 1; /* default 0 */
     color: ${props => (props.played ? "#fff" : props.theme.color)};
     margin: 0 0 0 20px;
@@ -74,7 +74,7 @@ const StyledPlaylistItem = styled.div`
     font-weight: normal;
   }
 
-  .wbn-player__video-download a {
+  .video-player__video-download a {
     color: ${props =>
       props.played && !props.active ? "#fff" : props.theme.color};
   }
