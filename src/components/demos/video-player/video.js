@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import StyledVideoWrapper from './styled/styled-video-wrapper';
-import StyledVideo from './styled/styled-video';
+import StyledVideoWrapper from './styles/styled-video-wrapper';
+import StyledVideo from './styles/styled-video';
 
 const Video = ({active, autoplay, endCallback, progressCallback}) => (
   <StyledVideo>

@@ -5,14 +5,14 @@ import StyledPlaylistitems from '../styles/styled-playlist-items';
 const PlaylistItems = ({videos, active}) => (
   <StyledPlaylistitems>
     {
-      video.map(video => {
-        <PlaylistItem
+      videos.map(video => {
+        return <PlaylistItem
           key={video.id}
           video={video}
           active={video.id === active.id}
           played={video.played}
          />
-      });
+      })
     }
   </StyledPlaylistitems>
 );
