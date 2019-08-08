@@ -5,9 +5,9 @@ import { ThemeProvider } from 'styled-components';
 import StyledVideoPlayer from '../styles/styled-video-player';
 
 const theme = {
-  border: "#353535",
+  bgcolor: "#353535",
   bgcolorItem: "#414141",
-  bgcolorItemArchive: "#405c63",
+  bgcolorItemActive: "#405c63",
   bgcolorPlayed: "#526d4e",
   border: "none",
   borderPlayed: "none",
@@ -15,9 +15,9 @@ const theme = {
 };
 
 const themeLight = {
-  border: "#fff",
+  bgcolor: "#fff",
   bgcolorItem: "#fff",
-  bgcolorItemArchive: "#80a7b1",
+  bgcolorItemActive: "#80a7b1",
   bgcolorPlayed: "#7d9979",
   border: "1px solid #353535",
   borderPlayed: "none",
@@ -44,7 +44,7 @@ const VideoPlayer = (props) => {
   const progressCallback = () => { }
 
   return (
-    <ThemeProvider theme={state.nightMode ? theme : themeLight}>
+    <ThemeProvider theme={state.nightmode ? theme : themeLight}>
       {
         state.video !== null ?
           <StyledVideoPlayer>

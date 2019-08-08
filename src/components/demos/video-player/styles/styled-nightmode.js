@@ -4,6 +4,7 @@ const StyledNightmode = styled.div`
   font-family: "Hind", sans-serif;
   font-weight: 800;
   font-size: 1.6em;
+  line-height: 24px;
   color: ${props => props.theme.color};
   padding: 0;
   margin: 20px;
