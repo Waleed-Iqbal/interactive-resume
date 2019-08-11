@@ -100,7 +100,7 @@ class App extends React.Component {
           />
           <Route
             exact
-            path="/:activevideo"
+            path="/video-player/:activevideo"
             render={
               props => (
                 <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
@@ -131,10 +131,10 @@ class Page extends React.Component {
   }
 
   render() {
-    const PageComponent = this.props.component
+    const PageComponent = this.props.component;
 
     return (
-      <PageComponent heading={this.props.heading} />
+      <PageComponent heading={this.props.heading} props={this.props} />
     )
   }
 }
