@@ -60,6 +60,7 @@ const StyledPlaylistItem = styled.div`
     text-align: center;
     border-radius: 5px;
     margin: 0 0 0 5px;
+    line-height: 20px;
   }
 
   .video-player__video-download {
