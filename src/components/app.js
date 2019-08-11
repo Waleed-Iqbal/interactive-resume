@@ -100,7 +100,7 @@ class App extends React.Component {
           />
           <Route
             exact
-            path="/video-player/:activevideo"
+            path="/video-player/:activeVideo"
             render={
               props => (
                 <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
