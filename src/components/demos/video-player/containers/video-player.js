@@ -24,7 +24,11 @@ const themeLight = {
   color: "#353535"
 };
 
-const VideoPlayer = ({ match, history, location }) => {
+const VideoPlayer = ({props}) => {
+
+  let match = props.match,
+      history = props.history,
+      location = props.location;
 
   const videos = JSON.parse(document.querySelector('input[name="videos"]').value);
 
@@ -33,27 +37,25 @@ const VideoPlayer = ({ match, history, location }) => {
     activeVideo: videos.playlist[0],
     nightmode: true,
     playlistId: videos.playlistId,
-    autoplay: false
+    autoplay: false,
   });
 
   useEffect(() => {
     const videoId = match.params.activeVideo;
 
-    if(videoId !== undefined) {
+    if (videoId !== undefined) {
       const newActiveVideo = state.videos.findIndex( video => video.id === videoId );
 
       setState(prev => ({
         ...prev,
         activeVideo: prev.videos[newActiveVideo],
-        autoplay: location.autoplay
-      }))
-
+        autoplay: location.autoplay,
+      }));
     } else {
       history.push({
-        pathname: `/${state.activeVideo.id}`,
-        autoplay: false
-      })
-
+        pathname: `/video-player/${state.activeVideo.id}`,
+        autoplay: false,
+      });
     }
   }, []);
 
@@ -66,25 +68,24 @@ const VideoPlayer = ({ match, history, location }) => {
 
   return (
     <ThemeProvider theme={state.nightmode ? theme : themeLight}>
-      {
-        state.video !== null ?
-          <StyledVideoPlayer>
-            <Video
-              active={state.activeVideo}
-              autoplay={state.autoplay}
-              endCallback={endCallback}
-              progressCallback={progressCallback} />
-            <Playlist
-              videos={state.videos}
-              active={state.activeVideo}
-              nightModeCallback={nightModeCallback}
-              nightmode={state.nightmode}
-            />
-          </StyledVideoPlayer>
-          : null
-      }
+      {state.videos !== null ? (
+        <StyledVideoPlayer>
+          <Video
+            active={state.activeVideo}
+            autoplay={state.autoplay}
+            endCallback={endCallback}
+            progressCallback={progressCallback}
+          />
+          <Playlist
+            videos={state.videos}
+            active={state.activeVideo}
+            nightModeCallback={nightModeCallback}
+            nightmode={state.nightmode}
+          />
+        </StyledVideoPlayer>
+      ) : null}
     </ThemeProvider>
   );
-}
+};
 
 export default VideoPlayer;
