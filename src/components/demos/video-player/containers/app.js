@@ -2,11 +2,12 @@ import React from 'react';
 import VideoPlayer from './video-player';
 import GlobalStyle from '../styles/global-style';
 
-const VideoPlayerApp = () => {
+const VideoPlayerApp = ({props}) => {
+
   return (
     <React.Fragment>
       <GlobalStyle />
-      <VideoPlayer />
+      <VideoPlayer props={props} />
     </React.Fragment>
   );
 }
