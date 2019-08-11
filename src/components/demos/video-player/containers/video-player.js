@@ -57,7 +57,7 @@ const VideoPlayer = ({props}) => {
         autoplay: false,
       });
     }
-  }, []);
+  }, [history, location.autoplay, match.params.activeVideo, state.activeVideo.id, state.videos]);
 
 
   const nightModeCallback = () => { }
