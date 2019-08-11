@@ -38,7 +38,7 @@ const VideoPlayer = ({ props }) => {
     activeVideo: savedState ? savedState.activeVideo :videos.playlist[0],
     nightmode: savedState ? savedState.nightmode :true,
     playlistId: savedState ? savedState.playlistId : videos.playlistId,
-    autoplay: savedState ? savedState.autoplay : false,
+    autoplay: false,
   });
 
 
