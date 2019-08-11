@@ -3,11 +3,7 @@ import ReactPlayer from 'react-player';
 import StyledVideoWrapper from './styles/styled-video-wrapper';
 import StyledVideo from './styles/styled-video';
 
-const Video = ({active, autoplay, endCallback, progressCallback}) => {
-  console.log('URL');
-  console.log(active.video);
-
-  return (
+const Video = ({active, autoplay, endCallback, progressCallback}) => (
     <StyledVideo>
       <StyledVideoWrapper>
         <ReactPlayer
@@ -22,7 +18,6 @@ const Video = ({active, autoplay, endCallback, progressCallback}) => {
         />
       </StyledVideoWrapper>
     </StyledVideo>
-  );
-}
+);
 
 export default Video;
