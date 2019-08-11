@@ -24,27 +24,33 @@ const themeLight = {
   color: "#353535"
 };
 
-const VideoPlayer = ({props}) => {
+const VideoPlayer = ({ props }) => {
 
   let match = props.match,
-      history = props.history,
-      location = props.location;
+    history = props.history,
+    location = props.location;
 
   const videos = JSON.parse(document.querySelector('input[name="videos"]').value);
+  const savedState = JSON.parse(localStorage.getItem(videos.playlistId));
 
   const [state, setState] = useState({
-    videos: videos.playlist,
-    activeVideo: videos.playlist[0],
-    nightmode: true,
-    playlistId: videos.playlistId,
-    autoplay: false,
+    videos: savedState ? savedState.videos : videos.playlist,
+    activeVideo: savedState ? savedState.activeVideo :videos.playlist[0],
+    nightmode: savedState ? savedState.nightmode :true,
+    playlistId: savedState ? savedState.playlistId : videos.playlistId,
+    autoplay: savedState ? savedState.autoplay : false,
+  });
+
+
+  useEffect(() => {
+    localStorage.setItem(state.playlistId, JSON.stringify({ ...state }));
   });
 
   useEffect(() => {
     const videoId = match.params.activeVideo;
 
     if (videoId !== undefined) {
-      const newActiveVideo = state.videos.findIndex( video => video.id === videoId );
+      const newActiveVideo = state.videos.findIndex(video => video.id === videoId);
 
       setState(prev => ({
         ...prev,
@@ -61,7 +67,7 @@ const VideoPlayer = ({props}) => {
 
 
   const nightModeCallback = () => {
-    setState(prevState => ({...prevState, nightmode: !prevState.nightmode}));
+    setState(prevState => ({ ...prevState, nightmode: !prevState.nightmode }));
   }
 
   const endCallback = () => {
@@ -76,13 +82,13 @@ const VideoPlayer = ({props}) => {
   }
 
   const progressCallback = e => {
-    if(e.playedSeconds >= 10 && e.playedSeconds < 11) {
+    if (e.playedSeconds >= 10 && e.playedSeconds < 11) {
       const videos = [...state.videos];
       const playedVideo = videos.find(video => video.id === state.activeVideo.id);
       playedVideo.played = true;
-      setState({...state, videos});
+      setState(prevState => ({ ...prevState, videos }));
     }
-   }
+  }
 
   return (
     <ThemeProvider theme={state.nightmode ? theme : themeLight}>
