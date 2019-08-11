@@ -2,9 +2,7 @@ import React from 'react';
 import VideoPlayer from './video-player';
 import GlobalStyle from '../styles/global-style';
 
-const VideoPlayerApp = ({props}) => {
-
-  return (
+const VideoPlayerApp = ({props}) => (
     <React.Fragment>
       <GlobalStyle />
       <VideoPlayer props={props} />
@@ -13,6 +11,5 @@ const VideoPlayerApp = ({props}) => {
       </h2>
     </React.Fragment>
   );
-}
 
 export default VideoPlayerApp;
