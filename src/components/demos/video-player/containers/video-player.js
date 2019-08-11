@@ -75,7 +75,14 @@ const VideoPlayer = ({props}) => {
     });
   }
 
-  const progressCallback = () => { }
+  const progressCallback = e => {
+    if(e.playedSeconds >= 10 && e.playedSeconds < 11) {
+      const videos = [...state.videos];
+      const playedVideo = videos.find(video => video.id === state.activeVideo.id);
+      playedVideo.played = true;
+      setState({...state, videos});
+    }
+   }
 
   return (
     <ThemeProvider theme={state.nightmode ? theme : themeLight}>
