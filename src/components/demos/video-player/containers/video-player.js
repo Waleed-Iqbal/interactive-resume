@@ -60,7 +60,9 @@ const VideoPlayer = ({props}) => {
   }, [history, location.autoplay, match.params.activeVideo, state.activeVideo.id, state.videos]);
 
 
-  const nightModeCallback = () => { }
+  const nightModeCallback = () => {
+    setState(prevState => ({...prevState, nightmode: !prevState.nightmode}));
+  }
 
   const endCallback = () => { }
 
