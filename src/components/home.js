@@ -15,7 +15,8 @@ export default function Home() {
           {/* <NavigationItem navigationClass="nav-demos-samples" linkTo="/demos" text="Demos" /> */}
           <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" />
           <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Contact Me" />
-          <NavigationItem navigationClass="nav-contact" linkTo="/video-player" text="Video Player" />
+          <li className="demos">Demos</li>
+          <NavigationItem navigationClass="nav-video-player" linkTo="/video-player" text="Video Player" />
         </ul>
       </nav>
       <main className="main-section"></main>

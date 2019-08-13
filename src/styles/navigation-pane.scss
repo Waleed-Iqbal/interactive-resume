@@ -42,6 +42,12 @@
   }
 }
 
+.nav-tabs .demos {
+  margin: 0;
+  padding: 1em;
+  background-color: beige;
+}
+
 .nav-home {
   @include navigation-icon-text(1.2em, '../images/icons/icon-home.svg');
 }
