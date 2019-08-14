@@ -91,24 +91,28 @@ const VideoPlayer = ({ props }) => {
   }
 
   return (
-    <ThemeProvider theme={state.nightmode ? theme : themeLight}>
-      {state.videos !== null ? (
-        <StyledVideoPlayer>
-          <Video
-            active={state.activeVideo}
-            autoplay={state.autoplay}
-            endCallback={endCallback}
-            progressCallback={progressCallback}
-          />
-          <Playlist
-            videos={state.videos}
-            active={state.activeVideo}
-            nightModeCallback={nightModeCallback}
-            nightmode={state.nightmode}
-          />
-        </StyledVideoPlayer>
-      ) : null}
-    </ThemeProvider>
+    <React.Fragment>
+      <ThemeProvider theme={state.nightmode ? theme : themeLight}>
+        {
+          state.videos !== null ? (
+            <StyledVideoPlayer>
+              <Video
+                active={state.activeVideo}
+                autoplay={state.autoplay}
+                endCallback={endCallback}
+                progressCallback={progressCallback}
+              />
+              <Playlist
+                videos={state.videos}
+                active={state.activeVideo}
+                nightModeCallback={nightModeCallback}
+                nightmode={state.nightmode}
+              />
+            </StyledVideoPlayer>
+          ) : null
+        }
+      </ThemeProvider>
+    </React.Fragment>
   );
 };
 
