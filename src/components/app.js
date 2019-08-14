@@ -9,6 +9,7 @@ import SimpleResume from "./simple-resume";
 import Home from "./home";
 import { Error404 } from './error404';
 import NavigationPane from './navigation-pane';
+import LoadingAnimation from './demos/loading-animations/loading-animations';
 
 
 class App extends React.Component {
@@ -67,10 +68,10 @@ class App extends React.Component {
           /> */}
             <Route
               exact
-              path="/demos"
+              path="/loading-animations"
               render={
                 props => (
-                  <Page {...props} component={UnderConstruction} title="Demos &amp; Samples" heading="Demos" />
+                  <Page {...props} component={LoadingAnimation} title="Loading Animations" heading="Loading Animations" />
                 )
               }
             />

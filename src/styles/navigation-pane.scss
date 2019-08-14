@@ -43,7 +43,7 @@
 }
 
 .nav-tabs .demos {
-  margin: 0;
+  margin: 0.5em 0;
   padding: 1em;
   background-color: beige;
 }
@@ -58,4 +58,9 @@
 
 .nav-contact {
    @include navigation-icon-text(1.2em, '../images/icons/icon-contact.svg');
+}
+
+.nav-tabs .demo {
+  margin: 0;
+  padding: 0.5em 1em;
 }

@@ -14,7 +14,8 @@ export default function NavigationPane() {
         <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" />
         <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Contact Me" />
         <li className="demos"><p>Demos</p></li>
-        <NavigationItem navigationClass="nav-video-player" linkTo="/video-player" text="Video Player" />
+        <NavigationItem navigationClass="demo nav-video-player" linkTo="/video-player" text="Video Player" />
+        <NavigationItem navigationClass="demo nav-loading-animation" linkTo="/loading-animations" text="Loaders" />
       </ul>
     </nav>
   )
