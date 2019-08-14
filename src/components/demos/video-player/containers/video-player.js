@@ -35,8 +35,8 @@ const VideoPlayer = ({ props }) => {
 
   const [state, setState] = useState({
     videos: savedState ? savedState.videos : videos.playlist,
-    activeVideo: savedState ? savedState.activeVideo :videos.playlist[0],
-    nightmode: savedState ? savedState.nightmode :true,
+    activeVideo: savedState ? savedState.activeVideo : videos.playlist[0],
+    nightmode: savedState ? savedState.nightmode : true,
     playlistId: savedState ? savedState.playlistId : videos.playlistId,
     autoplay: false,
   });
