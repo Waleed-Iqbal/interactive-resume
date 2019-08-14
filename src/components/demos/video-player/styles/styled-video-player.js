@@ -4,7 +4,6 @@ const StyledVideoPlayer = styled.div`
   background: ${props => props.theme.bgcolor}; /* #353535; */
   border: ${props => props.theme.border};
   max-width: 1800px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
