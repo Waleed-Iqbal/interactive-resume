@@ -18,12 +18,12 @@ $dimension-value: 80px;
 #loaders-container {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 5%;
+  padding: 5em 2em 0;
   text-align: center;
 
   >div {
-    margin: 0 50px;
-    @include custom-width-height(10em, 10em);
+    margin: 2em 4em;
+    @include custom-width-height(15em, 15em);
   }
 
   >span,
@@ -33,12 +33,17 @@ $dimension-value: 80px;
     top: 40vh;
 
     p {
-      margin-top: 40px
+      margin-top: 40px;
     }
   }
 
   p {
-    margin-top: 2em;
+    margin-top: 3em;
+    font-size: 1.3em;
+  }
+
+  .loader {
+    margin: 0 auto;
   }
 }
 
