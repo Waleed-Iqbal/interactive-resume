@@ -8,12 +8,15 @@ import VideoPlayerApp from "./demos/video-player/containers/app";
 import SimpleResume from "./simple-resume";
 import Home from "./home";
 import { Error404 } from './error404';
+import NavigationPane from './navigation-pane';
+
 
 class App extends React.Component {
 
   render() {
     return (
       <React.Fragment>
+        <NavigationPane />
         {/* NavBar is not inside Switch since its gonna be displayed on all pages */}
         <Switch>
           <Route
