@@ -18,44 +18,45 @@ class App extends React.Component {
       <React.Fragment>
         <NavigationPane />
         {/* NavBar is not inside Switch since its gonna be displayed on all pages */}
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={
-              props => (
-                <Page {...props} component={Home} title="Hire Waleed" />
-              )
-            }
-          />
-          <Route
-            exact
-            path="/home"
-            render={
-              props => (
-                <Page {...props} component={Home} title="Hire Waleed" />
-              )
-            }
-          />
-          <Route
-            exact
-            path="/aboutwaleed"
-            render={
-              props => (
-                <Page {...props} component={UnderConstruction} title="About Waleed" heading="About" />
-              )
-            }
-          />
-          <Route
-            exact
-            path="/simple-resume"
-            render={
-              props => (
-                <Page {...props} component={SimpleResume} title="Resume" />
-              )
-            }
-          />
-          {/* <Route
+        <main className="main-section">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={
+                props => (
+                  <Page {...props} component={Home} title="Hire Waleed" />
+                )
+              }
+            />
+            <Route
+              exact
+              path="/home"
+              render={
+                props => (
+                  <Page {...props} component={Home} title="Hire Waleed" />
+                )
+              }
+            />
+            <Route
+              exact
+              path="/aboutwaleed"
+              render={
+                props => (
+                  <Page {...props} component={UnderConstruction} title="About Waleed" heading="About" />
+                )
+              }
+            />
+            <Route
+              exact
+              path="/simple-resume"
+              render={
+                props => (
+                  <Page {...props} component={SimpleResume} title="Resume" />
+                )
+              }
+            />
+            {/* <Route
             exact
             path="/interactive-resume"
             render={
@@ -64,61 +65,62 @@ class App extends React.Component {
               )
             }
           /> */}
-          <Route
-            exact
-            path="/demos"
-            render={
-              props => (
-                <Page {...props} component={UnderConstruction} title="Demos &amp; Samples" heading="Demos" />
-              )
-            }
-          />
-          <Route
-            exact
-            path="/blog"
-            render={
-              props => (
-                <Page {...props} component={UnderConstruction} title="Waleed - Blog" heading="Blog" />
-              )
-            }
-          />
-          <Route
-            exact
-            path="/contact-me"
-            render={
-              props => (
-                <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
-              )
-            }
-          />
-          {/* START: Video player */}
-          <Route
-            exact
-            path="/video-player"
-            render={
-              props => (
-                <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
-              )
-            }
-          />
-          <Route
-            exact
-            path="/video-player/:activeVideo"
-            render={
-              props => (
-                <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
-              )
-            }
-          />
-          {/* END: Video player */}
-          <Route
-            render={
-              props => (
-                <Page {...props} component={Error404} title="Page not found" />
-              )
-            }
-          />
-        </Switch>
+            <Route
+              exact
+              path="/demos"
+              render={
+                props => (
+                  <Page {...props} component={UnderConstruction} title="Demos &amp; Samples" heading="Demos" />
+                )
+              }
+            />
+            <Route
+              exact
+              path="/blog"
+              render={
+                props => (
+                  <Page {...props} component={UnderConstruction} title="Waleed - Blog" heading="Blog" />
+                )
+              }
+            />
+            <Route
+              exact
+              path="/contact-me"
+              render={
+                props => (
+                  <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
+                )
+              }
+            />
+            {/* START: Video player */}
+            <Route
+              exact
+              path="/video-player"
+              render={
+                props => (
+                  <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
+                )
+              }
+            />
+            <Route
+              exact
+              path="/video-player/:activeVideo"
+              render={
+                props => (
+                  <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
+                )
+              }
+            />
+            {/* END: Video player */}
+            <Route
+              render={
+                props => (
+                  <Page {...props} component={Error404} title="Page not found" />
+                )
+              }
+            />
+          </Switch>
+        </main>
       </React.Fragment>
     );
   }
