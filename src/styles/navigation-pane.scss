@@ -56,9 +56,14 @@
   @include navigation-icon-text(1.2em, '../images/avatar-face.svg');
 }
 
+.nav-simplistic-resume {
+  @include navigation-icon-text(1.2em, '../images/icons/icon-resume.svg');
+}
+
 .nav-contact {
    @include navigation-icon-text(1.2em, '../images/icons/icon-contact.svg');
 }
+
 
 .nav-tabs .demo {
   margin: 0;

@@ -1,0 +1,19 @@
+<!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"	x="0px" y="0px"	viewBox="0 0 500 500"	style="enable-background:new 0 0 500 500;"	xml:space="preserve" >
+<title>Resume-CV icon</title>
+<desc>Resume-CV icon for portfolio navigation</desc>
+	<g id="svg-icon-resume" stroke="#000" stroke-width="5">
+		<rect x="5" y="0" width="485" height="500" fill="#eee" stroke="black"/>
+		<circle cx="150" cy="120" r="30"/>
+		<path d="M200,210 A 1,1 0 0 0 100,210" />
+		<g id="svg-icon-resume-text-lines" stroke="#000" stroke-width="15">
+			<line x1="230" x2="400" y1="100" y2="100" />
+			<line x1="230" x2="400" y1="150" y2="150" />
+			<line x1="230" x2="400" y1="200" y2="200" />
+			<line x1="100" x2="400" y1="250" y2="250" />
+			<line x1="100" x2="400" y1="300" y2="300" />
+			<line x1="100" x2="400" y1="350" y2="350" />
+			<line x1="100" x2="400" y1="400" y2="400" />
+		</g>
+	</g>
+</svg>
