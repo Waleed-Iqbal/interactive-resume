@@ -6,7 +6,7 @@ import "./styles/home.scss";
 
 ReactDOM.render(
   <HashRouter>
-    <div className="home-container">
+    <div className="app-container">
       <App />
     </div>
   </HashRouter>,

@@ -3,7 +3,7 @@
 
 @media screen and (min-width: $mobile-breakpoint) {
 
-  .home-container {
+  .app-container {
     display: grid;
     height: 100vh;
     grid-template-rows: 100%;
@@ -16,5 +16,32 @@
     // background-color: theme-color(primary, dark);
     // background: url('../images/icons/icon-resume.svg') no-repeat;
 
+  }
+
+  .home-container {
+
+  }
+
+  .profile-picture-slider {
+    position: relative;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+    }
+  }
+
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .profile-picture-avatar {
+    padding-left: 20px;
+    width: 140px;
+    height: 170px;
   }
 }
