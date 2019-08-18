@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/simple-resume.scss";
 import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
+import AnimatingText from './animating-text';
 
 export function SimpleResume() {
   return (
@@ -14,17 +15,15 @@ export function SimpleResume() {
         <div className="transform-animation">
           <p className="transform-text">I transform &nbsp;</p>
           <p className="transform-animating-text">
-            <span className="transform-qualities">
-              <span className="transform-quality"><em>mockup</em></span>
-              <span className="transform-quality"><em>complex</em></span>
-              <span className="transform-quality"><em>lagging</em></span>
-            </span>
+            <AnimatingText
+              containerClassName="transform-qualities"
+              textClassName="transform-quality"
+              textList={['mockup','complex','lagging']} />
             <span className="into">into</span>
-            <span className="transform-qualities">
-              <span className="transform-quality"><em>layout</em></span>
-              <span className="transform-quality"><em>simple</em></span>
-              <span className="transform-quality"><em>leading</em></span>
-            </span>
+            <AnimatingText
+              containerClassName="transform-qualities"
+              textClassName="transform-quality"
+              textList={['layout','cosimplemplex','leading']} />
           </p>
           <p> ... and much more</p>
         </div>
