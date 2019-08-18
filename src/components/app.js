@@ -77,6 +77,15 @@ class App extends React.Component {
             />
             <Route
               exact
+              path="/morse-code"
+              render={
+                props => (
+                  <Page {...props} component={UnderConstruction} title="Morse Code" heading="Morse Code" />
+                )
+              }
+            />
+            <Route
+              exact
               path="/blog"
               render={
                 props => (
