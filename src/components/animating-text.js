@@ -6,7 +6,7 @@ export default function AnimatingText(props) {
   return (
     <span className={props.containerClassName}>
       {
-        props.textList.map((text) => <span className={props.textClassName}><em>{text}</em></span>)
+        props.textList.map((text) => <span key={text} className={props.textClassName}><em>{text}</em></span>)
       }
     </span>
   )

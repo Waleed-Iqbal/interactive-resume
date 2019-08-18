@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-
+import AnimatingText from './animating-text';
 import "../styles/home.scss";
 
 export default function Home() {
@@ -31,12 +31,26 @@ export default function Home() {
 
   return (
     <div className="home-container">
-      <h1>Hi, Ni Hau, Hola, Bonjure, Salam, Marhaba, Guten Tag, Namaste, Konnichiwa </h1>
+      <AnimatingText
+        containerClassName="home-greetings"
+        textClassName="home-greeting"
+        textList={['Hi', 'Ni Hau', 'Hola', 'Bonjour', 'Salam', 'Marhaba', 'Guten Tag', 'Namaste', 'Konnichiwa']} />
+
+      <div
+        className="profile-picture-slider"
+        onMouseEnter={sliderEffectHandler}
+        onMouseMove={sliderEffectHandler}
+        onMouseLeave={sliderEffectHandler}>
       {/* <img src="https://i.imgur.com/ID1ZAgw.jpg" alt="profile picture"/> */}
       {/* <img src={require('../images/profile-pic.jpg')} alt="profile picture"/> */}
-      <div className="profile-picture-slider" onMouseEnter={sliderEffectHandler} onMouseMove={sliderEffectHandler} onMouseLeave={sliderEffectHandler} >
-        <img className="profile-picture" src={require('../images/profile-pic.jpg')} alt="profile picture" />
-        <img className="profile-picture-avatar" src={require('../images/profile-pic-avatar.jpg')} alt="profile picture avatar" />
+        <img
+          className="profile-picture"
+          src={require('../images/profile-pic.jpg')}
+          alt="profile picture" />
+        <img
+          className="profile-picture-avatar"
+          src={require('../images/profile-pic-avatar.jpg')}
+          alt="profile picture avatar" />
       </div>
     </div>
   )

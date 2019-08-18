@@ -13,13 +13,50 @@
 
   .main-section {
     grid-area: main-section;
-    // background-color: theme-color(primary, dark);
-    // background: url('../images/icons/icon-resume.svg') no-repeat;
-
   }
 
   .home-container {
 
+  }
+
+  .home-greetings {
+    font-size: 2rem;
+    // position: relative;
+  }
+
+  .home-greeting {
+    width: 10rem;
+    position: absolute;
+    top: 0;
+  }
+
+  .home-greeting:nth-child(n+2) {
+    opacity: 0;
+  }
+
+  $total-animation-time: 27s;
+  $total-texts: 9;
+  $time-slice: 100/$total-texts;
+  $appear-disappear-time: ($time-slice - $total-texts)/2;
+  // total time slice each text gets = 100/$total-texts = 11.11
+  @for $i from 1 through $total-texts {
+    .home-greeting:nth-child(#{$i}) {
+      animation: home-greeting-#{$i} $total-animation-time linear infinite;
+    }
+    @keyframes home-greeting-#{$i} {
+      $index: $i - 1;
+      $begin: $index * $time-slice;
+      $startVisibility: $begin+$appear-disappear-time;
+      $endVisibility: ($startVisibility*1) + $total-texts;
+
+      #{$startVisibility * 1%}, #{$endVisibility * 1%} {
+        opacity: 1;
+      }
+
+      #{$begin * 1%}, #{($endVisibility+$appear-disappear-time) * 1%}, 100% {
+        opacity: 0;
+      }
+    }
   }
 
   .profile-picture-slider {
@@ -43,9 +80,6 @@
   }
 
   .profile-picture-avatar {
-    // padding-left: 20px;
-    // width: 140px;
-    // height: 170px;
     background-color: white;
   }
 }
