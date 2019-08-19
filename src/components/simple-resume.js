@@ -23,7 +23,7 @@ export function SimpleResume() {
             <AnimatingText
               containerClassName="transform-qualities"
               textClassName="transform-quality"
-              textList={['layout','cosimplemplex','leading']} />
+              textList={['reality','simple','leading']} />
           </p>
           <p> ... and much more</p>
         </div>
