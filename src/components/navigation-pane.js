@@ -10,7 +10,7 @@ export default function NavigationPane() {
         <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="About me" />
         <NavigationItem navigationClass="nav-simplistic-resume" linkTo="/simple-resume" text="Resume" />
         {/* <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" /> */}
-        <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" />
+        {/* <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" /> */}
         <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Contact Me" />
         <li className="demos"><p>Demos</p></li>
         <NavigationItem navigationClass="demo nav-video-player" linkTo="/video-player" text="Video Player" />
