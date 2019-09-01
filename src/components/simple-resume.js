@@ -18,12 +18,12 @@ export function SimpleResume() {
             <AnimatingText
               containerClassName="transform-qualities"
               textClassName="transform-quality"
-              textList={['mockup','complex','lagging']} />
+              textList={['mockup', 'complex', 'lagging']} />
             <span className="into">into</span>
             <AnimatingText
               containerClassName="transform-qualities"
               textClassName="transform-quality"
-              textList={['reality','simple','leading']} />
+              textList={['reality', 'simple', 'leading']} />
           </p>
           <p> ... and much more</p>
         </div>
@@ -36,11 +36,14 @@ export function SimpleResume() {
             <h3>Contact me</h3>
             <ul>
               <li className="email">
-                <a className="icon icon-email" href="mailto:ikhawajawaleed@gmail.com"></a>Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank" rel="noopener noreferrer">ikhawajawaleed@gmail.com</a></li>
-              <li className="linked-in">
-              <a className="icon icon-linkedin" href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+                <a className="icon icon-email" href="mailto:ikhawajawaleed@gmail.com"></a>Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank" rel="noopener noreferrer">ikhawajawaleed@gmail.com</a>
               </li>
-              <li className="skype-me"><a className="icon icon-skype" title="clicking it won't work, search this id on skype"></a>Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a></li>
+              <li className="linked-in">
+                <a className="icon icon-linkedin" href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+              </li>
+              <li className="skype-me">
+                <a className="icon icon-skype" title="clicking it won't work, search this id on skype"></a>Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a>
+              </li>
             </ul>
           </div>
           <div className="hire-me">
@@ -51,21 +54,45 @@ export function SimpleResume() {
           </div>
           <div className="social-presence">
             <h3>Social and technical presence</h3>
-          <ul>
-            <li className="git-hub">
-              Want a free project? checkout my <a href="https://github.com/Waleed-Iqbal" target="_blank" rel="noopener noreferrer">Github</a> account.
-            </li>
-            <li className="stack-overflow">
-              Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer">Stackoverflow</a> profile
-            </li>
-            <li className="facebook">
-              Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer">Facebook</a> profile
-            </li>
-            <li className="quora">
-              Want to ask questions together? Let's go to <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank" rel="noopener noreferrer">Quora</a>
-            </li>
-          </ul>
-        </div>
+            <ul>
+              <li className="git-hub">
+                <a href="https://github.com/Waleed-Iqbal" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={require('../images/icons/icon-github.png')}
+                    alt="GitHub icon" />
+                </a>
+                Want a free project? checkout my
+                <a href="https://github.com/Waleed-Iqbal" target="_blank" rel="noopener noreferrer">
+                  Github
+                </a> account.
+              </li>
+              <li className="stack-overflow">
+                <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer"><img
+                  src={require('../images/icons/icon-stackoverflow.png')}
+                  alt="Stackoverflow icon" /></a>
+                Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer">Stackoverflow</a> profile
+              </li>
+              <li className="facebook">
+                <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer"><img
+                  src={require('../images/icons/icon-fb.png')}
+                  alt="Facebook icon" /></a>
+                Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer">Facebook</a> profile
+              </li>
+              <li className="quora">
+                <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank" rel="noopener noreferrer"><img
+                  src={require('../images/icons/icon-quora.png')}
+                  alt="Quora icon" /></a>
+                Want to ask questions together? Let's go to <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank" rel="noopener noreferrer">Quora</a>
+              </li>
+
+              <li className="reddit">
+                <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer"><img
+                  src={require('../images/icons/icon-reddit.png')}
+                  alt="Reddit icon" /></a>
+                Are you are reddit person? So am I <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer">Reddit</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       {/*<section className="skill-set"></section>
