@@ -95,15 +95,15 @@ export function SimpleResume() {
           </div>
         </div>
       </section>
-      {/*<section className="skill-set"></section>
+      <section className="skill-set"></section>
       <section className="work-experience">
-        <li>KeepTrucking</li>
-        <li>NowSoftware Inc.</li>
-        <li>Bentley Systems Inc.</li>
-        <li>Contour Software Inc. / Trapeze</li>
-        <li>LMKR</li>
+        <li>KeepTrucking  Feb 2019 - present</li>
+        <li>NowSoftware Inc. Sep 2018 - January 1019</li>
+        <li>Bentley Systems Inc. April 2017 - August 2018</li>
+        <li>Contour Software Inc. / Trapeze Dec 2015 - March 2017</li>
+        <li>LMKR Sep 2014 - August 2015</li>
       </section>
-      <section className="certs-honors">
+     {/* <section className="certs-honors">
         <ul>
           <li>Microsoft Certified Professional. (Oct 2015)</li>
           <li>Gold Medal for best undergraduate final year project awarded by National University of Science and Technology. (Aug 2014)</li>
