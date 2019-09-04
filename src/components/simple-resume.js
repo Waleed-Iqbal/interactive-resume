@@ -125,7 +125,7 @@ export function SimpleResume() {
           <li>LMKR Sep 2014 - August 2015</li>
         </ul>
       </section>
-      {/* <section className="certs-honors">
+      <section className="certs-honors">
         <ul>
           <li>Microsoft Certified Professional. (Oct 2015)</li>
           <li>Gold Medal for best undergraduate final year project awarded by National University of Science and Technology. (Aug 2014)</li>
@@ -134,18 +134,14 @@ export function SimpleResume() {
           <li>Gold Medal and Cash Prize from school in Matriculation exams. (2008)</li>
         </ul>
       </section>
-      <section className="education">
-        <li>Undergraduate</li>
-        <li>College</li>
-        <li>School</li>
-      </section>
       <section className="interests">
         <ul>
           <li>Cycling</li>
           <li>Reading</li>
           <li>Playing and making games</li>
+          <li>Animations, animations and animation</li>
         </ul>
-      </section>*/}
+      </section>
     </main>
   );
 }
