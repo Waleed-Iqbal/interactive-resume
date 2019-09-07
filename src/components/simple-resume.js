@@ -72,6 +72,12 @@ export function SimpleResume() {
                   alt="Stackoverflow icon" /></a>
                 Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer">Stackoverflow</a> profile
               </li>
+              <li className="freecodecamp">
+                <a href="https://www.freecodecamp.org/waleed-iqbal" target="_blank" rel="noopener noreferrer"><img
+                  src={require('../images/icons/icon-freecodecamp.svg')}
+                  alt="FreeCodeCamp icon" width="32px" height="32px"  /></a>
+                  Enjoy learning from free sources? ME TOO, here is my <a href="https://www.freecodecamp.org/waleed-iqbal" target="_blank" rel="noopener noreferrer">FreeCodeCamp</a> profile
+              </li>
               <li className="facebook">
                 <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer"><img
                   src={require('../images/icons/icon-fb.png')}
@@ -89,7 +95,7 @@ export function SimpleResume() {
                 <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer"><img
                   src={require('../images/icons/icon-reddit.png')}
                   alt="Reddit icon" /></a>
-                Are you are reddit person? So am I <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer">Reddit</a>
+                  Are you are reddit person? So am I <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer">Reddit</a>
               </li>
             </ul>
           </div>
