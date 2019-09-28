@@ -29,13 +29,9 @@ export default function Home() {
     let upperLimit = 180;
     newPositionOfAvatar = e.pageX - profilePictureData.left;
 
-    if (newPositionOfAvatar <= lowerLimit) {
-      newPositionOfAvatar = lowerLimit;
-    }
+    if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
 
-    if (newPositionOfAvatar >= upperLimit) {
-      newPositionOfAvatar = upperLimit;
-    }
+    if (newPositionOfAvatar >= upperLimit) newPositionOfAvatar = upperLimit;
 
     newPositionOfAvatar += "px";
     window.requestAnimationFrame(slideAvatar);
