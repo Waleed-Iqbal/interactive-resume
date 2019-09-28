@@ -27,7 +27,6 @@ export default function Home() {
   let sliderEffectHandler = (e) => {
     let lowerLimit = 0;
     let upperLimit = 180;
-    console.log(`profilePictureData.left: ... ${profilePictureData.left}  ... e.pageX: ... ${e.pageX}`)
     newPositionOfAvatar = e.pageX - profilePictureData.left;
 
     if (newPositionOfAvatar <= lowerLimit) {
@@ -39,7 +38,6 @@ export default function Home() {
     }
 
     newPositionOfAvatar += "px";
-    console.log(newPositionOfAvatar);
     window.requestAnimationFrame(slideAvatar);
   }
 
