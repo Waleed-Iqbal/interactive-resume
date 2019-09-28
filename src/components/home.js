@@ -25,7 +25,21 @@ export default function Home() {
   }
 
   let sliderEffectHandler = (e) => {
-    newPositionOfAvatar = (e.pageX - profilePictureData.left) + "px";
+    let lowerLimit = 0;
+    let upperLimit = 180;
+    console.log(`profilePictureData.left: ... ${profilePictureData.left}  ... e.pageX: ... ${e.pageX}`)
+    newPositionOfAvatar = e.pageX - profilePictureData.left;
+
+    if (newPositionOfAvatar <= lowerLimit) {
+      newPositionOfAvatar = lowerLimit;
+    }
+
+    if (newPositionOfAvatar >= upperLimit) {
+      newPositionOfAvatar = upperLimit;
+    }
+
+    newPositionOfAvatar += "px";
+    console.log(newPositionOfAvatar);
     window.requestAnimationFrame(slideAvatar);
   }
 
@@ -41,8 +55,8 @@ export default function Home() {
         onMouseEnter={sliderEffectHandler}
         onMouseMove={sliderEffectHandler}
         onMouseLeave={sliderEffectHandler}>
-      {/* <img src="https://i.imgur.com/ID1ZAgw.jpg" alt="profile picture"/> */}
-      {/* <img src={require('../images/profile-pic.jpg')} alt="profile picture"/> */}
+        {/* <img src="https://i.imgur.com/ID1ZAgw.jpg" alt="profile picture"/> */}
+        {/* <img src={require('../images/profile-pic.jpg')} alt="profile picture"/> */}
         <img
           className="profile-picture"
           src={require('../images/profile-pic.jpg')}
