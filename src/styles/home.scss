@@ -39,21 +39,26 @@
   $total-texts: 9;
   $time-slice: 100/$total-texts;
   $appear-disappear-time: ($time-slice - $total-texts)/2;
+
   @for $i from 1 through $total-texts {
     .home-greeting:nth-child(#{$i}) {
       animation: home-greeting-#{$i} $total-animation-time linear infinite;
     }
+
     @keyframes home-greeting-#{$i} {
       $index: $i - 1; // the first animation need to start at 0%
-      $beginAnimation: $index * $time-slice;// the first animation need to start at 0%, rest is a multiplier
+      $beginAnimation: $index * $time-slice; // the first animation need to start at 0%, rest is a multiplier
       $startVisibility: $beginAnimation + $appear-disappear-time;
       $endVisibility: ($startVisibility*1) + $total-texts;
 
-      #{$beginAnimation * 1%}, #{($endVisibility+$appear-disappear-time) * 1%}, 100% {
+      #{$beginAnimation * 1%},
+      #{($endVisibility+$appear-disappear-time) * 1%},
+      100% {
         opacity: 0;
       }
 
-      #{$startVisibility * 1%}, #{$endVisibility * 1%} {
+      #{$startVisibility * 1%},
+      #{$endVisibility * 1%} {
         opacity: 1;
       }
     }
@@ -67,19 +72,56 @@
     overflow: hidden;
     border: 2px solid black;
 
-    img {
+    div {
       position: absolute;
       width: 100%;
       height: 100%;
     }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .profile-picture-container {
+      .profile-picture {
+        // width: 100%;
+        // height: 100%;
+      }
+    }
+
+    .profile-picture-avatar-container {
+      .profile-picture-avatar {
+        background-color: white;
+      }
+    }
+
+    .slider-container {
+      width: 205%;
+      background-image: url(../images/profile-pic-avatar.jpg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0.3;
+    }
+
+    .left-slider,
+    .right-slider {
+      display: inline-block;
+      position: static;
+      box-sizing: border-box;
+      width: 50%;
+    }
+
+    .left-slider {
+      // background-color: bisque;
+      border-right: 4px solid black;
+    }
+
+    .right-slider {
+      // background-color: blueviolet;
+      border-left: 4px solid black;
+    }
   }
 
-  .profile-picture {
-    width: 100%;
-    height: 100%;
-  }
-
-  .profile-picture-avatar {
-    background-color: white;
-  }
 }

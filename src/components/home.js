@@ -5,35 +5,45 @@ import "../styles/home.scss";
 export default function Home() {
 
   let profilePictureData = {};
-  let avatar = null;
+  let slider = null;
   let start = null;
+  let lowerLimit = -184;
+  let upperLimit = -8;
   let newPositionOfAvatar = 0;
 
   useEffect(() => {
     profilePictureData = document.getElementsByClassName('profile-picture-slider')[0].getClientRects()[0];
-    avatar = document.getElementsByClassName('profile-picture-avatar')[0];
-    console.log(profilePictureData);
+    slider = document.getElementsByClassName('slider-container')[0];
+
   }, []);
 
   function slideAvatar(timestamp) {
     if (!start) start = timestamp;
     var progress = timestamp - start;
-    avatar.style.left = newPositionOfAvatar;
+
+    if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
+    if (newPositionOfAvatar >= upperLimit) newPositionOfAvatar = upperLimit;
+
+    let newBackgroundPosition = newPositionOfAvatar - 180;
+    newPositionOfAvatar += "px";
+
+    newBackgroundPosition += "px";
+    slider.style.left = newPositionOfAvatar;
+
+
     if (progress < 400) {
       window.requestAnimationFrame(slideAvatar);
     }
   }
 
   let sliderEffectHandler = (e) => {
-    let lowerLimit = 0;
-    let upperLimit = 180;
-    newPositionOfAvatar = e.pageX - profilePictureData.left;
+
+
+    newPositionOfAvatar = e.pageX - profilePictureData.left - 184;
 
     if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
-
     if (newPositionOfAvatar >= upperLimit) newPositionOfAvatar = upperLimit;
 
-    newPositionOfAvatar += "px";
     window.requestAnimationFrame(slideAvatar);
   }
 
@@ -48,17 +58,24 @@ export default function Home() {
         className="profile-picture-slider"
         onMouseEnter={sliderEffectHandler}
         onMouseMove={sliderEffectHandler}
-        onMouseLeave={sliderEffectHandler}>
-        {/* <img src="https://i.imgur.com/ID1ZAgw.jpg" alt="profile picture"/> */}
-        {/* <img src={require('../images/profile-pic.jpg')} alt="profile picture"/> */}
-        <img
-          className="profile-picture"
-          src={require('../images/profile-pic.jpg')}
-          alt="profile picture" />
-        <img
-          className="profile-picture-avatar"
-          src={require('../images/profile-pic-avatar.jpg')}
-          alt="profile picture avatar" />
+        onMouseLeave={sliderEffectHandler}
+      >
+        <div className="profile-picture-container">
+          <img
+            className="profile-picture"
+            src={require('../images/profile-pic.jpg')}
+            alt="profile picture" />
+        </div>
+        <div className="slider-container">
+          <div className="left-slider"></div>
+          <div className="right-slider"></div>
+        </div>
+        {/* <div className="profile-picture-avatar-container">
+          <img
+            className="profile-picture-avatar"
+            src={require('../images/profile-pic-avatar.jpg')}
+            alt="profile picture avatar" />
+        </div> */}
       </div>
     </div>
   )
