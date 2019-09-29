@@ -9,13 +9,29 @@ export default function Home() {
   let start = null;
   let lowerLimit = -184;
   let upperLimit = -8;
+  let lowerWidthPercentage= 25;
+  let upperWidthPercentage= 75;
   let newPositionOfAvatar = 0;
+  let leftSlider = null;
+  let rightSlider = null;
 
   useEffect(() => {
     profilePictureData = document.getElementsByClassName('profile-picture-slider')[0].getClientRects()[0];
     slider = document.getElementsByClassName('slider-container')[0];
+    leftSlider = document.getElementsByClassName('left-slider')[0];
+    rightSlider = document.getElementsByClassName('right-slider')[0];
 
   }, []);
+
+  function calculateLeftSliderWidth() {
+    let newWidthPercentage = (newPositionOfAvatar + 272)/(3.52);
+    console.log(`newWidthPercentage:  ${newWidthPercentage}`);
+
+    if(newWidthPercentage <= lowerWidthPercentage) newWidthPercentage = lowerWidthPercentage;
+    if(newWidthPercentage >= upperWidthPercentage) newWidthPercentage = upperWidthPercentage;
+
+    return newWidthPercentage;
+  }
 
   function slideAvatar(timestamp) {
     if (!start) start = timestamp;
@@ -24,11 +40,10 @@ export default function Home() {
     if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
     if (newPositionOfAvatar >= upperLimit) newPositionOfAvatar = upperLimit;
 
-    let newBackgroundPosition = newPositionOfAvatar - 180;
-    newPositionOfAvatar += "px";
 
-    newBackgroundPosition += "px";
-    slider.style.left = newPositionOfAvatar;
+    let newBackgroundPosition = calculateLeftSliderWidth() ;
+    leftSlider.style.width = newBackgroundPosition + "%";
+    rightSlider.style.width = (100 - newBackgroundPosition) + "%";
 
 
     if (progress < 400) {
