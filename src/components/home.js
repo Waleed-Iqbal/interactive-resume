@@ -5,33 +5,20 @@ import "../styles/home.scss";
 export default function Home() {
 
   let profilePictureData = {};
-  let slider = null;
+  let profilePictureAvatar = null;
   let start = null;
   let lowerLimit = -184;
   let upperLimit = -8;
-  let lowerWidthPercentage= 25;
-  let upperWidthPercentage= 75;
-  let newPositionOfAvatar = 0;
-  let leftSlider = null;
-  let rightSlider = null;
+  let lowerWidthPercentage= 0;
+  let upperWidthPercentage= 100;
+  let newPositionOfAvatar = 50;
 
   useEffect(() => {
     profilePictureData = document.getElementsByClassName('profile-picture-slider')[0].getClientRects()[0];
-    slider = document.getElementsByClassName('slider-container')[0];
-    leftSlider = document.getElementsByClassName('left-slider')[0];
-    rightSlider = document.getElementsByClassName('right-slider')[0];
+    profilePictureAvatar = document.getElementsByClassName('profile-picture-avatar-container')[0];
 
   }, []);
 
-  function calculateLeftSliderWidth() {
-    let newWidthPercentage = (newPositionOfAvatar + 272)/(3.52);
-    console.log(`newWidthPercentage:  ${newWidthPercentage}`);
-
-    if(newWidthPercentage <= lowerWidthPercentage) newWidthPercentage = lowerWidthPercentage;
-    if(newWidthPercentage >= upperWidthPercentage) newWidthPercentage = upperWidthPercentage;
-
-    return newWidthPercentage;
-  }
 
   function slideAvatar(timestamp) {
     if (!start) start = timestamp;
@@ -40,11 +27,12 @@ export default function Home() {
     if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
     if (newPositionOfAvatar >= upperLimit) newPositionOfAvatar = upperLimit;
 
+    newPositionOfAvatar = (newPositionOfAvatar + 184)/1.76;
 
-    let newBackgroundPosition = calculateLeftSliderWidth() ;
-    leftSlider.style.width = newBackgroundPosition + "%";
-    rightSlider.style.width = (100 - newBackgroundPosition) + "%";
+    if (newPositionOfAvatar === upperWidthPercentage) return; // bad hack
 
+    profilePictureAvatar.style.width = newPositionOfAvatar + '%';
+    console.log(`profilePictureAvatar.style.width: ${profilePictureAvatar.style.width}`);
 
     if (progress < 400) {
       window.requestAnimationFrame(slideAvatar);
@@ -81,16 +69,12 @@ export default function Home() {
             src={require('../images/profile-pic.jpg')}
             alt="profile picture" />
         </div>
-        <div className="slider-container">
-          <div className="left-slider"></div>
-          <div className="right-slider"></div>
-        </div>
-        {/* <div className="profile-picture-avatar-container">
+        <div className="profile-picture-avatar-container">
           <img
             className="profile-picture-avatar"
             src={require('../images/profile-pic-avatar.jpg')}
-            alt="profile picture avatar" />
-        </div> */}
+            alt="profile picture" />
+        </div>
       </div>
     </div>
   )
