@@ -66,7 +66,7 @@ export default function Home() {
         <div className="profile-picture-container">
           <img
             className="profile-picture"
-            src={require('../images/Picture_1.jpg')}
+            src={require('../images/profile-pic.jpg')}
             alt="profile picture" />
         </div>
         <div className="profile-picture-avatar-container">
