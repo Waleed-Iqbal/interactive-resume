@@ -9,7 +9,6 @@ export default function Home() {
   let start = null;
   let lowerLimit = -184;
   let upperLimit = -8;
-  let lowerWidthPercentage= 0;
   let upperWidthPercentage= 100;
   let newPositionOfAvatar = 50;
 
@@ -30,6 +29,7 @@ export default function Home() {
     newPositionOfAvatar = (newPositionOfAvatar + 184)/1.76;
 
     if (newPositionOfAvatar === upperWidthPercentage) return; // bad hack
+    if (newPositionOfAvatar >= 98) newPositionOfAvatar = upperWidthPercentage; // bad hack
 
     profilePictureAvatar.style.width = newPositionOfAvatar + '%';
     console.log(`profilePictureAvatar.style.width: ${profilePictureAvatar.style.width}`);
@@ -66,7 +66,7 @@ export default function Home() {
         <div className="profile-picture-container">
           <img
             className="profile-picture"
-            src={require('../images/profile-pic.jpg')}
+            src={require('../images/Picture_1.jpg')}
             alt="profile picture" />
         </div>
         <div className="profile-picture-avatar-container">
