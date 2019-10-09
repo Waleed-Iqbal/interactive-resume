@@ -15,7 +15,6 @@ export default function Home() {
   useEffect(() => {
     profilePictureData = document.getElementsByClassName('profile-picture-slider')[0].getClientRects()[0];
     profilePictureAvatar = document.getElementsByClassName('profile-picture-avatar-container')[0];
-
   }, []);
 
 
@@ -31,6 +30,7 @@ export default function Home() {
     if (newPositionOfAvatar === upperWidthPercentage) return; // bad hack
     if (newPositionOfAvatar >= 98) newPositionOfAvatar = upperWidthPercentage; // bad hack
 
+    newPositionOfAvatar = Math.round(newPositionOfAvatar);
     profilePictureAvatar.style.width = newPositionOfAvatar + '%';
     console.log(`profilePictureAvatar.style.width: ${profilePictureAvatar.style.width}`);
 
