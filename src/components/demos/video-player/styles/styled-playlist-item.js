@@ -52,15 +52,16 @@ const StyledPlaylistItem = styled.div`
 
   .video-player__video-time {
     background: #565656;
-    min-width: 45px;
+    min-width: 50px;
     color: #fff;
-    font-size: 0.8em;
-    padding: 4px;
-    height: 20px;
+    font-size: 1em;
+    padding-top: 5px;
+    height: 30px;
     text-align: center;
     border-radius: 5px;
     margin: 0 0 0 5px;
     line-height: 20px;
+    font-weight: bold;
   }
 
   .video-player__video-download {
