@@ -1,5 +1,4 @@
 import React from 'react';
-import "../styles/404.scss";
 import "../styles/globals.scss"
 import { Link } from 'react-router-dom';
 import { NavigationLinks } from '../scripts/variables';
