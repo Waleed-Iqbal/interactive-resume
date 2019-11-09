@@ -7,7 +7,7 @@ export default function NavigationPane() {
     <nav className="main-left-nav">
       <ul className="nav-tabs">
         <NavigationItem navigationClass="nav-home" linkTo="/home" text="Home" />
-        <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="About me" />
+        {/* <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="About me" /> */}
         <NavigationItem navigationClass="nav-simplistic-resume" linkTo="/simple-resume" text="Resume" />
         {/* <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" /> */}
         {/* <NavigationItem navigationClass="nav-blog" linkTo="/blog" text="Blog" /> */}

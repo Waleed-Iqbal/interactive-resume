@@ -39,7 +39,7 @@ class App extends React.Component {
                 )
               }
             />
-            <Route
+            {/* <Route
               exact
               path="/aboutwaleed"
               render={
@@ -47,7 +47,7 @@ class App extends React.Component {
                   <Page {...props} component={UnderConstruction} title="About Waleed" heading="About" />
                 )
               }
-            />
+            /> */}
             <Route
               exact
               path="/simple-resume"
