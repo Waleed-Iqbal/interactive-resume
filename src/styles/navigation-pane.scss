@@ -14,7 +14,7 @@
 
 .main-left-nav {
   grid-area: main-left-nav;
-  background-color: theme-color(backgroundColor, light);
+  background-color: getThemeColor(backgroundColor, light);
 
   li {
     list-style: none;

@@ -20,7 +20,7 @@
   position: relative;
   padding-bottom: 1em;
   justify-content: left;
-  border-bottom: 2px solid theme-color(primary, dark);
+  border-bottom: 2px solid getThemeColor(primary, dark);
   #AvatarWaleedFace {
     top: -3.4em;
     transform: scale(0.5);
@@ -148,7 +148,7 @@
   grid-area: contact-links;
 
   a {
-    color: theme-color(primary, dark);
+    color: getThemeColor(primary, dark);
     text-decoration: underline;
   }
 

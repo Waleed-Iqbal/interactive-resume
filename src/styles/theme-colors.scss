@@ -17,7 +17,7 @@ $theme-colors: (
     )
 );
 
-@function theme-color($key: 'primary', $variant: 'light') {
+@function getThemeColor($key: 'primary', $variant: 'light') {
     $map: map-get($theme-colors, $key);
     @return map-get($map, $variant);
 }
