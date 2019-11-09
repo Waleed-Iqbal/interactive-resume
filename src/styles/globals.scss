@@ -1,3 +1,5 @@
+@import './theme-colors.scss';
+
 body {
     margin: 0;
     font-size: 16px;
@@ -38,4 +40,8 @@ a {
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.link {
+    color: getThemeColor(primary, dark);
 }
