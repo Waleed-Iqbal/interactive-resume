@@ -93,7 +93,7 @@ class App extends React.Component {
                 )
               }
             /> */}
-            <Route
+            {/* <Route
               exact
               path="/contact-me"
               render={
@@ -101,7 +101,7 @@ class App extends React.Component {
                   <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
                 )
               }
-            />
+            /> */}
             {/* START: Video player */}
             <Route
               exact
