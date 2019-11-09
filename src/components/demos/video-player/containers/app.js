@@ -9,7 +9,7 @@ const VideoPlayerApp = ({ props }) => (
     <GlobalStyle />
     <VideoPlayer props={props} />
     <h2 className="text-center mt-40">
-      Courtesy <Link className="link" to="https://www.youtube.com/watch?v=iVRO0toVdYM">FreeCodeCamp</Link>.
+      Inspired by ... <Link className="link" to="https://www.youtube.com/watch?v=iVRO0toVdYM">FreeCodeCamp</Link>.
     </h2>
   </React.Fragment>
 );
