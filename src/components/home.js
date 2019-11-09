@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import AnimatingText from './animating-text';
 import "../styles/home.scss";
+import {HomePage} from "../scripts/pages-data";
 
 export default function Home() {
+
+  document.title = HomePage.pageTitle;
 
   let profilePictureData = {};
   let profilePictureAvatar = null;
@@ -32,7 +35,6 @@ export default function Home() {
 
     newPositionOfAvatar = Math.round(newPositionOfAvatar);
     profilePictureAvatar.style.width = newPositionOfAvatar + '%';
-    console.log(`profilePictureAvatar.style.width: ${profilePictureAvatar.style.width}`);
 
     if (progress < 400) {
       window.requestAnimationFrame(slideAvatar);
@@ -40,8 +42,6 @@ export default function Home() {
   }
 
   let sliderEffectHandler = (e) => {
-
-
     newPositionOfAvatar = e.pageX - profilePictureData.left - 184;
 
     if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
@@ -55,7 +55,7 @@ export default function Home() {
       <AnimatingText
         containerClassName="home-greetings"
         textClassName="home-greeting"
-        textList={['Hi', 'Ni Hau', 'Hola', 'Bonjour', 'Salam', 'Marhaba', 'Guten Tag', 'Namaste', 'Konnichiwa']} />
+        textList={HomePage.greetings} />
 
       <div
         className="profile-picture-slider"

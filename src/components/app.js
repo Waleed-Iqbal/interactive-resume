@@ -10,7 +10,7 @@ import Home from "./home";
 import { Error404 } from './error404';
 import NavigationPane from './navigation-pane';
 import LoadingAnimation from './demos/loading-animations/loading-animations';
-import { NavigationLinks } from '../scripts/variables';
+import { PageTitles, AppNavigationLinks } from '../scripts/pages-data';
 
 class App extends React.Component {
 
@@ -23,43 +23,43 @@ class App extends React.Component {
           <Switch>
             <Route
               exact
-              path={NavigationLinks.default}
+              path={AppNavigationLinks.default}
               render={
                 props => (
-                  <Page {...props} component={Home} title="Hire Waleed" />
+                  <Page {...props} component={Home} title={PageTitles.homePage} />
                 )
               }
             />
             <Route
               exact
-              path={NavigationLinks.home}
+              path={AppNavigationLinks.home}
               render={
                 props => (
-                  <Page {...props} component={Home} title="Hire Waleed" />
+                  <Page {...props} component={Home} title={PageTitles.homePage} />
                 )
               }
             />
             {/* <Route
               exact
-              path={NavigationLinks.aboutWaleed}
+              path={AppNavigationLinks.aboutWaleed}
               render={
                 props => (
-                  <Page {...props} component={UnderConstruction} title="About Waleed" heading="About" />
+                  <Page {...props} component={UnderConstruction} title={PageTitles.aboutPage} heading={PageTitles.aboutPage} />
                 )
               }
             /> */}
             <Route
               exact
-              path={NavigationLinks.simpleResume}
+              path={AppNavigationLinks.simpleResume}
               render={
                 props => (
-                  <Page {...props} component={SimpleResume} title="Resume" />
+                  <Page {...props} component={SimpleResume} title={PageTitles.simpleResume} />
                 )
               }
             />
             {/* <Route
             exact
-            path={NavigationLinks.interactiveResume}
+            path={AppNavigationLinks.interactiveResume}
             render={
               props => (
                 <Page {...props} component={UnderConstruction} title="Interactive Resume" heading="Immersive resume" />
@@ -68,25 +68,25 @@ class App extends React.Component {
           /> */}
             <Route
               exact
-              path={NavigationLinks.loadingAnimations}
+              path={AppNavigationLinks.loadingAnimations}
               render={
                 props => (
-                  <Page {...props} component={LoadingAnimation} title="Loading Animations" heading="Loading Animations" />
-                )
-              }
-            />
-            <Route
-              exact
-              path={NavigationLinks.morseCode}
-              render={
-                props => (
-                  <Page {...props} component={UnderConstruction} title="Morse Code" heading="Morse Code" />
+                  <Page {...props} component={LoadingAnimation} title={PageTitles.loadingAnimations} heading={PageTitles.loadingAnimations} />
                 )
               }
             />
             {/* <Route
               exact
-              path={NavigationLinks.blog}
+              path={AppNavigationLinks.morseCode}
+              render={
+                props => (
+                  <Page {...props} component={UnderConstruction} title="Morse Code" heading="Morse Code" />
+                )
+              }
+            /> */}
+            {/* <Route
+              exact
+              path={AppNavigationLinks.blog}
               render={
                 props => (
                   <Page {...props} component={UnderConstruction} title="Waleed - Blog" heading="Blog" />
@@ -95,7 +95,7 @@ class App extends React.Component {
             /> */}
             {/* <Route
               exact
-              path={NavigationLinks.contactMe}
+              path={AppNavigationLinks.contactMe}
               render={
                 props => (
                   <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
@@ -105,10 +105,10 @@ class App extends React.Component {
             {/* START: Video player */}
             <Route
               exact
-              path={NavigationLinks.videoPlayer}
+              path={AppNavigationLinks.videoPlayer}
               render={
                 props => (
-                  <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
+                  <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
                 )
               }
             />
@@ -117,7 +117,7 @@ class App extends React.Component {
               path="/video-player/:activeVideo"
               render={
                 props => (
-                  <Page {...props} component={VideoPlayerApp} title="Video Player" heading="Video Player" />
+                  <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
                 )
               }
             />
@@ -125,7 +125,7 @@ class App extends React.Component {
             <Route
               render={
                 props => (
-                  <Page {...props} component={Error404} title="Page not found" />
+                  <Page {...props} component={Error404} title={PageTitles.pageNotFound} />
                 )
               }
             />

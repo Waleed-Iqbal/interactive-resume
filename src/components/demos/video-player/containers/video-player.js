@@ -3,6 +3,7 @@ import Video from '../video';
 import Playlist from './playlist';
 import { ThemeProvider } from 'styled-components';
 import StyledVideoPlayer from '../styles/styled-video-player';
+import {VideoPlayerPage} from "../../../../scripts/pages-data";
 
 const theme = {
   bgcolor: "#353535",
@@ -25,6 +26,8 @@ const themeLight = {
 };
 
 const VideoPlayer = ({ props }) => {
+
+  document.title = VideoPlayerPage.pageTitle;
 
   let match = props.match,
     history = props.history,

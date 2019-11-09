@@ -1,7 +1,10 @@
 import React from 'react'
 import './loading-animations.scss';
+import {LoadingAnimationsPage} from "../../../scripts/pages-data.js";
 
 export default function LoadingAnimations() {
+  document.title = LoadingAnimationsPage.pageTitle;
+
   return (
     <div id="loaders-container">
       <SimpleLoader loaderClass="loader-1" />

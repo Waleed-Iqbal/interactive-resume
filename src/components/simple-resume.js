@@ -2,8 +2,11 @@ import React from 'react';
 import "../styles/simple-resume.scss";
 import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
 import AnimatingText from './animating-text';
+import {SimpleResumePage} from "../scripts/pages-data";
 
 export function SimpleResume() {
+  document.title = SimpleResumePage.pageTitle;
+
   return (
     <main className="resume-container">
       <section className="name-designation">

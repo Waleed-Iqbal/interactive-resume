@@ -25,7 +25,7 @@ const AboutPage = {
   pageTitle: 'About Waleed',
 }
 
-const SimpleResume = {
+const SimpleResumePage = {
   pageTitle: 'Resume',
 
 }
@@ -44,9 +44,9 @@ const PageNotFound = {
 
 const PageTitles = {
   homePage: HomePage.pageTitle,
-  aboutPage: AboutPage.pageTitle,
+  about: AboutPage.pageTitle,
   pageNotFound: PageNotFound.pageTitle,
-  simpleResume: SimpleResume.pageTitle,
+  simpleResume: SimpleResumePage.pageTitle,
   videoPlayer: VideoPlayerPage.pageTitle,
   loadingAnimationsPage: LoadingAnimationsPage.pageTitle,
 }
@@ -56,7 +56,7 @@ export {
   PageTitles,
   AboutPage,
   PageNotFound,
-  SimpleResume,
+  SimpleResumePage,
   VideoPlayerPage,
   AppNavigationLinks,
   LoadingAnimationsPage,
