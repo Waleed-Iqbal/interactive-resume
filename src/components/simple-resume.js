@@ -104,6 +104,7 @@ export function SimpleResume() {
           </div>
         </div>
       </section>
+      
       <section className="skill-set">
         <ul className="core-languages">
           <li>JavaScript</li>
@@ -125,6 +126,7 @@ export function SimpleResume() {
           <li>Photoshop</li>
         </ul>
       </section>
+      
       <section className="work-experience">
         <ul>
           <li>KeepTrucking  Feb 2019 - present</li>
@@ -134,6 +136,7 @@ export function SimpleResume() {
           <li>LMKR Sep 2014 - August 2015</li>
         </ul>
       </section>
+      
       <section className="certs-honors">
         <ul>
           <li>Microsoft Certified Professional. (Oct 2015)</li>
@@ -143,6 +146,7 @@ export function SimpleResume() {
           <li>Gold Medal and Cash Prize from school in Matriculation exams. (2008)</li>
         </ul>
       </section>
+      
       <section className="interests">
         <ul>
           <li>Cycling</li>
