@@ -31,7 +31,7 @@ const SimpleResumePage = {
 }
 
 const LoadingAnimationsPage = {
-  pageTitle: 'Animating Loaders',
+  pageTitle: 'Loaders',
 }
 
 const VideoPlayerPage = {
