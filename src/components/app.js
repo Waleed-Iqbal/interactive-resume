@@ -84,7 +84,7 @@ class App extends React.Component {
                 )
               }
             /> */}
-            <Route
+            {/* <Route
               exact
               path={AppNavigationLinks.emailSignatures}
               render={
@@ -92,7 +92,7 @@ class App extends React.Component {
                   <Page {...props} component={UnderConstruction} title="Email Signatures" heading="Email Signatures" />
                 )
               }
-            />
+            /> */}
             {/* <Route
               exact
               path={AppNavigationLinks.contactMe}
