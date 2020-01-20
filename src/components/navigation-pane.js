@@ -15,7 +15,7 @@ export default function NavigationPane() {
         <li className="demos"><p>Demos</p></li>
         <NavigationItem navigationClass="demo nav-video-player" linkTo="/video-player" text="Video Player" />
         <NavigationItem navigationClass="demo nav-loading-animation" linkTo={AppNavigationLinks.loadingAnimations} text="Loaders" />
-        <NavigationItem navigationClass="nav-email-signatures" linkTo={AppNavigationLinks.EmailSignatures} text="Email Signatures" />
+        <NavigationItem navigationClass="demo nav-email-signatures" linkTo={AppNavigationLinks.EmailSignatures} text="Email Signatures" />
         {/* <NavigationItem navigationClass="demo nav-morse-code" linkTo="/morse-code" text="Morse Code" /> */}
       </ul>
     </nav>
