@@ -84,15 +84,15 @@ class App extends React.Component {
                 )
               }
             /> */}
-            {/* <Route
+            <Route
               exact
-              path={AppNavigationLinks.blog}
+              path={AppNavigationLinks.emailSignatures}
               render={
                 props => (
-                  <Page {...props} component={UnderConstruction} title="Waleed - Blog" heading="Blog" />
+                  <Page {...props} component={UnderConstruction} title="Email Signatures" heading="Email Signatures" />
                 )
               }
-            /> */}
+            />
             {/* <Route
               exact
               path={AppNavigationLinks.contactMe}

@@ -2,13 +2,14 @@
 const AppNavigationLinks = {
   default: '/',
   home: '/home',
-  blog: 'blog',
+  emailSignatures: '/email-signatures',
   morseCode: '/morseCode',
   contactMe: '/contact-me',
   aboutWaleed: '/about-waleed',
   simpleResume: '/simple-resume',
   interactiveResume: '/interactive-resume',
   loadingAnimations: '/loading-animations',
+  EmailSignatures: '/email-signatures',
 
   videoPlayer: '/video-player',
   get videoPlayer_ActiveVideo() {
