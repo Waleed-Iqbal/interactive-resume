@@ -12,146 +12,136 @@ import NavigationPane from './navigation-pane';
 import LoadingAnimation from './demos/loading-animations/loading-animations';
 import { PageTitles, AppNavigationLinks } from '../scripts/pages-data';
 
-class App extends React.Component {
-
-  render() {
-    return (
-      <React.Fragment>
-        <NavigationPane />
-        {/* NavBar is not inside Switch since its gonna be displayed on all pages */}
-        <main className="main-section">
-          <Switch>
-            <Route
-              exact
-              path={AppNavigationLinks.default}
-              render={
-                props => (
-                  <Page {...props} component={Home} title={PageTitles.homePage} />
-                )
-              }
-            />
-            <Route
-              exact
-              path={AppNavigationLinks.home}
-              render={
-                props => (
-                  <Page {...props} component={Home} title={PageTitles.homePage} />
-                )
-              }
-            />
-            {/* <Route
-              exact
-              path={AppNavigationLinks.aboutWaleed}
-              render={
-                props => (
-                  <Page {...props} component={UnderConstruction} title={PageTitles.aboutPage} heading={PageTitles.aboutPage} />
-                )
-              }
-            /> */}
-            <Route
-              exact
-              path={AppNavigationLinks.simpleResume}
-              render={
-                props => (
-                  <Page {...props} component={SimpleResume} title={PageTitles.simpleResume} />
-                )
-              }
-            />
-            {/* <Route
+export default function App() {
+  return (
+    <React.Fragment>
+      <NavigationPane />
+      {/* NavBar is not inside Switch since its gonna be displayed on all pages */}
+      <main className="main-section">
+        <Switch>
+          <Route
             exact
-            path={AppNavigationLinks.interactiveResume}
+            path={AppNavigationLinks.default}
             render={
               props => (
-                <Page {...props} component={UnderConstruction} title="Interactive Resume" heading="Immersive resume" />
+                <Page {...props} component={Home} title={PageTitles.homePage} />
+              )
+            }
+          />
+          <Route
+            exact
+            path={AppNavigationLinks.home}
+            render={
+              props => (
+                <Page {...props} component={Home} title={PageTitles.homePage} />
+              )
+            }
+          />
+          {/* <Route
+            exact
+            path={AppNavigationLinks.aboutWaleed}
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title={PageTitles.aboutPage} heading={PageTitles.aboutPage} />
               )
             }
           /> */}
-            <Route
-              exact
-              path={AppNavigationLinks.loadingAnimations}
-              render={
-                props => (
-                  <Page {...props} component={LoadingAnimation} title={PageTitles.loadingAnimations} heading={PageTitles.loadingAnimations} />
-                )
-              }
-            />
-            {/* <Route
-              exact
-              path={AppNavigationLinks.morseCode}
-              render={
-                props => (
-                  <Page {...props} component={UnderConstruction} title="Morse Code" heading="Morse Code" />
-                )
-              }
-            /> */}
-            {/* <Route
-              exact
-              path={AppNavigationLinks.emailSignatures}
-              render={
-                props => (
-                  <Page {...props} component={UnderConstruction} title="Email Signatures" heading="Email Signatures" />
-                )
-              }
-            /> */}
-            {/* <Route
-              exact
-              path={AppNavigationLinks.contactMe}
-              render={
-                props => (
-                  <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
-                )
-              }
-            /> */}
-            {/* START: Video player */}
-            <Route
-              exact
-              path={AppNavigationLinks.videoPlayer}
-              render={
-                props => (
-                  <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
-                )
-              }
-            />
-            <Route
-              exact
-              path="/video-player/:activeVideo"
-              render={
-                props => (
-                  <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
-                )
-              }
-            />
-            {/* END: Video player */}
-            <Route
-              render={
-                props => (
-                  <Page {...props} component={Error404} title={PageTitles.pageNotFound} />
-                )
-              }
-            />
-          </Switch>
-        </main>
-      </React.Fragment>
-    );
-  }
+          <Route
+            exact
+            path={AppNavigationLinks.simpleResume}
+            render={
+              props => (
+                <Page {...props} component={SimpleResume} title={PageTitles.simpleResume} />
+              )
+            }
+          />
+          {/* <Route
+          exact
+          path={AppNavigationLinks.interactiveResume}
+          render={
+            props => (
+              <Page {...props} component={UnderConstruction} title="Interactive Resume" heading="Immersive resume" />
+            )
+          }
+        /> */}
+          <Route
+            exact
+            path={AppNavigationLinks.loadingAnimations}
+            render={
+              props => (
+                <Page {...props} component={LoadingAnimation} title={PageTitles.loadingAnimations} heading={PageTitles.loadingAnimations} />
+              )
+            }
+          />
+          {/* <Route
+            exact
+            path={AppNavigationLinks.morseCode}
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title="Morse Code" heading="Morse Code" />
+              )
+            }
+          /> */}
+          {/* <Route
+            exact
+            path={AppNavigationLinks.emailSignatures}
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title="Email Signatures" heading="Email Signatures" />
+              )
+            }
+          /> */}
+          {/* <Route
+            exact
+            path={AppNavigationLinks.contactMe}
+            render={
+              props => (
+                <Page {...props} component={UnderConstruction} title="Get in touch" heading="Contact info" />
+              )
+            }
+          /> */}
+          {/* START: Video player */}
+          <Route
+            exact
+            path={AppNavigationLinks.videoPlayer}
+            render={
+              props => (
+                <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
+              )
+            }
+          />
+          <Route
+            exact
+            path="/video-player/:activeVideo"
+            render={
+              props => (
+                <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
+              )
+            }
+          />
+          {/* END: Video player */}
+          <Route
+            render={
+              props => (
+                <Page {...props} component={Error404} title={PageTitles.pageNotFound} />
+              )
+            }
+          />
+        </Switch>
+      </main>
+    </React.Fragment>
+  );
 }
 
 /**
  * Add a component as page when routed with custom tab
  */
-class Page extends React.Component {
+function Page(props) {
 
-  componentDidMount() {
-    document.title = this.props.title
-  }
+  document.title = props.title;
+  const PageComponent = props.component;
 
-  render() {
-    const PageComponent = this.props.component;
-
-    return (
-      <PageComponent heading={this.props.heading} props={this.props} />
-    )
-  }
+  return (
+      <PageComponent heading={props.heading} props={props} />
+  )
 }
-
-export default App;

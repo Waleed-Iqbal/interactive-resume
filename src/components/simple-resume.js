@@ -52,7 +52,7 @@ export function SimpleResume() {
           <div className="hire-me">
             <h3>Hire me</h3>
             <li className="fiverr">
-              <a className="icon icon-fiverr" href="https://www.fiverr.com/waleed_iqbal?up_rollout=true"></a>Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal?up_rollout=true" target="_blank" rel="noopener noreferrer">Fiverr 5 Star Rated Profile</a>
+              <a className="icon icon-fiverr" href="https://www.fiverr.com/waleed_iqbal"></a>Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal" target="_blank" rel="noopener noreferrer">Fiverr 5 Star Rated Profile</a>
             </li>
           </div>
           <div className="social-presence">
@@ -104,7 +104,7 @@ export function SimpleResume() {
           </div>
         </div>
       </section>
-      
+
       <section className="skill-set">
         <ul className="core-languages">
           <li>JavaScript</li>
@@ -126,7 +126,7 @@ export function SimpleResume() {
           <li>Photoshop</li>
         </ul>
       </section>
-      
+
       <section className="work-experience">
         <ul>
           <li>KeepTrucking  Feb 2019 - present</li>
@@ -136,7 +136,7 @@ export function SimpleResume() {
           <li>LMKR Sep 2014 - August 2015</li>
         </ul>
       </section>
-      
+
       <section className="certs-honors">
         <ul>
           <li>Microsoft Certified Professional. (Oct 2015)</li>
@@ -146,7 +146,7 @@ export function SimpleResume() {
           <li>Gold Medal and Cash Prize from school in Matriculation exams. (2008)</li>
         </ul>
       </section>
-      
+
       <section className="interests">
         <ul>
           <li>Cycling</li>

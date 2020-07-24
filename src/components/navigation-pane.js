@@ -22,14 +22,12 @@ export default function NavigationPane() {
   )
 }
 
-class NavigationItem extends Component {
-  render() {
-    return (
-      <li className={this.props.navigationClass}>
-        <Link to={this.props.linkTo}>
-          <p>{this.props.text}</p>
-        </Link>
-      </li>
-    )
-  }
+function NavigationItem(props) {
+  return (
+    <li className={props.navigationClass}>
+      <Link to={props.linkTo}>
+        <p>{ props.text}</p>
+      </Link>
+    </li>
+  )
 }
