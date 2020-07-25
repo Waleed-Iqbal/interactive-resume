@@ -49,21 +49,20 @@
 }
 
 .nav-home {
-  @include navigation-icon-text(1.2em, '../images/icons/icon-home.svg');
+  @include navigation-icon-text(1.2em, "../images/icons/icon-home.svg");
 }
 
 .nav-about {
-  @include navigation-icon-text(1.2em, '../images/avatar-face.svg');
+  @include navigation-icon-text(1.2em, "../images/avatar-face.svg");
 }
 
 .nav-simplistic-resume {
-  @include navigation-icon-text(1.2em, '../images/icons/icon-resume.svg');
+  @include navigation-icon-text(1.2em, "../images/icons/icon-resume.svg");
 }
 
 .nav-contact {
-   @include navigation-icon-text(1.2em, '../images/icons/icon-contact.svg');
+  @include navigation-icon-text(1.2em, "../images/icons/icon-contact.svg");
 }
-
 
 .nav-tabs .demo {
   margin: 0;

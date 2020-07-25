@@ -1,16 +1,14 @@
-
-
 @function avatar-color($key) {
   @return map-get($avatar-colors, $key);
 }
 
 $avatar-colors: (
-    face: #fafad2,
-    hair: #aaa,
-    beard: #222,
-    glasses: #222,
-    glassesBridge: #aaa,
-    eyes: #fff
+  face: #fafad2,
+  hair: #aaa,
+  beard: #222,
+  glasses: #222,
+  glassesBridge: #aaa,
+  eyes: #fff,
 );
 
 #AvatarWaleedFace {
@@ -22,7 +20,6 @@ $avatar-colors: (
   border-bottom: 20px solid avatar-color(beard);
   background-color: avatar-color(face);
 
-
   .avatar--glasses {
     top: 18%;
     width: 100%;
@@ -30,7 +27,6 @@ $avatar-colors: (
     display: flex;
     position: absolute;
     --glasses-temple-skew-angle: 22deg;
-
 
     .temple {
       width: 65px;
@@ -66,7 +62,7 @@ $avatar-colors: (
 
         25% {
           height: var(--frame-close-height);
-          margin-top: calc(var(--frame-open-height)/2);
+          margin-top: calc(var(--frame-open-height) / 2);
         }
 
         30% {
@@ -89,10 +85,11 @@ $avatar-colors: (
     }
 
     .right-temple {
-      transform: skewY(calc(var(--glasses-temple-skew-angle) * -1)); // making angle negative
+      transform: skewY(
+        calc(var(--glasses-temple-skew-angle) * -1)
+      ); // making angle negative
     }
   }
-
 
   @media screen and (max-width: 662px) {
     width: 140px;

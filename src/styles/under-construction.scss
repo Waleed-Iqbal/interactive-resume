@@ -1,93 +1,87 @@
 #UnderConstruction {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 20vh 10vh auto;
-    grid-template-areas:
-        "HomePage"
-        "Coming"
-        "Soon";
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 20vh 10vh auto;
+  grid-template-areas:
+    "HomePage"
+    "Coming"
+    "Soon";
 }
 
 #HomePage {
-    grid-area: HomePage;
-    background-color: bisque;
+  grid-area: HomePage;
+  background-color: bisque;
 }
 
 #Coming {
-    grid-area: Coming;
+  grid-area: Coming;
 }
 
 #HomePage,
 #Coming {
-    text-align: center;
-    position: relative;
-    font-size: 3rem;
+  text-align: center;
+  position: relative;
+  font-size: 3rem;
 }
 
-
 #Soon {
-    display: flex;
-    grid-area: Soon;
-    padding-top: 50px;
-    justify-content: center;
+  display: flex;
+  grid-area: Soon;
+  padding-top: 50px;
+  justify-content: center;
 
-    >div {
-
-        &:first-child,
-        &:last-child {
-            font-size: 5rem;
-            padding: 90px 10px 0 10px;
-        }
+  > div {
+    &:first-child,
+    &:last-child {
+      font-size: 5rem;
+      padding: 90px 10px 0 10px;
     }
+  }
 }
 
 @media screen and (max-width: 662px) {
+  #HomePage {
+    font-size: 2rem;
+  }
 
-    #HomePage {
-        font-size: 2rem;
+  #Soon {
+    padding-top: 10px;
+
+    > div {
+      &:first-child,
+      &:last-child {
+        font-size: 3rem;
+        padding-top: 50px;
+      }
     }
-
-    #Soon {
-        padding-top: 10px;
-
-        >div {
-
-            &:first-child,
-            &:last-child {
-                font-size: 3rem;
-                padding-top: 50px;
-            }
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 410px) {
+  #HomePage {
+    font-size: 2rem;
+  }
 
-    #HomePage {
-        font-size: 2rem;
+  #Soon {
+    font-size: 2rem;
+
+    > div {
+      &:first-child,
+      &:last-child {
+        display: none;
+      }
     }
 
-    #Soon {
-        font-size: 2rem;
-
-        >div {
-
-            &:first-child,
-            &:last-child {
-                display: none;
-            }
-        }
-
-        &:before {
-            content: "Coming S";
-            padding-top: 62px;
-            padding-right: 10px;
-        }
-
-        &:after {
-            content: "N";
-            padding-top: 62px;
-            padding-left: 10px;
-        }
+    &:before {
+      content: "Coming S";
+      padding-top: 62px;
+      padding-right: 10px;
     }
+
+    &:after {
+      content: "N";
+      padding-top: 62px;
+      padding-left: 10px;
+    }
+  }
 }

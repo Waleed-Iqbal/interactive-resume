@@ -2,13 +2,12 @@
 @import "./theme-colors.scss";
 
 @media screen and (min-width: $mobile-breakpoint) {
-
   .app-container {
     display: grid;
     height: 100vh;
     grid-template-rows: 100%;
     grid-template-columns: 160px auto;
-    grid-template-areas: "main-left-nav main-section"
+    grid-template-areas: "main-left-nav main-section";
   }
 
   .main-section {
@@ -31,13 +30,13 @@
     top: 0;
   }
 
-  .home-greeting:nth-child(n+2) {
+  .home-greeting:nth-child(n + 2) {
     opacity: 0;
   }
 
   $total-animation-time: 27s;
   $total-texts: 9;
-  $time-slice: 100/$total-texts;
+  $time-slice: 100 / $total-texts;
   $appear-disappear-time: ($time-slice - $total-texts)/2;
 
   @for $i from 1 through $total-texts {
@@ -49,7 +48,7 @@
       $index: $i - 1; // the first animation need to start at 0%
       $beginAnimation: $index * $time-slice; // the first animation need to start at 0%, rest is a multiplier
       $startVisibility: $beginAnimation + $appear-disappear-time;
-      $endVisibility: ($startVisibility*1) + $total-texts;
+      $endVisibility: ($startVisibility * 1) + $total-texts;
 
       #{$beginAnimation * 1%},
       #{($endVisibility+$appear-disappear-time) * 1%},
@@ -92,5 +91,4 @@
       }
     }
   }
-
 }

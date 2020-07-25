@@ -10,7 +10,6 @@ $dimension-value: 80px;
   height: $h;
 }
 
-
 .width-height {
   @include width-height();
 }
@@ -21,12 +20,12 @@ $dimension-value: 80px;
   padding: 5em 2em 0;
   text-align: center;
 
-  >div {
+  > div {
     margin: 2em 4em;
     @include custom-width-height(15em, 15em);
   }
 
-  >span,
+  > span,
   img {
     position: absolute;
     left: calc(50vw - 100px);
@@ -79,7 +78,6 @@ tbody tr td p {
   }
 }
 
-
 .loader-3 {
   box-sizing: border-box;
   @include width-height;
@@ -110,7 +108,6 @@ tbody tr td p {
   }
 }
 
-
 .loader-4 {
   box-sizing: border-box;
   @include width-height;
@@ -131,7 +128,6 @@ tbody tr td p {
     transform: rotate(180deg);
   }
 }
-
 
 .loader-5 {
   box-sizing: border-box;
