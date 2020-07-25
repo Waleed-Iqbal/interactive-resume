@@ -54,10 +54,10 @@ const VideoPlayer = ({ props }) => {
 
     if (videoId !== undefined) {
       const newActiveVideo = state.videos.findIndex(
-        (video) => video.id === videoId
+        video => video.id === videoId
       );
 
-      setState((prev) => ({
+      setState(prev => ({
         ...prev,
         activeVideo: prev.videos[newActiveVideo],
         autoplay: location.autoplay,
@@ -77,7 +77,7 @@ const VideoPlayer = ({ props }) => {
   ]);
 
   const nightModeCallback = () => {
-    setState((prevState) => ({
+    setState(prevState => ({
       ...prevState,
       nightmode: !prevState.nightmode,
     }));
@@ -86,7 +86,7 @@ const VideoPlayer = ({ props }) => {
   const endCallback = () => {
     const videoId = match.params.activeVideo;
     const currentVideoIndex = state.videos.findIndex(
-      (video) => video.id === videoId
+      video => video.id === videoId
     );
     const nextVideo =
       currentVideoIndex === state.videos.length - 1 ? 0 : currentVideoIndex + 1;
@@ -97,14 +97,14 @@ const VideoPlayer = ({ props }) => {
     });
   };
 
-  const progressCallback = (e) => {
+  const progressCallback = e => {
     if (e.playedSeconds >= 10 && e.playedSeconds < 11) {
       const videos = [...state.videos];
       const playedVideo = videos.find(
-        (video) => video.id === state.activeVideo.id
+        video => video.id === state.activeVideo.id
       );
       playedVideo.played = true;
-      setState((prevState) => ({ ...prevState, videos }));
+      setState(prevState => ({ ...prevState, videos }));
     }
   };
 

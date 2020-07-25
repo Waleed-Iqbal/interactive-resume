@@ -43,7 +43,7 @@ export default function Home() {
     }
   }
 
-  let sliderEffectHandler = (e) => {
+  let sliderEffectHandler = e => {
     newPositionOfAvatar = e.pageX - profilePictureData.left - 184;
 
     if (newPositionOfAvatar <= lowerLimit) newPositionOfAvatar = lowerLimit;
@@ -53,31 +53,30 @@ export default function Home() {
   };
 
   return (
-    <div className="home-container">
+    <div className='home-container'>
       <AnimatingText
-        containerClassName="home-greetings"
-        textClassName="home-greeting"
+        containerClassName='home-greetings'
+        textClassName='home-greeting'
         textList={HomePage.greetings}
       />
 
       <div
-        className="profile-picture-slider"
+        className='profile-picture-slider'
         onMouseEnter={sliderEffectHandler}
         onMouseMove={sliderEffectHandler}
-        onMouseLeave={sliderEffectHandler}
-      >
-        <div className="profile-picture-container">
+        onMouseLeave={sliderEffectHandler}>
+        <div className='profile-picture-container'>
           <img
-            className="profile-picture"
+            className='profile-picture'
             src={require("../images/profile-pic.jpg")}
-            alt="profile picture"
+            alt='profile picture'
           />
         </div>
-        <div className="profile-picture-avatar-container">
+        <div className='profile-picture-avatar-container'>
           <img
-            className="profile-picture-avatar"
+            className='profile-picture-avatar'
             src={require("../images/profile-pic-avatar.jpg")}
-            alt="profile picture"
+            alt='profile picture'
           />
         </div>
       </div>

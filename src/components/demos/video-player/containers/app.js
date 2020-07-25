@@ -8,9 +8,9 @@ const VideoPlayerApp = ({ props }) => (
   <React.Fragment>
     <GlobalStyle />
     <VideoPlayer props={props} />
-    <h2 className="text-center mt-40">
-      Inspired by ...{" "}
-      <Link className="link" to="https://www.youtube.com/watch?v=iVRO0toVdYM">
+    <h2 className='text-center mt-40'>
+      Inspired by ...
+      <Link className='link' to='https://www.youtube.com/watch?v=iVRO0toVdYM'>
         FreeCodeCamp
       </Link>
       .

@@ -4,7 +4,7 @@ import { AvatarWaleedFace } from "./avatar-waleed-face";
 
 export function AvatarWaleed() {
   return (
-    <div id="AvatarWaleed">
+    <div id='AvatarWaleed'>
       <AvatarWaleedFace />
     </div>
   );

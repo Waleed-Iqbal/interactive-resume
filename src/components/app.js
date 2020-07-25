@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 
 import "../styles/globals.scss";
-import UnderConstruction from "./under-construction";
 import VideoPlayerApp from "./demos/video-player/containers/app";
 import SimpleResume from "./simple-resume";
 import Home from "./home";
@@ -16,19 +15,19 @@ export default function App() {
     <React.Fragment>
       <NavigationPane />
       {/* NavBar is not inside Switch since its gonna be displayed on all pages */}
-      <main className="main-section">
+      <main className='main-section'>
         <Switch>
           <Route
             exact
             path={AppNavigationLinks.default}
-            render={(props) => (
+            render={props => (
               <Page {...props} component={Home} title={PageTitles.homePage} />
             )}
           />
           <Route
             exact
             path={AppNavigationLinks.home}
-            render={(props) => (
+            render={props => (
               <Page {...props} component={Home} title={PageTitles.homePage} />
             )}
           />
@@ -44,7 +43,7 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.simpleResume}
-            render={(props) => (
+            render={props => (
               <Page
                 {...props}
                 component={SimpleResume}
@@ -64,7 +63,7 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.loadingAnimations}
-            render={(props) => (
+            render={props => (
               <Page
                 {...props}
                 component={LoadingAnimation}
@@ -104,7 +103,7 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.videoPlayer}
-            render={(props) => (
+            render={props => (
               <Page
                 {...props}
                 component={VideoPlayerApp}
@@ -115,8 +114,8 @@ export default function App() {
           />
           <Route
             exact
-            path="/video-player/:activeVideo"
-            render={(props) => (
+            path='/video-player/:activeVideo'
+            render={props => (
               <Page
                 {...props}
                 component={VideoPlayerApp}
@@ -127,7 +126,7 @@ export default function App() {
           />
           {/* END: Video player */}
           <Route
-            render={(props) => (
+            render={props => (
               <Page
                 {...props}
                 component={Error404}

@@ -1,37 +1,37 @@
-import React, { Component } from "react";
+import React from "react";
 import "../styles/navigation-pane.scss";
 import { Link } from "react-router-dom";
 import { AppNavigationLinks } from "../scripts/pages-data";
 
 export default function NavigationPane() {
   return (
-    <nav className="main-left-nav">
-      <ul className="nav-tabs">
+    <nav className='main-left-nav'>
+      <ul className='nav-tabs'>
         <NavigationItem
-          navigationClass="nav-home"
+          navigationClass='nav-home'
           linkTo={AppNavigationLinks.home}
-          text="Home"
+          text='Home'
         />
         {/* <NavigationItem navigationClass="nav-about" linkTo="/aboutwaleed" text="About me" /> */}
         <NavigationItem
-          navigationClass="nav-simplistic-resume"
+          navigationClass='nav-simplistic-resume'
           linkTo={AppNavigationLinks.simpleResume}
-          text="Resume"
+          text='Resume'
         />
         {/* <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" /> */}
         {/* <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Contact Me" /> */}
-        <li className="demos">
+        <li className='demos'>
           <p>Demos</p>
         </li>
         <NavigationItem
-          navigationClass="demo nav-video-player"
-          linkTo="/video-player"
-          text="Video Player"
+          navigationClass='demo nav-video-player'
+          linkTo='/video-player'
+          text='Video Player'
         />
         <NavigationItem
-          navigationClass="demo nav-loading-animation"
+          navigationClass='demo nav-loading-animation'
           linkTo={AppNavigationLinks.loadingAnimations}
-          text="Loaders"
+          text='Loaders'
         />
         {/* <NavigationItem navigationClass="demo nav-email-signatures" linkTo={AppNavigationLinks.EmailSignatures} text="Email Signatures" /> */}
         {/* <NavigationItem navigationClass="demo nav-morse-code" linkTo="/morse-code" text="Morse Code" /> */}

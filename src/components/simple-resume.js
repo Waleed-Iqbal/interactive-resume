@@ -8,25 +8,25 @@ export function SimpleResume() {
   document.title = Data.pageTitle;
 
   return (
-    <main className="resume-container">
-      <section className="name-designation">
+    <main className='resume-container'>
+      <section className='name-designation'>
         <AvatarWaleedFace />
-        <div className="name-designation-container">
-          <h1 className="name">Waleed Iqbal</h1>
-          <h1 className="designation">Frontend Developer</h1>
+        <div className='name-designation-container'>
+          <h1 className='name'>Waleed Iqbal</h1>
+          <h1 className='designation'>Frontend Developer</h1>
         </div>
-        <div className="transform-animation">
-          <p className="transform-text">I transform &nbsp;</p>
-          <p className="transform-animating-text">
+        <div className='transform-animation'>
+          <p className='transform-text'>I transform &nbsp;</p>
+          <p className='transform-animating-text'>
             <AnimatingText
-              containerClassName="transform-qualities"
-              textClassName="transform-quality"
+              containerClassName='transform-qualities'
+              textClassName='transform-quality'
               textList={["mockup", "complex", "lagging"]}
             />
-            <span className="into">into</span>
+            <span className='into'>into</span>
             <AnimatingText
-              containerClassName="transform-qualities"
-              textClassName="transform-quality"
+              containerClassName='transform-qualities'
+              textClassName='transform-quality'
               textList={["reality", "simple", "leading"]}
             />
           </p>
@@ -34,196 +34,177 @@ export function SimpleResume() {
         </div>
       </section>
 
-      <section className="contact-info">
-        <h1 className="contact-me">Want to reach me?</h1>
-        <div className="contact-links">
-          <div className="contact-me">
+      <section className='contact-info'>
+        <h1 className='contact-me'>Want to reach me?</h1>
+        <div className='contact-links'>
+          <div className='contact-me'>
             <h3>Contact me</h3>
             <ul>
-              <li className="email">
+              <li className='email'>
                 <a
-                  className="icon icon-email"
-                  href={`mailto:${Data.emailId}`}
-                ></a>
-                Don't be shy. Drop me an email at{" "}
+                  className='icon icon-email'
+                  href={`mailto:${Data.emailId}`}></a>
+                Don't be shy. Drop me an email at
                 <a
                   href={`mailto:${Data.emailId}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   {Data.emailId}
                 </a>
               </li>
-              <li className="linked-in">
+              <li className='linked-in'>
                 <a
-                  className="icon icon-linkedin"
-                  href={Data.linkedInProfile}
-                ></a>
-                Visit my{" "}
+                  className='icon icon-linkedin'
+                  href={Data.linkedInProfile}></a>
+                Visit my
                 <a
                   href={Data.linkedInProfile}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   LinkedIn profile
                 </a>
               </li>
-              <li className="skype-me">
+              <li className='skype-me'>
                 <a
-                  className="icon icon-skype"
-                  title="clicking it won't work, search this id on skype"
-                ></a>
-                Can be reach on Skype at{" "}
+                  className='icon icon-skype'
+                  title="clicking it won't work, search this id on skype"></a>
+                Can be reach on Skype at
                 <a title="clicking it won't work, search this id on skype">
                   khawajawaleediqbal91
                 </a>
               </li>
             </ul>
           </div>
-          <div className="hire-me">
+          <div className='hire-me'>
             <h3>Hire me</h3>
-            <li className="fiverr">
+            <li className='fiverr'>
               <a
-                className="icon icon-fiverr"
-                href="https://www.fiverr.com/waleed_iqbal"
-              ></a>
-              Have a peek at my{" "}
+                className='icon icon-fiverr'
+                href='https://www.fiverr.com/waleed_iqbal'></a>
+              Have a peek at my
               <a
-                href="https://www.fiverr.com/waleed_iqbal"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+                href='https://www.fiverr.com/waleed_iqbal'
+                target='_blank'
+                rel='noopener noreferrer'>
                 Fiverr 5 Star Rated Profile
               </a>
             </li>
           </div>
-          <div className="social-presence">
+          <div className='social-presence'>
             <h3>Social and technical presence</h3>
             <ul>
-              <li className="git-hub">
+              <li className='git-hub'>
                 <a
-                  href="https://github.com/Waleed-Iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://github.com/Waleed-Iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <img
                     src={require("../images/icons/icon-github.png")}
-                    alt="GitHub icon"
+                    alt='GitHub icon'
                   />
                 </a>
                 Want a free project? checkout my
                 <a
-                  href="https://github.com/Waleed-Iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://github.com/Waleed-Iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   Github
-                </a>{" "}
+                </a>
                 account.
               </li>
-              <li className="stack-overflow">
+              <li className='stack-overflow'>
                 <a
-                  href="https://stackoverflow.com/users/4758651/waleed-iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://stackoverflow.com/users/4758651/waleed-iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <img
                     src={require("../images/icons/icon-stackoverflow.png")}
-                    alt="Stackoverflow icon"
+                    alt='Stackoverflow icon'
                   />
                 </a>
-                Need to copy paste code? visit my{" "}
+                Need to copy paste code? visit my
                 <a
-                  href="https://stackoverflow.com/users/4758651/waleed-iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://stackoverflow.com/users/4758651/waleed-iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   Stackoverflow
-                </a>{" "}
+                </a>
                 profile
               </li>
-              <li className="freecodecamp">
+              <li className='freecodecamp'>
                 <a
-                  href="https://www.freecodecamp.org/waleed-iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://www.freecodecamp.org/waleed-iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <img
                     src={require("../images/icons/icon-freecodecamp.svg")}
-                    alt="FreeCodeCamp icon"
-                    width="32px"
-                    height="32px"
+                    alt='FreeCodeCamp icon'
+                    width='32px'
+                    height='32px'
                   />
                 </a>
-                Enjoy learning from free sources? ME TOO, here is my{" "}
+                Enjoy learning from free sources? ME TOO, here is my
                 <a
-                  href="https://www.freecodecamp.org/waleed-iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://www.freecodecamp.org/waleed-iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   FreeCodeCamp
-                </a>{" "}
+                </a>
                 profile
               </li>
-              <li className="facebook">
+              <li className='facebook'>
                 <a
-                  href="https://web.facebook.com/KhawajaWaleedIqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://web.facebook.com/KhawajaWaleedIqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <img
                     src={require("../images/icons/icon-fb.png")}
-                    alt="Facebook icon"
+                    alt='Facebook icon'
                   />
                 </a>
-                Like to stalk? here is my{" "}
+                Like to stalk? here is my
                 <a
-                  href="https://web.facebook.com/KhawajaWaleedIqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://web.facebook.com/KhawajaWaleedIqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   Facebook
-                </a>{" "}
+                </a>
                 profile
               </li>
-              <li className="quora">
+              <li className='quora'>
                 <a
-                  href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://www.quora.com/profile/Khawaja-Waleed-Iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <img
                     src={require("../images/icons/icon-quora.png")}
-                    alt="Quora icon"
+                    alt='Quora icon'
                   />
                 </a>
-                Want to ask questions together? Let's go to{" "}
+                Want to ask questions together? Let's go to
                 <a
-                  href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://www.quora.com/profile/Khawaja-Waleed-Iqbal'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   Quora
                 </a>
               </li>
 
-              <li className="reddit">
+              <li className='reddit'>
                 <a
-                  href="https://www.reddit.com/user/ikhawajawaleed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://www.reddit.com/user/ikhawajawaleed'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   <img
                     src={require("../images/icons/icon-reddit.png")}
-                    alt="Reddit icon"
+                    alt='Reddit icon'
                   />
                 </a>
-                Are you are reddit person? So am I{" "}
+                Are you are reddit person? So am I
                 <a
-                  href="https://www.reddit.com/user/ikhawajawaleed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                  href='https://www.reddit.com/user/ikhawajawaleed'
+                  target='_blank'
+                  rel='noopener noreferrer'>
                   Reddit
                 </a>
               </li>
@@ -232,8 +213,8 @@ export function SimpleResume() {
         </div>
       </section>
 
-      <section className="skill-set">
-        <ul className="core-languages">
+      <section className='skill-set'>
+        <ul className='core-languages'>
           <li>JavaScript</li>
           <li>React</li>
           <li>CSS/SASS</li>
@@ -241,20 +222,20 @@ export function SimpleResume() {
           <li>C#</li>
           <li>TypeScript</li>
         </ul>
-        <ul className="other-languages">
+        <ul className='other-languages'>
           <li>Python</li>
           <li>MatLab</li>
           <li>SQL</li>
           <li>C++</li>
         </ul>
-        <ul className="tools">
+        <ul className='tools'>
           <li>VS Code</li>
           <li>Git - TFS - SVN</li>
           <li>Photoshop</li>
         </ul>
       </section>
 
-      <section className="work-experience">
+      <section className='work-experience'>
         <ul>
           <li>KeepTrucking Feb 2019 - present</li>
           <li>NowSoftware Inc. Sep 2018 - January 1019</li>
@@ -264,7 +245,7 @@ export function SimpleResume() {
         </ul>
       </section>
 
-      <section className="certs-honors">
+      <section className='certs-honors'>
         <ul>
           <li>Microsoft Certified Professional. (Oct 2015)</li>
           <li>
@@ -285,7 +266,7 @@ export function SimpleResume() {
         </ul>
       </section>
 
-      <section className="interests">
+      <section className='interests'>
         <ul>
           <li>Cycling</li>
           <li>Reading</li>

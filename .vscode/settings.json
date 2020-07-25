@@ -5,6 +5,16 @@
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
   "emmet.triggerExpansionOnTab": true,
-  "cSpell.words": ["avatar", "waleed"]
+  "cSpell.words": ["avatar", "waleed"],
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "prettier.disableLanguages": ["js"],
+  "prettier.jsxBracketSameLine": true,
+  "formatFiles.extensionsToInclude": "js"
 }

@@ -5,7 +5,7 @@ import React from "react";
 export default function AnimatingText(props) {
   return (
     <span className={props.containerClassName}>
-      {props.textList.map((text) => (
+      {props.textList.map(text => (
         <span key={text} className={props.textClassName}>
           <em>{text}</em>
         </span>

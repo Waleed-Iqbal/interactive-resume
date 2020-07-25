@@ -10,7 +10,7 @@ export function Error404() {
   return (
     <h1>
       Page not found. Go to
-      <Link to={AppNavigationLinks.home} className="link">
+      <Link to={AppNavigationLinks.home} className='link'>
         &nbsp;homepage.
       </Link>
     </h1>

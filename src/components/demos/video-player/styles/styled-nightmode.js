@@ -5,7 +5,7 @@ const StyledNightmode = styled.div`
   font-weight: 800;
   font-size: 1.6em;
   line-height: 24px;
-  color: ${(props) => props.theme.color};
+  color: ${props => props.theme.color};
   padding: 0;
   margin: 20px;
   /* CSS taken from https://www.w3schools.com/howto/howto_css_switch.asp */
