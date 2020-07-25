@@ -1,9 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export default function MorseCode() {
-  return (
-    <div>
-      Morse Code
-    </div>
-  )
+  return <div>Morse Code</div>;
 }

@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 import "../styles/simple-resume.scss";
 import { AvatarWaleedFace } from "./avatars/waleed/avatar-waleed-face";
-import AnimatingText from './animating-text';
-import {SimpleResumePage} from "../scripts/pages-data";
+import AnimatingText from "./animating-text";
+import { SimpleResumePage as Data } from "../scripts/pages-data";
 
 export function SimpleResume() {
-  document.title = SimpleResumePage.pageTitle;
+  document.title = Data.pageTitle;
 
   return (
     <main className="resume-container">
@@ -21,12 +21,14 @@ export function SimpleResume() {
             <AnimatingText
               containerClassName="transform-qualities"
               textClassName="transform-quality"
-              textList={['mockup', 'complex', 'lagging']} />
+              textList={["mockup", "complex", "lagging"]}
+            />
             <span className="into">into</span>
             <AnimatingText
               containerClassName="transform-qualities"
               textClassName="transform-quality"
-              textList={['reality', 'simple', 'leading']} />
+              textList={["reality", "simple", "leading"]}
+            />
           </p>
           <p> ... and much more</p>
         </div>
@@ -39,66 +41,191 @@ export function SimpleResume() {
             <h3>Contact me</h3>
             <ul>
               <li className="email">
-                <a className="icon icon-email" href="mailto:ikhawajawaleed@gmail.com"></a>Don't be shy. Drop me an email at <a href="mailto:ikhawajawaleed@gmail.com" target="_blank" rel="noopener noreferrer">ikhawajawaleed@gmail.com</a>
+                <a
+                  className="icon icon-email"
+                  href={`mailto:${Data.emailId}`}
+                ></a>
+                Don't be shy. Drop me an email at{" "}
+                <a
+                  href={`mailto:${Data.emailId}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {Data.emailId}
+                </a>
               </li>
               <li className="linked-in">
-                <a className="icon icon-linkedin" href="https://www.linkedin.com/in/kwaleediqbal"></a>Visit my <a href="https://www.linkedin.com/in/kwaleediqbal" target="_blank" rel="noopener noreferrer">LinkedIn profile</a>
+                <a
+                  className="icon icon-linkedin"
+                  href={Data.linkedInProfile}
+                ></a>
+                Visit my{" "}
+                <a
+                  href={Data.linkedInProfile}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn profile
+                </a>
               </li>
               <li className="skype-me">
-                <a className="icon icon-skype" title="clicking it won't work, search this id on skype"></a>Can be reach on Skype at <a title="clicking it won't work, search this id on skype" >khawajawaleediqbal91</a>
+                <a
+                  className="icon icon-skype"
+                  title="clicking it won't work, search this id on skype"
+                ></a>
+                Can be reach on Skype at{" "}
+                <a title="clicking it won't work, search this id on skype">
+                  khawajawaleediqbal91
+                </a>
               </li>
             </ul>
           </div>
           <div className="hire-me">
             <h3>Hire me</h3>
             <li className="fiverr">
-              <a className="icon icon-fiverr" href="https://www.fiverr.com/waleed_iqbal"></a>Have a peek at my <a href="https://www.fiverr.com/waleed_iqbal" target="_blank" rel="noopener noreferrer">Fiverr 5 Star Rated Profile</a>
+              <a
+                className="icon icon-fiverr"
+                href="https://www.fiverr.com/waleed_iqbal"
+              ></a>
+              Have a peek at my{" "}
+              <a
+                href="https://www.fiverr.com/waleed_iqbal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fiverr 5 Star Rated Profile
+              </a>
             </li>
           </div>
           <div className="social-presence">
             <h3>Social and technical presence</h3>
             <ul>
               <li className="git-hub">
-                <a href="https://github.com/Waleed-Iqbal" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Waleed-Iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <img
-                    src={require('../images/icons/icon-github.png')}
-                    alt="GitHub icon" />
+                    src={require("../images/icons/icon-github.png")}
+                    alt="GitHub icon"
+                  />
                 </a>
                 Want a free project? checkout my
-                <a href="https://github.com/Waleed-Iqbal" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Waleed-Iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Github
-                </a> account.
+                </a>{" "}
+                account.
               </li>
               <li className="stack-overflow">
-                <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer"><img
-                  src={require('../images/icons/icon-stackoverflow.png')}
-                  alt="Stackoverflow icon" /></a>
-                Need to copy paste code? visit my <a href="https://stackoverflow.com/users/4758651/waleed-iqbal" target="_blank" rel="noopener noreferrer">Stackoverflow</a> profile
+                <a
+                  href="https://stackoverflow.com/users/4758651/waleed-iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../images/icons/icon-stackoverflow.png")}
+                    alt="Stackoverflow icon"
+                  />
+                </a>
+                Need to copy paste code? visit my{" "}
+                <a
+                  href="https://stackoverflow.com/users/4758651/waleed-iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Stackoverflow
+                </a>{" "}
+                profile
               </li>
               <li className="freecodecamp">
-                <a href="https://www.freecodecamp.org/waleed-iqbal" target="_blank" rel="noopener noreferrer"><img
-                  src={require('../images/icons/icon-freecodecamp.svg')}
-                  alt="FreeCodeCamp icon" width="32px" height="32px"  /></a>
-                  Enjoy learning from free sources? ME TOO, here is my <a href="https://www.freecodecamp.org/waleed-iqbal" target="_blank" rel="noopener noreferrer">FreeCodeCamp</a> profile
+                <a
+                  href="https://www.freecodecamp.org/waleed-iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../images/icons/icon-freecodecamp.svg")}
+                    alt="FreeCodeCamp icon"
+                    width="32px"
+                    height="32px"
+                  />
+                </a>
+                Enjoy learning from free sources? ME TOO, here is my{" "}
+                <a
+                  href="https://www.freecodecamp.org/waleed-iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  FreeCodeCamp
+                </a>{" "}
+                profile
               </li>
               <li className="facebook">
-                <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer"><img
-                  src={require('../images/icons/icon-fb.png')}
-                  alt="Facebook icon" /></a>
-                Like to stalk? here is my <a href="https://web.facebook.com/KhawajaWaleedIqbal" target="_blank" rel="noopener noreferrer">Facebook</a> profile
+                <a
+                  href="https://web.facebook.com/KhawajaWaleedIqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../images/icons/icon-fb.png")}
+                    alt="Facebook icon"
+                  />
+                </a>
+                Like to stalk? here is my{" "}
+                <a
+                  href="https://web.facebook.com/KhawajaWaleedIqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Facebook
+                </a>{" "}
+                profile
               </li>
               <li className="quora">
-                <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank" rel="noopener noreferrer"><img
-                  src={require('../images/icons/icon-quora.png')}
-                  alt="Quora icon" /></a>
-                Want to ask questions together? Let's go to <a href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal" target="_blank" rel="noopener noreferrer">Quora</a>
+                <a
+                  href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../images/icons/icon-quora.png")}
+                    alt="Quora icon"
+                  />
+                </a>
+                Want to ask questions together? Let's go to{" "}
+                <a
+                  href="https://www.quora.com/profile/Khawaja-Waleed-Iqbal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Quora
+                </a>
               </li>
 
               <li className="reddit">
-                <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer"><img
-                  src={require('../images/icons/icon-reddit.png')}
-                  alt="Reddit icon" /></a>
-                  Are you are reddit person? So am I <a href="https://www.reddit.com/user/ikhawajawaleed" target="_blank" rel="noopener noreferrer">Reddit</a>
+                <a
+                  href="https://www.reddit.com/user/ikhawajawaleed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={require("../images/icons/icon-reddit.png")}
+                    alt="Reddit icon"
+                  />
+                </a>
+                Are you are reddit person? So am I{" "}
+                <a
+                  href="https://www.reddit.com/user/ikhawajawaleed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Reddit
+                </a>
               </li>
             </ul>
           </div>
@@ -129,7 +256,7 @@ export function SimpleResume() {
 
       <section className="work-experience">
         <ul>
-          <li>KeepTrucking  Feb 2019 - present</li>
+          <li>KeepTrucking Feb 2019 - present</li>
           <li>NowSoftware Inc. Sep 2018 - January 1019</li>
           <li>Bentley Systems Inc. April 2017 - August 2018</li>
           <li>Contour Software Inc. / Trapeze Dec 2015 - March 2017</li>
@@ -140,10 +267,21 @@ export function SimpleResume() {
       <section className="certs-honors">
         <ul>
           <li>Microsoft Certified Professional. (Oct 2015)</li>
-          <li>Gold Medal for best undergraduate final year project awarded by National University of Science and Technology. (Aug 2014)</li>
-          <li>GPA (> 3.5) based scholarship in every semester from NUST during Bachelors in Engineering. (2010 – 2014)</li>
-          <li>Merit certificate from Rector NUST for being among the high achievers of the institute. (Mar 2014)</li>
-          <li>Gold Medal and Cash Prize from school in Matriculation exams. (2008)</li>
+          <li>
+            Gold Medal for best undergraduate final year project awarded by
+            National University of Science and Technology. (Aug 2014)
+          </li>
+          <li>
+            GPA (> 3.5) based scholarship in every semester from NUST during
+            Bachelors in Engineering. (2010 – 2014)
+          </li>
+          <li>
+            Merit certificate from Rector NUST for being among the high
+            achievers of the institute. (Mar 2014)
+          </li>
+          <li>
+            Gold Medal and Cash Prize from school in Matriculation exams. (2008)
+          </li>
         </ul>
       </section>
 

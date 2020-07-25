@@ -1,6 +1,6 @@
-import React from 'react'
-import './loading-animations.scss';
-import {LoadingAnimationsPage} from "../../../scripts/pages-data.js";
+import React from "react";
+import "./loading-animations.scss";
+import { LoadingAnimationsPage } from "../../../scripts/pages-data.js";
 
 export default function LoadingAnimations() {
   document.title = LoadingAnimationsPage.pageTitle;
@@ -21,14 +21,13 @@ export default function LoadingAnimations() {
         <img className="company-loader" width="350px" height="130px" src="https://placeholder.com/wp-content/uploads/2018/10/placeholder.com-logo1.png" />
       </div> */}
     </div>
-  )
+  );
 }
 
 // Simple loader means the one with no nesting inside the div with loader-x class
 function SimpleLoader({ loaderClass }) {
-
   // Converting "loader-1" to "Loader 1"
-  let loaderName = loaderClass.split('-').join(' ').toString();
+  let loaderName = loaderClass.split("-").join(" ").toString();
   loaderName = loaderName[0].toUpperCase() + loaderName.slice(1);
 
   return (
@@ -36,5 +35,5 @@ function SimpleLoader({ loaderClass }) {
       <div className={`loader ${loaderClass}`}></div>
       <p className="loader-name">{loaderName}</p>
     </div>
-  )
+  );
 }

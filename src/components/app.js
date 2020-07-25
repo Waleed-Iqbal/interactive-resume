@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 
@@ -7,10 +6,10 @@ import UnderConstruction from "./under-construction";
 import VideoPlayerApp from "./demos/video-player/containers/app";
 import SimpleResume from "./simple-resume";
 import Home from "./home";
-import { Error404 } from './error404';
-import NavigationPane from './navigation-pane';
-import LoadingAnimation from './demos/loading-animations/loading-animations';
-import { PageTitles, AppNavigationLinks } from '../scripts/pages-data';
+import { Error404 } from "./error404";
+import NavigationPane from "./navigation-pane";
+import LoadingAnimation from "./demos/loading-animations/loading-animations";
+import { PageTitles, AppNavigationLinks } from "../scripts/pages-data";
 
 export default function App() {
   return (
@@ -22,20 +21,16 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.default}
-            render={
-              props => (
-                <Page {...props} component={Home} title={PageTitles.homePage} />
-              )
-            }
+            render={(props) => (
+              <Page {...props} component={Home} title={PageTitles.homePage} />
+            )}
           />
           <Route
             exact
             path={AppNavigationLinks.home}
-            render={
-              props => (
-                <Page {...props} component={Home} title={PageTitles.homePage} />
-              )
-            }
+            render={(props) => (
+              <Page {...props} component={Home} title={PageTitles.homePage} />
+            )}
           />
           {/* <Route
             exact
@@ -49,11 +44,13 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.simpleResume}
-            render={
-              props => (
-                <Page {...props} component={SimpleResume} title={PageTitles.simpleResume} />
-              )
-            }
+            render={(props) => (
+              <Page
+                {...props}
+                component={SimpleResume}
+                title={PageTitles.simpleResume}
+              />
+            )}
           />
           {/* <Route
           exact
@@ -67,11 +64,14 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.loadingAnimations}
-            render={
-              props => (
-                <Page {...props} component={LoadingAnimation} title={PageTitles.loadingAnimations} heading={PageTitles.loadingAnimations} />
-              )
-            }
+            render={(props) => (
+              <Page
+                {...props}
+                component={LoadingAnimation}
+                title={PageTitles.loadingAnimations}
+                heading={PageTitles.loadingAnimations}
+              />
+            )}
           />
           {/* <Route
             exact
@@ -104,28 +104,36 @@ export default function App() {
           <Route
             exact
             path={AppNavigationLinks.videoPlayer}
-            render={
-              props => (
-                <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
-              )
-            }
+            render={(props) => (
+              <Page
+                {...props}
+                component={VideoPlayerApp}
+                title={PageTitles.videoPlayer}
+                heading={PageTitles.videoPlayer}
+              />
+            )}
           />
           <Route
             exact
             path="/video-player/:activeVideo"
-            render={
-              props => (
-                <Page {...props} component={VideoPlayerApp} title={PageTitles.videoPlayer} heading={PageTitles.videoPlayer} />
-              )
-            }
+            render={(props) => (
+              <Page
+                {...props}
+                component={VideoPlayerApp}
+                title={PageTitles.videoPlayer}
+                heading={PageTitles.videoPlayer}
+              />
+            )}
           />
           {/* END: Video player */}
           <Route
-            render={
-              props => (
-                <Page {...props} component={Error404} title={PageTitles.pageNotFound} />
-              )
-            }
+            render={(props) => (
+              <Page
+                {...props}
+                component={Error404}
+                title={PageTitles.pageNotFound}
+              />
+            )}
           />
         </Switch>
       </main>
@@ -137,11 +145,8 @@ export default function App() {
  * Add a component as page when routed with custom tab
  */
 function Page(props) {
-
   document.title = props.title;
   const PageComponent = props.component;
 
-  return (
-      <PageComponent heading={props.heading} props={props} />
-  )
+  return <PageComponent heading={props.heading} props={props} />;
 }

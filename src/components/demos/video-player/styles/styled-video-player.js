@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 const StyledVideoPlayer = styled.div`
-  background: ${props => props.theme.bgcolor}; /* #353535; */
-  border: ${props => props.theme.border};
+  background: ${(props) => props.theme.bgcolor}; /* #353535; */
+  border: ${(props) => props.theme.border};
   max-width: 1800px;
   display: -webkit-box;
   display: -ms-flexbox;
