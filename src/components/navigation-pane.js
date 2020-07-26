@@ -6,6 +6,12 @@ import { AppNavigationLinks } from "../scripts/pages-data";
 export default function NavigationPane() {
   return (
     <nav className='main-left-nav'>
+      <div className='hamburger'>
+        <div className='line line-1'></div>
+        <div className='line line-2'></div>
+        <div className='line line-3'></div>
+        <div className='line line-4'></div>
+      </div>
       <ul className='nav-tabs'>
         <NavigationItem
           navigationClass='nav-home'
