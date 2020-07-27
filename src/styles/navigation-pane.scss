@@ -13,9 +13,8 @@
 }
 
 .main-left-nav {
-  grid-area: main-left-nav;
-  background-color: getThemeColor(backgroundColor, light);
   position: relative;
+  grid-area: main-left-nav;
 
   li {
     list-style: none;
@@ -28,17 +27,26 @@
 }
 
 .hamburger {
-  position: absolute;
-  display: flex;
-  height: 50px;
+  left: 50%;
   width: 50px;
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  position: absolute;
   align-items: center;
   justify-content: center;
-  left: 50%;
   transform: translateX(-50%);
 
-  &:hover {
-    cursor: pointer;
+  .line {
+    width: 2px;
+    height: 30px;
+    margin: 0 5px 0;
+    border-radius: 30px;
+    background-color: black;
+    transition: transform 0.2s;
+  }
+
+  &:active {
     --rotate-3: 40deg;
     --rotate-4: calc(-1 * var(--rotate-3));
 
@@ -49,8 +57,8 @@
     .line-2 {
       transform: translate(-3px, 3px) rotateZ(var(--rotate-3));
       border-radius: 0;
-      border-bottom-right-radius: 4px;
       border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
     }
 
     .line-3 {
@@ -60,16 +68,6 @@
     .line-4 {
       transform: rotateZ(0deg);
     }
-  }
-
-  .line {
-    display: inline-block;
-    width: 2px;
-    height: 30px;
-    margin: 0 5px 0;
-    border-radius: 30px;
-    background-color: white;
-    transition: transform 0.2s linear;
   }
 }
 
@@ -91,8 +89,8 @@
 }
 
 .nav-tabs .demos {
-  margin: 0.5em 0;
   padding: 1em;
+  margin: 0.5em 0;
   background-color: beige;
 }
 
