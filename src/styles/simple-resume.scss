@@ -1,3 +1,5 @@
+@import "./theme-colors.scss";
+
 .resume-container {
   background-color: ghostwhite;
   width: 96vw;
@@ -17,7 +19,7 @@
   position: relative;
   padding-bottom: 1em;
   justify-content: left;
-  border-bottom: 2px solid getThemeColor(primary, dark);
+  border-bottom: 2px solid $primary;
   #AvatarWaleedFace {
     top: -3.4em;
     transform: scale(0.5);
@@ -152,7 +154,7 @@
   grid-area: contact-links;
 
   a {
-    color: getThemeColor(primary, dark);
+    color: $primary;
     text-decoration: underline;
   }
 

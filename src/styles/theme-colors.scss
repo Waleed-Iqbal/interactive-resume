@@ -1,23 +1,11 @@
-$theme-colors: (
-  primary: (
-    light: #eba1ff,
-    dark: #7b3fcc,
-  ),
-  text: (
-    light: #eeeeee,
-    dark: #aaaaaa,
-  ),
-  foreground: (
-    light: #d1ba84,
-    dark: #b36b0b,
-  ),
-  backgroundColor: (
-    light: #94ffd7,
-    dark: #70ff95,
-  ),
-);
+$primary: #eba1ff;
+$text: #eeeeee;
+$foreground: #d1ba84;
+$backgroundColor: #94ffd7;
 
-@function getThemeColor($key: "primary", $variant: "light") {
-  $map: map-get($theme-colors, $key);
-  @return map-get($map, $variant);
+body.dark-theme {
+  $primary: #7b3fcc;
+  $text: #aaaaaa;
+  $foreground: #b36b0b;
+  $backgroundColor: #70ff95;
 }
