@@ -102,6 +102,7 @@
 
       p {
         color: $text;
+
         &::after {
           display: block;
           width: 130%;
@@ -128,8 +129,45 @@
   @include navigation-icon-text(1.2em, "../images/icons/icon-contact.svg");
 }
 
+.nav-demos {
+  @include navigation-icon-text(1.2em, "../images/icons/icon-demo.svg");
+}
+
+.nav-video-player {
+  @include navigation-icon-text(1.2em, "../images/icons/icon-video-player.svg");
+}
+
 @media screen and (max-width: $medium) {
   .hamburger {
     display: flex;
+  }
+
+  .nav-tabs-container {
+    // display: none;
+    padding-top: 50px;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+
+    li {
+      padding-left: 20px;
+      transition: padding 0.2s ease-in;
+
+      &:hover {
+        background-color: $foreground;
+        padding-left: 30px;
+
+        p {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      p {
+        padding-left: 30px;
+      }
+    }
   }
 }

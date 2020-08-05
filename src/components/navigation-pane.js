@@ -29,9 +29,14 @@ export default function NavigationPane() {
             />
             {/* <NavigationItem navigationClass="nav-interactive-resume" linkTo="/interactive-resume" text="Immersive Resume" /> */}
             {/* <NavigationItem navigationClass="nav-contact" linkTo="/contact-me" text="Contact Me" /> */}
-            <li className='demos'>
+            {/* <li className='demos'>
               <p>Demos</p>
-            </li>
+            </li> */}
+            <NavigationItem
+              navigationClass='demo nav-demos'
+              linkTo='/video-player'
+              text='Demos'
+            />
             <NavigationItem
               navigationClass='demo nav-video-player'
               linkTo='/video-player'
