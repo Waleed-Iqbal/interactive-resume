@@ -8,12 +8,11 @@
 
 .main-section {
   position: relative;
-  display: none;
+  // display: none;
 }
 
 .home-greetings {
   font-size: 2rem;
-  // position: relative;
 }
 
 .home-greeting {
@@ -84,7 +83,7 @@ $appear-disappear-time: ($time-slice - $total-texts)/2;
   }
 }
 
-@media (max-width: $medium) {
+@media (max-width: $large) {
   .app-container {
     padding: 0 15px;
   }

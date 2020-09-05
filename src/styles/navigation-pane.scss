@@ -137,6 +137,15 @@
   @include navigation-icon-text(1.2em, "../images/icons/icon-video-player.svg");
 }
 
+@media screen and (max-width: $large) {
+  .nav-tabs {
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
 @media screen and (max-width: $medium) {
   .hamburger {
     display: flex;
