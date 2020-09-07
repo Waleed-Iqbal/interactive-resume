@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AnimatingText from "./animating-text";
 import "../styles/home.scss";
 import { HomePage } from "../scripts/pages-data";
@@ -6,8 +6,8 @@ import { HomePage } from "../scripts/pages-data";
 export default function Home() {
   document.title = HomePage.pageTitle;
 
-  let profilePictureData = {};
-  let profilePictureAvatar = null;
+  let [profilePictureData, setProfilePictureData] = useState({});
+  let [profilePictureAvatar, setProfilePictureAvatar] = useState(null);
   let start = null;
   let lowerLimit = -184;
   let upperLimit = -8;
@@ -15,12 +15,14 @@ export default function Home() {
   let newPositionOfAvatar = 50;
 
   useEffect(() => {
-    profilePictureData = document
-      .getElementsByClassName("profile-picture-slider")[0]
-      .getClientRects()[0];
-    profilePictureAvatar = document.getElementsByClassName(
-      "profile-picture-avatar-container"
-    )[0];
+    setProfilePictureData(
+      document
+        .getElementsByClassName("profile-picture-slider")[0]
+        .getClientRects()[0]
+    );
+    setProfilePictureAvatar(
+      document.getElementsByClassName("profile-picture-avatar-container")[0]
+    );
   }, []);
 
   function slideAvatar(timestamp) {
@@ -69,14 +71,14 @@ export default function Home() {
           <img
             className='profile-picture'
             src={require("../images/profile-pic.jpg")}
-            alt='profile picture'
+            alt='profile'
           />
         </div>
         <div className='profile-picture-avatar-container'>
           <img
             className='profile-picture-avatar'
             src={require("../images/profile-pic-avatar.jpg")}
-            alt='profile picture'
+            alt='profile'
           />
         </div>
       </div>

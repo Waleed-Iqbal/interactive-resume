@@ -196,24 +196,29 @@
   }
 
   .hamburger {
-    display: flex;
     z-index: 2;
+    display: flex;
   }
 
   .nav-tabs-container {
+    top: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    transform: scale(0);
     justify-items: center;
     align-content: center;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
     background-color: #00000022;
-    display: none;
+    transition: width 0.2s ease-in, opacity 0.2s ease-in, transform 0.2s ease-in;
 
     &.expand-menu {
-      display: flex;
+      opacity: 1;
+      width: 100vw;
+      transform: scale(1);
     }
   }
 
