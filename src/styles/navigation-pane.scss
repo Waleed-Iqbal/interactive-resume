@@ -71,9 +71,6 @@
     transition: transform 0.2s;
   }
 
-  &:hover {
-  }
-
   &:active {
     --rotate-3: 40deg;
     --rotate-4: calc(-1 * var(--rotate-3));
