@@ -6,7 +6,7 @@ import { AppNavigationLinks } from "../scripts/pages-data";
 export default function NavigationPane() {
   return (
     <header className='header'>
-      <nav>
+      <nav className='header-nav'>
         <div className='hamburger'>
           {/* add class "W" to change the state */}
           <div className='line line-1'></div>
