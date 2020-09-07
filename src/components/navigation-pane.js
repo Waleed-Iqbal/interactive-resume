@@ -8,7 +8,7 @@ export default function NavigationPane() {
     document
       .querySelector(".nav-tabs-container")
       .classList.toggle("expand-menu");
-    e.target.classList.toggle("open");
+    document.querySelector(".hamburger").classList.toggle("open");
   }
 
   return (
