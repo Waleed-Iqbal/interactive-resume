@@ -4,10 +4,17 @@ import { Link } from "react-router-dom";
 import { AppNavigationLinks } from "../scripts/pages-data";
 
 export default function NavigationPane() {
+  function hamburgerClicked(e) {
+    document
+      .querySelector(".nav-tabs-container")
+      .classList.toggle("expand-menu");
+    e.target.classList.toggle("open");
+  }
+
   return (
     <header className='header'>
       <nav className='header-nav'>
-        <div className='hamburger'>
+        <div className='hamburger' onClick={hamburgerClicked}>
           {/* add class "W" to change the state */}
           <div className='line line-1'></div>
           <div className='line line-2'></div>
