@@ -3,16 +3,26 @@
 
 .app-container {
   height: 100vh;
-  padding: 0 30px;
 }
 
 .main-section {
   position: relative;
-  display: none;
+}
+
+.home-hero {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: space-evenly;
+}
+
+.left-column {
+  width: 50%;
 }
 
 .home-greetings {
   font-size: 2rem;
+  position: relative;
 }
 
 .home-greeting {
@@ -80,11 +90,5 @@ $appear-disappear-time: ($time-slice - $total-texts)/2;
     .profile-picture-avatar {
       background-color: white;
     }
-  }
-}
-
-@media (max-width: $large) {
-  .app-container {
-    padding: 0 15px;
   }
 }

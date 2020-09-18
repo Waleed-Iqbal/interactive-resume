@@ -20,14 +20,15 @@ const HomePage = {
   pageTitle: "Hire Waleed",
   greetings: [
     "Hi",
-    "Ni Hau",
+    "你好",
     "Hola",
+    "(Bella) Ciao",
     "Bonjour",
-    "Salam",
-    "Marhaba",
-    "Guten Tag",
+    "مرحبا",
+    "こんにちは",
     "Namaste",
-    "Konnichiwa",
+    "Привет",
+    "こんにちは",
   ],
 };
 

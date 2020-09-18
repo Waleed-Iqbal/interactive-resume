@@ -206,17 +206,19 @@
     width: 0;
     opacity: 0;
     z-index: 1;
-    height: 100vh;
+    height: 0;
     display: flex;
     position: absolute;
     transform: scale(0);
     justify-items: center;
     align-content: center;
     background-color: #00000022;
-    transition: width 0.2s ease-in, opacity 0.2s ease-in, transform 0.2s ease-in;
+    transition: width 0.2s ease-in, opacity 0.2s ease-in, transform 0.2s ease-in,
+      height 0.2s ease-in;
 
     &.expand-menu {
       opacity: 1;
+      height: 100vh;
       width: 100vw;
       transform: scale(1);
     }

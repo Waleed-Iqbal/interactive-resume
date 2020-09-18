@@ -12,7 +12,7 @@ export default function NavigationPane() {
   }
 
   return (
-    <header className='header'>
+    <header className='header horz-padding'>
       <nav className='header-nav'>
         <div className='hamburger' onClick={hamburgerClicked}>
           {/* add class "W" to change the state */}

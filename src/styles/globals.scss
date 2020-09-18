@@ -1,4 +1,5 @@
 @import "./theme-colors.scss";
+@import "./responsive-breakpoints.scss";
 
 body {
   margin: 0;
@@ -47,4 +48,14 @@ a {
 
 .link {
   color: $primary;
+}
+
+.horz-padding {
+  padding: 0 30px;
+}
+
+@media screen and (max-width: $large) {
+  .horz-padding {
+    padding: 0 15px;
+  }
 }

@@ -55,33 +55,51 @@ export default function Home() {
   };
 
   return (
-    <div className='home-container'>
-      <AnimatingText
-        containerClassName='home-greetings'
-        textClassName='home-greeting'
-        textList={HomePage.greetings}
-      />
+    <div className='home-container horz-padding'>
+      <section className='home-hero'>
+        <div className='left-column'>
+          <p>
+            <AnimatingText
+              containerClassName='home-greetings'
+              textClassName='home-greeting'
+              textList={HomePage.greetings}
+            />
+            <br />
+            <h1 className='hero-heading'>I am Waleed</h1>
+          </p>
+          <p className='hero-description'>
+            Expert front-end developer specializing in UI/UX, animations. Armed
+            with extensive experience in developing single page applications,
+            landing pages, email templates and email signatures.
+          </p>
+        </div>
 
-      <div
-        className='profile-picture-slider'
-        onMouseEnter={sliderEffectHandler}
-        onMouseMove={sliderEffectHandler}
-        onMouseLeave={sliderEffectHandler}>
-        <div className='profile-picture-container'>
-          <img
-            className='profile-picture'
-            src={require("../images/profile-pic.jpg")}
-            alt='profile'
-          />
+        <div className='right-column'>
+          <div
+            className='profile-picture-slider'
+            onMouseEnter={sliderEffectHandler}
+            onMouseMove={sliderEffectHandler}
+            onMouseLeave={sliderEffectHandler}>
+            <div className='profile-picture-container'>
+              <img
+                className='profile-picture'
+                src={require("../images/profile-pic.jpg")}
+                alt='profile'
+              />
+            </div>
+            <div className='profile-picture-avatar-container'>
+              <img
+                className='profile-picture-avatar'
+                src={require("../images/profile-pic-avatar.jpg")}
+                alt='profile'
+              />
+            </div>
+          </div>
+          <p className='text-center'>
+            <i>insert cheesy caption</i>
+          </p>
         </div>
-        <div className='profile-picture-avatar-container'>
-          <img
-            className='profile-picture-avatar'
-            src={require("../images/profile-pic-avatar.jpg")}
-            alt='profile'
-          />
-        </div>
-      </div>
+      </section>
     </div>
   );
 }
