@@ -10,14 +10,14 @@
 }
 
 .home-hero {
-  display: flex;
+  width: 60%;
   padding-top: 60px;
   padding-bottom: 60px;
-  justify-content: space-evenly;
 }
 
-.left-column {
-  width: 50%;
+.hero-description {
+  line-height: 1.5;
+  letter-spacing: 1px;
 }
 
 .home-greetings {
@@ -60,35 +60,6 @@ $appear-disappear-time: ($time-slice - $total-texts)/2;
     #{$startVisibility * 1%},
     #{$endVisibility * 1%} {
       opacity: 1;
-    }
-  }
-}
-
-.profile-picture-slider {
-  position: relative;
-  margin: 0 auto;
-  width: 180px;
-  height: 230px;
-  overflow: hidden;
-  border: 2px solid black;
-
-  div {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  img {
-    width: auto;
-    height: 100%;
-  }
-
-  .profile-picture-avatar-container {
-    width: 50%;
-
-    .profile-picture-avatar {
-      background-color: white;
     }
   }
 }

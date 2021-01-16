@@ -30,6 +30,9 @@ const HomePage = {
     "Привет",
     "こんにちは",
   ],
+  heroHeading: "I am Waleed",
+  heroSubheading:
+    "Expert front-end developer specializing in UI/UX, animations. Armed with extensive experience in developing single page applications, landing pages, email templates and email signatures.",
 };
 
 const AboutPage = {
