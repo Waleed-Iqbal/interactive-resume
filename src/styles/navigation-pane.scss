@@ -49,38 +49,52 @@
 
 .hamburger {
   top: 10px;
-  left: 30px;
   z-index: 2;
-  width: 50px;
-  padding: 5px 0;
-  height: 50px;
+  right: 30px;
+  width: 68px;
+  height: 55px;
   display: none;
   display: flex;
+  padding: 5px 0;
   cursor: pointer;
+  overflow: hidden;
   border-radius: 50%;
   position: absolute;
   align-items: center;
   justify-content: center;
-  transform: translateX(-50%);
+  box-shadow: 0 0 5px 0 $primary;
 
   &::before {
     top: 0;
-    left: 0;
     width: 0;
     height: 0;
     z-index: 1;
+    left: -8px;
     content: "";
+    width: 125%;
+    height: 105%;
     position: absolute;
     border-radius: 50%;
-    border-top-left-radius: 0;
-    background-color: $primary;
-    transition: width 0.15s ease-in, height 0.15s ease-in;
+    border-top-right-radius: 0;
+    background-color: transparent;
+    transition: background-color 0.1s ease-in;
   }
 
   &:hover::before,
   &.open::before {
-    width: 100%;
-    height: 100%;
+    background-color: $primary;
+  }
+
+  &.open .line {
+    background-color: $text;
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px 2px $primary;
+
+    .line {
+      background-color: $text;
+    }
   }
 
   .line {
@@ -89,7 +103,7 @@
     height: 30px;
     margin: 0 5px 0;
     border-radius: 30px;
-    background-color: black;
+    background-color: $primary;
     transition: transform 0.2s;
   }
 
@@ -119,8 +133,8 @@
 }
 
 .nav-tabs-container {
-  top: 0;
-  left: 0;
+  top: -100%;
+  right: -100%;
   width: 0;
   opacity: 0;
   z-index: 1;
@@ -128,17 +142,25 @@
   display: flex;
   position: absolute;
   transform: scale(0);
+  transform: scale(1);
   justify-items: center;
   align-content: center;
   background-color: #00000022;
   transition: width 0.2s ease-in, opacity 0.2s ease-in, transform 0.2s ease-in,
-    height 0.2s ease-in;
+    height 0.2s ease-in, top 0.2s ease-in, right 0.2s ease-in;
 
   &.expand-menu {
     opacity: 1;
-    height: 100vh;
+    right: 0;
+    top: 0;
+
     width: 100vw;
-    transform: scale(1);
+    height: 100vh;
+
+    li {
+      opacity: 1;
+      display: block;
+    }
   }
 }
 
@@ -152,15 +174,19 @@
 
   li {
     width: 25%;
+    opacity: 0;
     cursor: pointer;
     overflow: hidden;
     margin-left: 25%;
+    display: none;
     border-radius: 20px;
     transform: translateY(0);
+    box-shadow: 0 0 0 0 $black;
     padding: 20px 20px 20px 11%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    transition: transform 100ms ease-in;
+    transition: transform 0.1s ease-in, box-shadow 0.2s ease-in,
+      opacity 0.7s ease-out;
 
     p {
       position: relative;
@@ -169,7 +195,7 @@
     }
 
     &:hover {
-      box-shadow: 0 0 9px 1px black;
+      box-shadow: 0 0 9px 1px $black;
       transform: translateY(-5px);
     }
 
