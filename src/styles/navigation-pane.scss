@@ -133,12 +133,12 @@
 }
 
 .nav-tabs-container {
-  top: -100%;
-  right: -100%;
   width: 0;
+  height: 0;
   opacity: 0;
   z-index: 1;
-  height: 0;
+  top: -100%;
+  right: -100%;
   display: flex;
   position: absolute;
   transform: scale(0);
@@ -150,12 +150,15 @@
     height 0.2s ease-in, top 0.2s ease-in, right 0.2s ease-in;
 
   &.expand-menu {
-    opacity: 1;
-    right: 0;
     top: 0;
-
+    right: 0;
+    opacity: 1;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $backgroundColorWithOpacity;
 
     li {
       opacity: 1;
@@ -165,38 +168,38 @@
 }
 
 .nav-tabs {
-  width: 100%;
+  width: 25%;
   height: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: $backgroundColorWithOpacity;
 
   li {
-    width: 25%;
     opacity: 0;
+    width: 100%;
+    display: none;
     cursor: pointer;
     overflow: hidden;
     margin-left: 25%;
-    display: none;
     border-radius: 20px;
     transform: translateY(0);
     box-shadow: 0 0 0 0 $black;
-    padding: 20px 20px 20px 11%;
+    padding: 20px 20px 20px 50%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transition: transform 0.1s ease-in, box-shadow 0.2s ease-in,
       opacity 0.7s ease-out;
 
     p {
-      position: relative;
       font-size: 26px;
       padding-left: 50px;
+      position: relative;
     }
 
     &:hover {
-      box-shadow: 0 0 9px 1px $black;
       transform: translateY(-5px);
+      box-shadow: 0 0 9px 1px $black;
     }
 
     &:active {
@@ -207,12 +210,22 @@
 
 @media screen and (max-width: $large) {
   .nav-tabs {
+    width: 50%;
+
     li {
+      width: 75%;
+      padding-left: 5%;
       padding-right: 20px;
     }
   }
 }
 
-.d-none {
-  display: none;
+@media screen and (max-width: $small) {
+  .nav-tabs {
+    width: 100%;
+
+    li {
+      margin-left: 0;
+    }
+  }
 }
